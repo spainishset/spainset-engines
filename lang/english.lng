@@ -1,5 +1,25 @@
 ##grflangid 0x01
 
-STR_GRF_NAME                   :STS - Spanish Train Set
-STR_GRF_DESC                   :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+str_grf_name                   :sts - spanish train set
+str_grf_desc                   :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+
+# Pucharse texts
+str_pucharse_svc:           {BLACK}Service: {YELLOW}{STRING}
+
+
+str_purchase_svc_p          :passengers
+str_purchase_svc_ep         :express passengers
+str_purchase_svc_hp         :high speed passengers
+str_purchase_svc_f          :freight
+str_purchase_svc_lf         :light freight
+str_purchase_svc_hf         :heavy freight
+str_purchase_svc_ephf       :express passengers or heavy freight
+str_purchase_svc_hphf       :high speed passengers or heavy freight
+str_purchase_svc_eplf       :express passengers or light freight
+str_purchase_svc_fp         :freight or passengers
+str_purchase_svc_lfep       :light freight or express passengers
+
+# Train names
+
+str_steam_040_verraco_name: 0-4-0 Verraco (Steam)
 
