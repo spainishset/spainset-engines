@@ -1,0 +1,5 @@
+Source code (NML/PNML, scripts and makefiles) are under GPL 2 license.
+
+Graphics and other assets are under Creative Commons 3 Attribution-ShareAlike license.
+
+

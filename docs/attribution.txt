@@ -1,0 +1,8 @@
+Makefile, Makefile.config and findversions.sh are based on NewGRF build framework (https://dev.openttdcoop.org/projects/make-nml/repository)
+
+PNML scaffolding are based on The Dutch Trainset 2 (https://github.com/openttdcoop/dutchtrains)
+
+Graphics are taken from the old Spain Set Taster v1.30b :
+	 2005-2017 Drawn by: Sanchimaru, Purno, Wile E. Coyote, Artamir & Others
+
+This while NewGRF it's inspired by the old Spanis Set Taster, coded by Death (E. Silbestein) & Maquinista.
