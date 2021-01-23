@@ -11,3 +11,16 @@
  * GRF HEADER
  */
 #include "src/header.pnml"
+
+//include sprite templates
+#include "src/templates.pnml"
+
+//railtype translation table
+#include "src/railtypetable.pnml"
+
+/*
+ * VEHICLES
+ */
+
+#include "src/steam/perruca_graphics.pnml"
+#include "src/steam/perruca_item.pnml"
