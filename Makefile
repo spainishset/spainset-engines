@@ -396,7 +396,7 @@ bananas: $(DIR_NAME)
 
 $(DIR_NAME).tar: $(DIR_NAME)
 	$(_E) "[BUNDLE TAR] $@"
-	$(_V) $(TAR) $(TAR_FLAGS) $@ $< --exclude=bananas.ini
+	$(_V) $(TAR) --exclude=bananas.ini $(TAR_FLAGS) $@ $<
 
 bundle_tar: $(DIR_NAME).tar
 bundle_zip: $(ZIP_FILENAME)
