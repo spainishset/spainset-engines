@@ -88,25 +88,7 @@ ROOT_DIR=`pwd`
 # Assume the dir is not modified
 MODIFIED=""
 REPO_DATE="2000,1,1"
-if [ -d "$ROOT_DIR/.hg" ]; then
-	# We are a hg checkout
-	if [ -n "`HGPLAIN= hg status -S | grep -v '^?'`" ]; then
-		MODIFIED="M"
-	fi
-	HASH=`LC_ALL=C HGPLAIN= hg id -i | cut -c1-12`
-	REV="h`echo $HASH | cut -c1-8`"
-	BRANCH="`HGPLAIN= hg branch | sed 's@^default$@@'`"
-	TAG="`HGPLAIN= hg id -t | grep -v 'tip$'`"
-	ISO_DATE="`HGPLAIN= hg log -r$HASH --template=\"{date|shortdate}\"`"
-	REPO_DATE="`echo ${ISO_DATE} | sed s/-/,/g | sed s/,0/,/g`"
-	HG_DATE=$(HGPLAIN= hg log -r$HASH --template='{date|hgdate}' | cut -d\  -f1)
-	VERSION=$[ ( ${HG_DATE} - $(date --date='1 Jan 2000' +'%s') ) / 86400 ]
-	DISPLAY_VERSION="v${VERSION}"
-	if [ -n "$TAG" ]; then
-		BRANCH=""
-		DISPLAY_VERSION="${TAG}"
-	fi
-elif [ -f "$ROOT_DIR/.git" ]; then
+if [ -d "$ROOT_DIR/.git" ]; then
 	# We are a git checkout
 	# Refresh the index to make sure file stat info is in sync, then look for modifications
 	git update-index --refresh >/dev/null
