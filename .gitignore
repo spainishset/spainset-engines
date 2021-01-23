@@ -1,0 +1,11 @@
+# Editor files
+*.swp
+~*
+
+# Generated files
+.nmlcache
+*.nml
+*.grf
+*.tar
+custom_tags.txt
+spts-steam-engines/**
