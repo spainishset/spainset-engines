@@ -1,0 +1,8 @@
+grf {
+    grfid: "LP\01\01";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    /* url: string(STR_GRF_URL)*/
+    version: NEWGRF_VERSION;
+    min_compatible_version: 0;
+}
