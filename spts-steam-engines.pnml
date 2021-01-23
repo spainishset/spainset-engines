@@ -24,3 +24,6 @@
 
 #include "src/steam/perruca_graphics.pnml"
 #include "src/steam/perruca_item.pnml"
+
+#include "src/steam/verraco_graphics.pnml"
+#include "src/steam/verraco_item.pnml"
