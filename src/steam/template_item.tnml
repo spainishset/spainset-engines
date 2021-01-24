@@ -9,13 +9,13 @@
 
 item(FEAT_TRAINS, item_steam_${id}) {
   property {
-    name: string(str_steam_ ${id}_name);
+    name: string(str_steam_${id}_name);
     sprite_id: SPRITE_ID_NEW_TRAIN;
     climates_available: ALL_CLIMATES;
-    introduction_date: date(1864,01,01);
-    model_life: 50; // How many time could be bought ?
+    introduction_date: ${date};
+    model_life: ${model_life};
     /* retire_early not set, use default retirement behaviour */
-    vehicle_life: 102; // in 1966 a few are keep on operative serive since XIX century
+    vehicle_life: ${vehicle_life};
     reliability_decay: 20;
 
     cost_factor: 14;
@@ -23,7 +23,7 @@ item(FEAT_TRAINS, item_steam_${id}) {
     running_cost_factor: 15;
 
     speed: 80 km/h;
-    power: 593 hp; // 602 cv;
+    power: ${power};
     weight: 63 ton; // 43 ton engine + 20 ton tender
     tractive_effort_coefficient: 0.1155; // TEc = TE / 10*Weithg in tons  <- TE = 7425 kg (72.8KN)
     air_drag_coefficient: 0;

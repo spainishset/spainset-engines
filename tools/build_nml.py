@@ -1,24 +1,39 @@
 #!/usr/bin/env python3
 
+def readCSVFile(filename):
+  import csv
+
+  with open(filename, newline='') as csvfile:
+    csvReader = csv.DictReader(csvfile)
+    output=[]
+    for row in csvReader:
+      output.append(row)
+    return output
+
+def writeOutputFile(filename, data):
+  outputFile = codecs.open(filename, 'w', 'utf-8')
+  outputFile.write(data)
+  outputFile.close()
+
+
 print("Generating nml files...")
 
-import codecs
-from string import Template
+import codecs # Easy I/O
+import airspeed # Tamplete engine compatible with Java Velocity
 
-output = []
 
-data = [{'id': '040_verraco'}, {'id': '030_perruca'}]
+data = readCSVFile('src/steam/data.csv')
+print(data)
 
-steamEngineTemplate = Template(codecs.open('src/steam/template_item.tnml', 'r', 'utf-8').read())
+itemTemplate = airspeed.Template(codecs.open('src/steam/template_item.tnml', 'r', 'utf-8').read())
 
 for engineData in data:
   print("Templating: " + engineData['id'])
-  output.append(steamEngineTemplate.safe_substitute(engineData))
+  outputItem = itemTemplate.merge(engineData)
 
-  outputFilename = 'engineData['id'] +'_item.pnml'
-  print("Generatin Writing the file : " + outputFilename)
+  outputItemFilename = engineData['id'] +'_item.pnml'
+  print("Generating file : " + outputItemFilename)
 
-  outputFile = codecs.open(outputFilename, 'w', 'utf-8')
-  outputFile.write('\n'.join(output))
-  outputFile.close()
+  writeOutputFile(outputItemFilename, outputItem)
+
 
