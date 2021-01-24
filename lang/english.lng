@@ -1,12 +1,10 @@
 ##grflangid 0x01
 
-str_grf_name                   :sts - spanish train set
+str_grf_name                   :{TITLE}
 str_grf_desc                   :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
 
 # Pucharse texts
-str_pucharse_svc:           {BLACK}Service: {YELLOW}{STRING}
-
-
+str_pucharse_svc            :{BLACK}Service: {YELLOW}{STRING}
 str_purchase_svc_p          :passengers
 str_purchase_svc_ep         :express passengers
 str_purchase_svc_hp         :high speed passengers
@@ -21,5 +19,5 @@ str_purchase_svc_lfep       :light freight or express passengers
 
 # Train names
 
-str_steam_040_verraco_name: 0-4-0 Verraco (Steam)
+str_steam_040_verraco_name: 0-4-0 "Verraco" (Steam)
 
