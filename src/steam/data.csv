@@ -1,3 +1,3 @@
-"id","date","modelLife","vehicleLife","power","animationFrames"
-"030_perruca","date(1860,01,01)",50,100,"500 hp",4
-"040_verraco","date(1864,01,01)",50,102,"593 hp",4
+"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","length","imageFile","animationFrames","tenderLength"
+"030_perruca","date(1860,01,01)",50,100,14,15,"80 km/h","500 hp","60 ton","0.11555",7,"Verraco/Verraco.png",4,2
+"040_verraco","date(1864,01,01)",50,102,14,15,"80 km/h","593 hp","63 ton","0.11555",7,"Verraco/Verraco.png",4,2
