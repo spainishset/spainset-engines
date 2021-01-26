@@ -19,8 +19,8 @@ data, and some modern goodies.
 
 ## TODO
 
-### Shortplace
-- [ ] Investigate how use some script language like Python+templates to
+### Short-term
+- [X] Investigate how use some script language like Python+templates to
     automatize all the boring repetitive coding.
 - [ ] Add more trains form Spanish Taster Set
   - Iberian gauge
@@ -94,12 +94,13 @@ data, and some modern goodies.
 - [ ] Add a few more XIX century engines (Series 100 and 200 from Norte, etc)
 - [ ] Add some post 2003 new Spanish engines
 
-### Longplace
+### Long-term
 - [ ] Apply the track standard nomenclature so the engines are compatible with
     tracks from other NewGRF. This should allow to make a new Spanish High speed
     track GRF that it's compatible with other NewGRFs.
 - [ ] Add "Fuel" variant of some steam engines (lower running costs)
 - [ ] Parameters to show/hide some engines (hide Cercanias trains, etc)
+- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain) 
 
-### Dreams
+### Dreaming
 - [ ] 32bpp and x2 or x4 sprites
