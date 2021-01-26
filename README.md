@@ -7,7 +7,8 @@ Actually only the Norte Series 500 (2500) "0-4-0 Verraco" it's implemented as ex
 
 ## How Build
 
-Run `build.sh` or :
+First, go to *tools* folder and run `pip3 install .` to grab the python dependencies.
+Then you can run `build.sh` or follow this manual steps :
 
 1. Run `make clean`
 2. Run `tools/build_nml.py steam` from the main folder
