@@ -5,6 +5,12 @@ This, actually, is a small test for creating a modern replacement for the Spanis
 
 Actually only the Norte Series 500 (2500) "0-4-0 Verraco" it's implemented as example.
 
+## How Build
+
+1. Run `tools/build_nml.py` from the main folder
+2. Run `make clean all`
+
+If you like to copy the NewGRF to your install of OpenTTD, run `make install`
 
 ## Objetives
 

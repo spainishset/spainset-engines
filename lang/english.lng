@@ -26,5 +26,6 @@ str_pucharse_gauge_i        :iberian
 
 # Train names
 
+str_steam_030_perruca_name: 0-3-0 "Perruca"/"Bourbonnais" (Steam)
 str_steam_040_verraco_name: 0-4-0 "Verraco" (Steam)
 

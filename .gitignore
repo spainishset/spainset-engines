@@ -1,6 +1,7 @@
 # Editor files
 *.swp
 ~*
+.~*
 
 # Generated files
 .nmlcache
