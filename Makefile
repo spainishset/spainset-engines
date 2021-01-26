@@ -87,6 +87,7 @@ all: $(GENERATE_GRF) $(GENERATE_DOC) bundle_tar
 
 # Don't delete intermediate files
 .PRECIOUS: %.nml %.scm %.png
+
 .SECONDARY: %.nml %.scm %.png
 
 ################################################################
@@ -152,7 +153,7 @@ REPO_VERSION_STRING ?= $(shell echo ${VERSION_INFO} | cut -f5)
 REPO_TITLE     ?= $(REPO_NAME) $(REPO_VERSION_STRING)
 
 # Get a list of files which contribute to the actual build of the grf (if using a hg or git checkout)
-MANIFEST ?= $(shell if [ "$(USED_VCS)" == "HG" ]; then echo "`hg st -ardmcn --exclude .devzone --exclude .hgtags --exclude .hgignore`"; elif [ "$(USED_VCS)" == "GIT" ]; then echo "`git ls-files | grep -v .devzone | grep -v .gitignore`"; fi)
+MANIFEST ?= $(shell if [ "$(USED_VCS)" == "HG" ]; then echo "`hg st -ardmcn --exclude .devzone --exclude .hgtags --exclude .hgignore`"; elif [ "$(USED_VCS)" == "GIT" ]; then echo "`git ls-files | grep -v .devzone | grep -v .gitignore | grep \"pnml\|csv\|vm\"`"; fi)
 
 # Settings for Bananas
 BANANAS_INI = bananas.ini
