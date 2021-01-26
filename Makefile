@@ -76,10 +76,10 @@ GENERATE_LNG  ?= custom_tags.txt
 # target 'all' must be first target
 all: $(GENERATE_GRF) $(GENERATE_DOC) bundle_tar
 
--include Makefile.in
+#-include Makefile.in
 
 # general definitions (no rules!)
--include Makefile.dist
+#-include Makefile.dist
 .PHONY: all clean distclean doc bundle bundle_bsrc bundle_bzip bundle_gsrc bundle_src bundle_tar bundle_xsrc bundle_xz bundle_zip bundle_zsrc check
 
 # We want to disable the default rules. It's not c/c++ anyway
@@ -190,62 +190,63 @@ clean::
 # Targets related to creation of graphics files
 ################################################################
 # Dependency on source list file via dep check
-ifdef GFX_SCRIPT_LIST_FILES
-# include dependency file, if we generate graphics
--include Makefile_gfx.dep
 
-GIMP           ?= "$(shell [ `which gimp 2>/dev/null` ] && echo "gimp" || echo "")"
-GIMP_FLAGS     ?= -n -i -b - <
-
-%.scm: $(SCRIPT_DIR)/gimpscript $(SCRIPT_DIR)/gimp.sed
-	$(_E) "[GIMP-SCRIPT] $@"
-	$(_V) cat $(SCRIPT_DIR)/gimpscript > $@
-	$(_V) cat $(GFX_SCRIPT_LIST_FILES) | grep $(patsubst %.scm,%.png,$@) | sed -f $(SCRIPT_DIR)/gimp.sed >> $@
-	$(_V) echo "(gimp-quit 0)" >> $@
-
-# create the png file. And make sure it's re-created even when present in the repo
-%.png: %.scm
-	$(_E) "[GIMP] $@"
-	$(_V) $(GIMP) $(GIMP_FLAGS) $< >/dev/null
-
-Makefile_gfx.dep: $(GFX_SCRIPT_LIST_FILES) Makefile
-	$(_E) "[GFX-DEP] $@"
-	$(_V) echo "GIMP := $(GIMP)" > Makefile_gfx
-	$(_V) echo "GIMP_FLAGS := $(GIMP_FLAGS)" >> Makefile_gfx
-	$(_V) echo "%.scm: $(SCRIPT_DIR)/gimpscript $(SCRIPT_DIR)/gimp.sed" >> Makefile_gfx
-	$(_V) echo -e '\t$(_E) "[GIMP-SCRIPT] $@"' >> Makefile_gfx
-	$(_V) echo -e '\t$(_V) cat $(SCRIPT_DIR)/gimpscript > $$@' >> Makefile_gfx
-	$(_V) echo -e '\t$(_V) cat $(GFX_SCRIPT_LIST_FILES) | grep $$(patsubst %.scm,%.png,$$@) | sed -f $(SCRIPT_DIR)/gimp.sed >> $$@' >> Makefile_gfx
-	$(_V) echo -e '\t$(_V) echo "(gimp-quit 0)" >> $$@' >> Makefile_gfx
-	$(_V) echo -e "" >> Makefile_gfx
-	$(_V) echo -e '%.png: %.scm' >> Makefile_gfx
-	$(_V) echo -e '\t$(_E) [GIMP] $$@' >> Makefile_gfx
-	$(_V) echo -e '\t$(_V) $(GIMP) $(GIMP_FLAGS) $$< >/dev/null' >> Makefile_gfx
-	$(_V) echo -e "" >> Makefile_gfx
-	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | grep -v "^#" | cut -d\  -f1`; do echo "gimp: $$i" >> Makefile_gfx; done; done
-	$(_V) echo -e "`cat $(GFX_SCRIPT_LIST_FILES) | grep \"\([pP][cCnN][xXgG]\)\" | grep -v \"^#\" | $(AWK) '{print $1": "$2}'`" >> Makefile_gfx
-	$(_V) echo -e "" > $@
-	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | grep -v "^#" | cut -d\  -f1 | sed "s/\.\([pP][cCnN][xXgG]\)//"`; do echo "$$i.scm: $$j" >> $@; echo "$(GRF_FILE): $$i.png" >> $@; done; done
-
-
-ifeq ($(GIMP),"")
-gfx:
-	$(_E) "Gimp processing required, but gimp not found nor specified"
-	$(_V) false
-else
-gfx: Makefile_gfx.dep
-	$(_E) "[GFX]"
-	$(_V) make -f Makefile_gfx gimp
-endif
-
-maintainer-clean::
-	$(_E) "[MAINTAINER CLEAN GFX]"
-	$(_V) rm -rf Makefile_gfx.dep
-	$(_V) rm -rf Makefile_gfx
-	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | cut -d\  -f1 | sed "s/\.\([pP][cCnN][xXgG]\)//"`; do rm -rf $$i.scm; rm -rf $$i.png; done; done
-else
-gfx:
-endif
+#ifdef GFX_SCRIPT_LIST_FILES
+## include dependency file, if we generate graphics
+#-include Makefile_gfx.dep
+#
+#GIMP           ?= "$(shell [ `which gimp 2>/dev/null` ] && echo "gimp" || echo "")"
+#GIMP_FLAGS     ?= -n -i -b - <
+#
+#%.scm: $(SCRIPT_DIR)/gimpscript $(SCRIPT_DIR)/gimp.sed
+#	$(_E) "[GIMP-SCRIPT] $@"
+#	$(_V) cat $(SCRIPT_DIR)/gimpscript > $@
+#	$(_V) cat $(GFX_SCRIPT_LIST_FILES) | grep $(patsubst %.scm,%.png,$@) | sed -f $(SCRIPT_DIR)/gimp.sed >> $@
+#	$(_V) echo "(gimp-quit 0)" >> $@
+#
+## create the png file. And make sure it's re-created even when present in the repo
+#%.png: %.scm
+#	$(_E) "[GIMP] $@"
+#	$(_V) $(GIMP) $(GIMP_FLAGS) $< >/dev/null
+#
+#Makefile_gfx.dep: $(GFX_SCRIPT_LIST_FILES) Makefile
+#	$(_E) "[GFX-DEP] $@"
+#	$(_V) echo "GIMP := $(GIMP)" > Makefile_gfx
+#	$(_V) echo "GIMP_FLAGS := $(GIMP_FLAGS)" >> Makefile_gfx
+#	$(_V) echo "%.scm: $(SCRIPT_DIR)/gimpscript $(SCRIPT_DIR)/gimp.sed" >> Makefile_gfx
+#	$(_V) echo -e '\t$(_E) "[GIMP-SCRIPT] $@"' >> Makefile_gfx
+#	$(_V) echo -e '\t$(_V) cat $(SCRIPT_DIR)/gimpscript > $$@' >> Makefile_gfx
+#	$(_V) echo -e '\t$(_V) cat $(GFX_SCRIPT_LIST_FILES) | grep $$(patsubst %.scm,%.png,$$@) | sed -f $(SCRIPT_DIR)/gimp.sed >> $$@' >> Makefile_gfx
+#	$(_V) echo -e '\t$(_V) echo "(gimp-quit 0)" >> $$@' >> Makefile_gfx
+#	$(_V) echo -e "" >> Makefile_gfx
+#	$(_V) echo -e '%.png: %.scm' >> Makefile_gfx
+#	$(_V) echo -e '\t$(_E) [GIMP] $$@' >> Makefile_gfx
+#	$(_V) echo -e '\t$(_V) $(GIMP) $(GIMP_FLAGS) $$< >/dev/null' >> Makefile_gfx
+#	$(_V) echo -e "" >> Makefile_gfx
+#	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | grep -v "^#" | cut -d\  -f1`; do echo "gimp: $$i" >> Makefile_gfx; done; done
+#	$(_V) echo -e "`cat $(GFX_SCRIPT_LIST_FILES) | grep \"\([pP][cCnN][xXgG]\)\" | grep -v \"^#\" | $(AWK) '{print $1": "$2}'`" >> Makefile_gfx
+#	$(_V) echo -e "" > $@
+#	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | grep -v "^#" | cut -d\  -f1 | sed "s/\.\([pP][cCnN][xXgG]\)//"`; do echo "$$i.scm: $$j" >> $@; echo "$(GRF_FILE): $$i.png" >> $@; done; done
+#
+#
+#ifeq ($(GIMP),"")
+#gfx:
+#	$(_E) "Gimp processing required, but gimp not found nor specified"
+#	$(_V) false
+#else
+#gfx: Makefile_gfx.dep
+#	$(_E) "[GFX]"
+#	$(_V) make -f Makefile_gfx gimp
+#endif
+#
+#maintainer-clean::
+#	$(_E) "[MAINTAINER CLEAN GFX]"
+#	$(_V) rm -rf Makefile_gfx.dep
+#	$(_V) rm -rf Makefile_gfx
+#	$(_V) for j in $(GFX_SCRIPT_LIST_FILES); do for i in `cat $$j | grep "\([pP][cCnN][xXgG]\)" | cut -d\  -f1 | sed "s/\.\([pP][cCnN][xXgG]\)//"`; do rm -rf $$i.scm; rm -rf $$i.png; done; done
+#else
+#gfx:
+#endif
 
 #####################################################
 # target 'lng' which builds the lang/*.lng files

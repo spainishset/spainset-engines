@@ -22,5 +22,5 @@
  * VEHICLES
  */
 
-#include "generated/include_all.pnml"
+#include "generated/steam/include_all.pnml"
 
