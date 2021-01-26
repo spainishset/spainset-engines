@@ -44,6 +44,6 @@ item(FEAT_TRAINS, item_steam_${id}) {
     articulated_part: switch_steam_${id}_articulated;
     length: switch_steam_${id}_length;
 
-    additional_text: return string(str_pucharse_svc_concat, string(str_purchase_svc_fp), string(str_pucharse_gauge, string(str_pucharse_gauge_i)));
+    additional_text: return string(str_pucharse_svc_concat, string(str_purchase_svc_${service}), string(str_pucharse_gauge, string(str_pucharse_gauge_${gauge})));
   }
 }

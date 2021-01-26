@@ -19,9 +19,9 @@ str_purchase_svc_fp         :freight or passengers
 str_purchase_svc_lfep       :light freight or express passengers
 
 str_pucharse_gauge          :{BLACK}Track gauge: {ORANGE}{STRING}
-str_pucharse_gauge_n        :narrow 
-str_pucharse_gauge_s        :standard
-str_pucharse_gauge_i        :iberian
+str_pucharse_gauge_narrow   :narrow 
+str_pucharse_gauge_standard :standard
+str_pucharse_gauge_iberian  :iberian
 
 
 # Train names

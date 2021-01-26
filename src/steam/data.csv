@@ -1,11 +1,11 @@
-"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","length","imageFile","animationFrames","tenderLength"
-"030_perruca","date(1880,01,01)",50,100,14,15,"80 km/h","973 hpM","65 ton",0.0926122301,7,"Verraco/Verraco.png",4,2
-"040_verraco","date(1864,01,01)",50,102,14,15,"80 km/h","593 hpM","63 ton",0.1179081629,7,"Verraco/Verraco.png",4,2
-"140_consolidacion","date(1920,01,01)",45,20,100,100,"72 km/h","1318 hpM","120 ton",0.2967653060,7,"Verraco/Verraco.png",4,2
-"240_mastodonte","date(1911,01,01) ",45,20,100,100,"105 km/h","1369 hpM","130 ton",0.2966326530,7,"Verraco/Verraco.png",4,2
-"282_garrafeta","date(1911,01,01) ",45,20,100,100,"60 km/h","1825 hpM","170 ton",0.1284489796,7,"Verraco/Verraco.png",4,2
-"241_montanya","date(1928,01,01) ",45,20,100,100,"120 km/h","2738 hpM","180 ton",0.2964795918,7,"Verraco/Verraco.png",4,2
-"231_pacific","date(1928,01,01) ",45,20,100,100,"125 km/h","2079 hpM","130 ton",0.2966938775,7,"Verraco/Verraco.png",4,2
-"151_santafe","date(1942,01,01) ",45,20,100,100,"100 km/h","4113 hpM","213 ton",0.2965408162,7,"Verraco/Verraco.png",4,2
-"141_mikado","date(1917,01,01) ",45,20,100,100,"90 km/h","2028 hpM","150 ton",0.2965918367,7,"Verraco/Verraco.png",4,2
-"242_confederacion","date(1956,01,01) ",45,20,100,100,"125 km/h","4563 hpM","213 ton",0.0992346939,7,"Verraco/Verraco.png",4,2
+"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","gauge","service","length","imageFile","animationFrames","tenderLength"
+"030_perruca","date(1880,01,01)",50,100,14,15,"80 km/h","973 hpM","65 ton",0.0926122301,"iberian","fp",7,"Verraco/Verraco.png",4,2
+"040_verraco","date(1864,01,01)",50,102,14,15,"80 km/h","593 hpM","63 ton",0.1179081629,"iberian","fp",7,"Verraco/Verraco.png",4,2
+"140_consolidacion","date(1920,01,01)",45,20,100,100,"72 km/h","1318 hpM","120 ton",0.2967653060,"iberian","fp",7,"Verraco/Verraco.png",4,2
+"240_mastodonte","date(1911,01,01) ",45,20,100,100,"105 km/h","1369 hpM","130 ton",0.2966326530,"iberian","fp",7,"Verraco/Verraco.png",4,2
+"282_garrafeta","date(1911,01,01) ",45,20,100,100,"60 km/h","1825 hpM","170 ton",0.1284489796,"iberian","hf",7,"Verraco/Verraco.png",4,2
+"241_montanya","date(1928,01,01) ",45,20,100,100,"120 km/h","2738 hpM","180 ton",0.2964795918,"iberian","ephf",7,"Verraco/Verraco.png",4,2
+"231_pacific","date(1928,01,01) ",45,20,100,100,"125 km/h","2079 hpM","130 ton",0.2966938775,"iberian","eplf",7,"Verraco/Verraco.png",4,2
+"151_santafe","date(1942,01,01) ",45,20,100,100,"100 km/h","4113 hpM","213 ton",0.2965408162,"iberian","hf",7,"Verraco/Verraco.png",4,2
+"141_mikado","date(1917,01,01) ",45,20,100,100,"90 km/h","2028 hpM","150 ton",0.2965918367,"iberian","fp",7,"Verraco/Verraco.png",4,2
+"242_confederacion","date(1956,01,01) ",45,20,100,100,"125 km/h","4563 hpM","213 ton",0.0992346939,"iberian","ephf",7,"Verraco/Verraco.png",4,2
