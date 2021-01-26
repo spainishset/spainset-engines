@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+OUTPUT_PATH = "generated/"
 
 def stringToNumber(strValue):
   "Tries to convert a string to a number (integer or float)"
@@ -26,7 +27,7 @@ def readCSVFile(filename):
 def writeOutputFile(filename, data):
   "Writes a file"
   import codecs # Easy I/O
-  
+
   outputFile = codecs.open(filename, 'w', 'utf-8')
   outputFile.write(data)
   outputFile.close()
@@ -36,7 +37,7 @@ def parseTemplate(template, data, outputFilename):
   templateOutput = template.merge(data)
 
   print("Generating file : " + outputFilename)
-  writeOutputFile(outputFilename, templateOutput)
+  writeOutputFile(OUTPUT_PATH + outputFilename, templateOutput)
 
 
 def main():
