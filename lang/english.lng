@@ -28,4 +28,12 @@ str_pucharse_gauge_i        :iberian
 
 str_steam_030_perruca_name: 0-3-0 "Perruca"/"Bourbonnais" (Steam)
 str_steam_040_verraco_name: 0-4-0 "Verraco" (Steam)
+str_steam_140_consolidacion_name: 1-4-0 "Consolidación" (Steam)
+str_steam_240_mastodonte_name: 2-4-0 "Mastodonte" (Steam)
+str_steam_282_garrafeta_name: 2-8-2 "Garrafeta" (Steam)
+str_steam_241_montanya_name: 2-4-1 "Montaña" (Steam)
+str_steam_231_pacific_name: 2-3-1 "Pacific" (Steam)
+str_steam_151_santafe_name: 1-5-1 "Santa Fe" (Steam)
+str_steam_141_mikado_name: 1-4-1 "Mikado" (Steam)
+str_steam_242_confederacion_name: 2-4-2 "Confederación" (Steam)
 
