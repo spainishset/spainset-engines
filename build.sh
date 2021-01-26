@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-./tools/build_nml.py
-make clean all
+make clean
+./tools/build_nml.py steam
+make all

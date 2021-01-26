@@ -7,8 +7,13 @@ Actually only the Norte Series 500 (2500) "0-4-0 Verraco" it's implemented as ex
 
 ## How Build
 
-1. Run `tools/build_nml.py` from the main folder
-2. Run `make clean all`
+Run `build.sh` or :
+
+1. Run `make clean`
+2. Run `tools/build_nml.py steam` from the main folder
+3. Run `tools/build_nml.py diesel` from the main folder
+4. Run `tools/build_nml.py electric` from the main folder
+5. Run `make all`
 
 If you like to copy the NewGRF to your install of OpenTTD, run `make install`
 

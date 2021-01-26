@@ -180,6 +180,9 @@ $(BASE_FILENAME).nml: $(BASE_FILENAME.pnml) $(MANIFEST)
 clean::
 	$(_E) "[CLEAN NML]"
 	$(_V)-rm -rf $(NML_FILE)
+	$(_V)-rm -rf generated/steam/*.pnml
+	$(_V)-rm -rf generated/diesel/*.pnml
+	$(_V)-rm -rf generated/electric/*.pnml
 # else
 # nml:
 # endif
