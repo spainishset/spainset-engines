@@ -1,0 +1,10 @@
+# Project
+* text eol=lf
+
+# Ensure those won't be messed up with
+*.jpg binary diff=exif
+*.png binary diff=exif
+*.pcx binary
+*.xcf binary diff=exif
+*.ods binary diff=exif
+*.bz2 binary diff=exif
