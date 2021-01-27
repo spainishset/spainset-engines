@@ -1,7 +1,8 @@
 ##grflangid 0x01
 
-str_grf_name                   :{TITLE}
-str_grf_desc                   :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+str_grf_name                :{TITLE}
+str_grf_desc                :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+str_grf_url                 :https://github.com/Zardoz89/spainset-engines
 
 # Pucharse texts
 str_pucharse_svc            :{BLACK}Service: {YELLOW}{STRING}
@@ -19,7 +20,7 @@ str_purchase_svc_fp         :freight or passengers
 str_purchase_svc_lfep       :light freight or express passengers
 
 str_pucharse_gauge          :{BLACK}Track gauge: {ORANGE}{STRING}
-str_pucharse_gauge_narrow   :narrow 
+str_pucharse_gauge_narrow   :narrow
 str_pucharse_gauge_standard :standard
 str_pucharse_gauge_iberian  :iberian
 

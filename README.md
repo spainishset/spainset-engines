@@ -106,7 +106,7 @@ data, and some modern goodies.
     track GRF that it's compatible with other NewGRFs.
 - [ ] Add "Fuel" variant of some steam engines (lower running costs)
 - [ ] Parameters to show/hide some engines (hide Cercanias trains, etc)
-- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain) 
+- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain)
 
 ### Dreaming
 - [ ] 32bpp and x2 or x4 sprites

@@ -11,7 +11,7 @@ grf {
     grfid: "LP\01\01";
     name: string(str_grf_name);
     desc: string(str_grf_desc);
-    /* url: string(str_grf_url)*/
+    url: string(str_grf_url);
     version: NEWGRF_VERSION;
     min_compatible_version: 0;
 }
