@@ -28,9 +28,13 @@ item(FEAT_TRAINS, item_steam_${id}) {
     speed: ${speed};
     power: ${power};
     weight: ${weight};
-    tractive_effort_coefficient: ${tec}; // TEc = TE / 10*Weithg in tons
+    tractive_effort_coefficient: ${tec};
     air_drag_coefficient: 0;
     length: ${length};
+    dual_headed: 0;
+    extra_power_per_wagon: 0;
+    bitmask_vehicle_info: 0;
+    misc_flags: 0;
 
     track_type: RAIL;
     engine_class: ENGINE_CLASS_STEAM;
