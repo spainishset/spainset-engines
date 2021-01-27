@@ -11,7 +11,7 @@
 
 // Pucharse
 spriteset (spriteset_steam_${id}_purchase, "gfx/${imageFile}") { 
-  template_purchase(1, 224)
+  template_purchase(1, 223)
 }
 
 #set($animationFramesMinusOne = $animationFrames - 1)
