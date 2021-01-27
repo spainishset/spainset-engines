@@ -8,5 +8,9 @@
  */
 
 railtypetable {
-  RAIL, ELRL, MONO, MGLV,
+  RAIL,
+  //standardGaugeNotElectrified: [SAAN, SABN, SACN, SBAN, SBBN, SBCN, SCAN, SCBN, SCCN, SDAN, SDBN, RAIL], 
+  ELRL, 
+  MONO, 
+  MGLV,
 }
