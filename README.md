@@ -34,7 +34,7 @@ data, and some modern goodies.
   - [x] 0-4-0 "Verraco" (Renfe 040)
   - [ ] 2-4-0 "Mastodonte"
   - [ ] 1-4-1 "Mikado"
-  - [ ] 1-4-0 "Consolidación" (Renfe 140)
+  - [x] 1-4-0 "Consolidación" (Renfe 140)
   - [ ] 1-4-1+1-4-1 "Garrafeta" (Renfe 282)
   - [ ] 2-4-1 "Montaña"
   - [ ] 2-3-1 "Pacific"
