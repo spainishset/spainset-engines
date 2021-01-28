@@ -1,0 +1,2 @@
+"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","gauge","service","length","imageFile","effect"
+"340_huevo","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"340/340.png",0
