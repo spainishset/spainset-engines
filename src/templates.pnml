@@ -19,7 +19,8 @@ template template_purchase(x, y) {
  * bottom left. Correct positioning ingame is then done by templates below.
 */
 
-template template_2cc_88(x, y) {
+// Size 8
+template template_s8(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -12]
     [x+9  , y, 22, 20, -14, -12]
@@ -31,7 +32,8 @@ template template_2cc_88(x, y) {
     [x+153, y, 22, 20,  -6, -12]
 }
 
-template template_2cc_78(x, y) {
+// Size 7
+template template_s7(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -14]
     [x+9  , y, 22, 20, -14, -13]
@@ -43,7 +45,8 @@ template template_2cc_78(x, y) {
     [x+153, y, 22, 20,  -6, -13]
 }
 
-template template_2cc_68(x, y) {
+// Size 6
+template template_s6(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -16]
     [x+9  , y, 22, 20, -14, -14]
@@ -55,7 +58,8 @@ template template_2cc_68(x, y) {
     [x+153, y, 22, 20,  -6, -14]
 }
 
-template template_2cc_58(x, y) {
+// Size 5
+template template_s5(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -18]
     [x+9  , y, 22, 20, -14, -15]
@@ -67,7 +71,8 @@ template template_2cc_58(x, y) {
     [x+153, y, 22, 20,  -6, -15]
 }
 
-template template_2cc_48(x, y) {
+// Size 4
+template template_s4(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -20]
     [x+9  , y, 22, 20, -14, -16]
@@ -79,7 +84,8 @@ template template_2cc_48(x, y) {
     [x+153, y, 22, 20,  -6, -16]
 }
 
-template template_2cc_38(x, y) {
+// Size 3
+template template_s3(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -22]
     [x+9  , y, 22, 20, -14, -17]
@@ -91,7 +97,8 @@ template template_2cc_38(x, y) {
     [x+153, y, 22, 20,  -6, -17]
 }
 
-template template_2cc_28(x, y) {
+// Size 2
+template template_s2(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -24]
     [x+9  , y, 22, 20, -14, -18]
@@ -103,7 +110,8 @@ template template_2cc_28(x, y) {
     [x+153, y, 22, 20,  -6, -18]
 }
 
-template template_2cc_18(x, y) {
+// Size 1
+template template_s1(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 24,  -3, -26]
     [x+9  , y, 22, 20, -14, -19]

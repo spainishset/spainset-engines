@@ -18,13 +18,13 @@ spriteset (spriteset_steam_${id}_purchase, "gfx/${imageFile}") {
 // Engine animation
 #foreach ($frame in [0..$animationFramesMinusOne])#set($yPos = $frame*32)#if ($yPos == 0)#set($yPos = 1)#end
 spriteset(spriteset_steam_${id}_ani_${frame}, "gfx/${imageFile}") {
-  template_2cc_78(1, ${yPos})
+  template_s7(1, ${yPos})
 }
 #end
 
 // Tender
 spriteset(spriteset_steam_${id}_tender, "gfx/${imageFile}") {
-  template_2cc_38(1, 192)
+  template_s3(1, 192)
 }
 
 // Animation states of the engine
