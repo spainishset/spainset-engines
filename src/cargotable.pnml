@@ -7,20 +7,9 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-// GRF header and global vars
-#include "src/header.pnml"
-
-// Cargotable
-#include "src/cargotable.pnml"
-
-// Railtype translation table
-#include "src/railtypetable.pnml"
-
-// Sprite templates
-#include "src/templates.pnml"
-
-
-// Vehicles
-#include "generated/steam/include_all.pnml"
-#include "generated/diesel/include_all.pnml"
-
+cargotable {
+    PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE,
+    WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY,
+    CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, FRVG, GLAS, GRVL, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC,
+    RFPR, SAND, SCMT, SGBT, SGCN, SULP, TOUR, VEHI, WDPR, WOOL, JAVA
+}
