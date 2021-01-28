@@ -43,10 +43,17 @@ item(FEAT_TRAINS, item_steam_${id}) {
   }
 
   graphics {
+    #if ($tenderLength > 0)
     default: switch_steam_${id}_position;
-    purchase: spriteset_steam_${id}_purchase;
+    #else
+    default: switch_steam_${id}_animation;
+    #end
+    #if ($tenderLength > 0)
     articulated_part: switch_steam_${id}_articulated;
     length: switch_steam_${id}_length;
+    visual_effect_and_powered: switch_steam_${id}_visual_effect_and_powered;
+    #end
+    purchase: spriteset_steam_${id}_purchase;
 
     additional_text: return string(str_pucharse_svc_concat, string(str_purchase_svc_${service}), string(str_pucharse_gauge, string(str_pucharse_gauge_${gauge})));
   }
