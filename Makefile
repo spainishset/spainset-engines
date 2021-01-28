@@ -319,7 +319,7 @@ maintainer-clean::
 		| sed -e "s/$(REPLACE_REVISION)/$(NEWGRF_VERSION)/" \
 		| sed -e "s/$(REPLACE_FILENAME)/$(OUTPUT_FILENAME)/" \
 		> $@
-	$(_V) [ -z "$(UNIX2DOS)" ] || $(UNIX2DOS) $(UNIX2DOS_FLAGS) $@
+#	$(_V) [ -z "$(UNIX2DOS)" ] || $(UNIX2DOS) $(UNIX2DOS_FLAGS) $@
 
 clean::
 	$(_E) "[CLEAN DOC]"

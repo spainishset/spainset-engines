@@ -11,7 +11,7 @@ grf {
     grfid: "LP\01\01";
     name: string(str_grf_name);
     desc: string(str_grf_desc);
-    /* url: string(str_grf_url)*/
+    url: string(str_grf_url);
     version: NEWGRF_VERSION;
     min_compatible_version: 0;
 }
@@ -21,3 +21,8 @@ if (ttd_platform != PLATFORM_OPENTTD) {
     //requires OpenTTD
     error(FATAL, USED_WITH, "OpenTTD");
 }
+
+//set depot vehicle width to 32px to avoid overlap
+train_width_32_px = 1;
+//align train properly in depot window
+traininfo_y_offset = 2;

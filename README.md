@@ -34,7 +34,7 @@ data, and some modern goodies.
   - [x] 0-4-0 "Verraco" (Renfe 040)
   - [ ] 2-4-0 "Mastodonte"
   - [ ] 1-4-1 "Mikado"
-  - [ ] 1-4-0 "Consolidación" (Renfe 140)
+  - [x] 1-4-0 "Consolidación" (Renfe 140)
   - [ ] 1-4-1+1-4-1 "Garrafeta" (Renfe 282)
   - [ ] 2-4-1 "Montaña"
   - [ ] 2-3-1 "Pacific"
@@ -106,7 +106,7 @@ data, and some modern goodies.
     track GRF that it's compatible with other NewGRFs.
 - [ ] Add "Fuel" variant of some steam engines (lower running costs)
 - [ ] Parameters to show/hide some engines (hide Cercanias trains, etc)
-- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain) 
+- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain)
 
 ### Dreaming
 - [ ] 32bpp and x2 or x4 sprites

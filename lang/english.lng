@@ -1,7 +1,8 @@
 ##grflangid 0x01
 
-str_grf_name                   :{TITLE}
-str_grf_desc                   :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+str_grf_name                :{TITLE}
+str_grf_desc                :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
+str_grf_url                 :https://github.com/Zardoz89/spainset-engines
 
 # Pucharse texts
 str_pucharse_svc            :{BLACK}Service: {YELLOW}{STRING}
@@ -19,7 +20,7 @@ str_purchase_svc_fp         :freight or passengers
 str_purchase_svc_lfep       :light freight or express passengers
 
 str_pucharse_gauge          :{BLACK}Track gauge: {ORANGE}{STRING}
-str_pucharse_gauge_narrow   :narrow 
+str_pucharse_gauge_narrow   :narrow
 str_pucharse_gauge_standard :standard
 str_pucharse_gauge_iberian  :iberian
 
@@ -37,3 +38,13 @@ str_steam_151_santafe_name: 1-5-1 "Santa Fe" (Steam)
 str_steam_141_mikado_name: 1-4-1 "Mikado" (Steam)
 str_steam_242_confederacion_name: 2-4-2 "Confederación" (Steam)
 
+str_diesel_340_huevo_name: 340 (ex 4000) "Huevo" (Diesel)
+
+
+# CARGO SUBTYPE CALLBACK
+# str_cargo_subtype_auto        :Auto
+# str_cargo_subtype_purchase    :Pucharse
+# str_cargo_subtype_NS          :NS
+# str_cargo_subtype_Railion     :Railion
+# str_cargo_subtype_Railion_red :Railion Red
+# str_cargo_subtype_Railpro     :Railpro
