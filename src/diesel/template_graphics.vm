@@ -21,3 +21,14 @@ spriteset(spriteset_diesel_${id}, "gfx/${imageFile}") {
 
 //= Callbacks
 
+## Only for refitable engines with different color schemes
+## // CARGO SUBTYPE CALLBACK
+## switch(FEAT_TRAINS, SELF, switch_diesel_${id}_subtype_text, cargo_subtype) {
+##   0: return string(str_cargo_subtype_auto);
+##   1: return string(str_cargo_subtype_purchase);
+##   2: return string(str_cargo_subtype_NS);
+##   3: return string(str_cargo_subtype_Railion);
+##   4: return string(str_cargo_subtype_Railion_red);
+##   5: return string(str_cargo_subtype_Railpro);
+##   return CB_RESULT_NO_TEXT;
+## }

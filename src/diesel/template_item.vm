@@ -31,10 +31,14 @@ item(FEAT_TRAINS, item_diesel_${id}) {
     tractive_effort_coefficient: ${tec};
     air_drag_coefficient: 0;
     length: ${length};
+    ## cargo_capacity: 1; // Set to 1 to allow be refited
     dual_headed: 0;
     extra_power_per_wagon: 0;
     bitmask_vehicle_info: 0;
     misc_flags: 0;
+
+    cargo_allow_refit: [PASS];
+    refit_cost: 0;
 
     track_type: RAIL;
     engine_class: ENGINE_CLASS_DIESEL;
@@ -45,6 +49,11 @@ item(FEAT_TRAINS, item_diesel_${id}) {
   graphics {
     default: spriteset_diesel_${id};
     purchase: spriteset_diesel_${id}_purchase;
+
+    ## Only for refitable engines with different color schemes
+    ## cargo_subtype_text: switch_diesel_${id}_subtype_text;
+    ## Only if it's refitable (diffent color schemes) and not have cargo
+    ## cargo_capacity: return 0;
 
     additional_text: return string(str_pucharse_svc_concat, string(str_purchase_svc_${service}), string(str_pucharse_gauge, string(str_pucharse_gauge_${gauge})));
   }

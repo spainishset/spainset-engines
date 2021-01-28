@@ -39,3 +39,12 @@ str_steam_141_mikado_name: 1-4-1 "Mikado" (Steam)
 str_steam_242_confederacion_name: 2-4-2 "Confederación" (Steam)
 
 str_diesel_340_huevo_name: 340 (ex 4000) "Huevo" (Diesel)
+
+
+# CARGO SUBTYPE CALLBACK
+# str_cargo_subtype_auto        :Auto
+# str_cargo_subtype_purchase    :Pucharse
+# str_cargo_subtype_NS          :NS
+# str_cargo_subtype_Railion     :Railion
+# str_cargo_subtype_Railion_red :Railion Red
+# str_cargo_subtype_Railpro     :Railpro
