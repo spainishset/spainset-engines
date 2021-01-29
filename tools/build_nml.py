@@ -58,7 +58,7 @@ def main():
   import airspeed # Tamplete engine compatible with Java Velocity
 
 
-  data = readCSVFile(f'src/{engine}/data.csv')
+  data = readCSVFile(f'src/{engine}/specs.csv')
   #print(data)
 
   # Generate all the vehicle files from CSV data
