@@ -80,6 +80,8 @@ if [ -z "$AWK" ]; then
 	AWK=awk
 fi
 
+DAYS_SINCE_2000=$( date --date="1 Jan 2000" +"%s" )
+
 # Find out some dirs
 cd `dirname "$0"`
 ROOT_DIR=`pwd`
@@ -102,7 +104,9 @@ if [ -d "$ROOT_DIR/.git" ]; then
 	ISO_DATE="`git log HEAD^..HEAD --pretty="%ai"`"
 	REPO_DATE="`echo ${ISO_DATE} | sed s/-/,/g | sed s/,0/,/g`"
 	GIT_DATE=$(git log HEAD^..HEAD --pretty="%ai" | cut -d\  -f1)
-	VERSION=$[ ( ${GIT_DATE} - $(date --date='1 Jan 2000' +'%s') ) / 86400 ]
+  GIT_DATE_DAYS=$( date --date=$GIT_DATE +'%s' )
+  VERSION=$[ ($GIT_DATE_DAYS - $DAYS_SINCE_2000) / 86400 ]
+	#VERSION=$[ ( ${GIT_DATE} - $(date --date="1 Jan 2000" +"%s") ) / 86400 ]
 	DISPLAY_VERSION="v${VERSION}"
 	if [ -n "$TAG" ]; then
 		BRANCH=""
