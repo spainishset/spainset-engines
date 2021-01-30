@@ -13,6 +13,9 @@
 // Cargotable
 #include "src/cargotable.pnml"
 
+// Functions
+//include "src/functions.pnml"
+
 // Railtype translation table
 #include "src/railtypetable.pnml"
 

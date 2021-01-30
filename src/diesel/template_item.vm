@@ -55,6 +55,11 @@ item(FEAT_TRAINS, item_diesel_${id}) {
     ## Only if it's refitable (diffent color schemes) and not have cargo
     ## cargo_capacity: return 0;
 
-    additional_text: return string(str_pucharse_svc_concat, string(str_purchase_svc_${service}), string(str_pucharse_gauge, string(str_pucharse_gauge_${gauge})));
+    #if (${info}==0)
+    additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+    #end
+    #if (${info}==1)
+    additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}),  string(str_diesel_${id}_info));
+    #end  
   }
 }
