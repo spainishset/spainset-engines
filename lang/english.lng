@@ -41,6 +41,11 @@ str_steam_242_confederacion_name: 2-4-2 "Confederación" (Steam)
 str_diesel_340_huevo_name: 340 (ex 4000) "Huevo" (Diesel)
 
 
+str_electric_250_alemana_name: 250 "Alemana" (Eléctrica)
+str_electric_276_francesa_name: 276 (ex 7600) "Francesa" (Eléctrica)
+str_electric_274_banyera_name: 274 "Bañera" (Eléctrica)
+
+
 # CARGO SUBTYPE CALLBACK
 # str_cargo_subtype_auto        :Auto
 # str_cargo_subtype_purchase    :Pucharse
