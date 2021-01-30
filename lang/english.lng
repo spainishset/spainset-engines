@@ -38,6 +38,7 @@ str_steam_151_santafe_name: 1-5-1 "Santa Fe" (Steam)
 str_steam_141_mikado_name: 1-4-1 "Mikado" (Steam)
 str_steam_242_confederacion_name: 2-4-2 "Confederación" (Steam)
 
+str_diesel_316_marilyn_name:316 "Marilyn"
 str_diesel_333_rambo_name:333 "Rambo"
 str_diesel_334_caracol_name:334 "Caracol de carreras"
 str_diesel_340_huevo_name:340 "Huevo"
@@ -47,20 +48,25 @@ str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
 str_electric_251_japonesa_y_media_name:251 "Japonesa y Media"
 str_electric_252_pre_eurosprinter_name:252 (Pre-EuroSprinter)
+str_electric_260_ex6000_name:260
+str_electric_261_paloma_name:261 "Paloma"
+str_electric_269_japonesa_name:269 "Japonesa"
+str_electric_270_ex7000_name:270
+str_electric_274_banyera_name:274 "Bañera"
+str_electric_276_francesa_name:276 "Francesa"
 
+# Liveries text
 #TODO :Liveries must have a space at the begging of the string 
 
 str_electric_252_pre_eurosprinter_liv: Mercancías
 str_electric_252_pre_eurosprinter_liv_ldba: Larga distancia Banda Azul
 str_electric_252_pre_eurosprinter_liv_ldbax: Prueba
-str_electric_260_ex6000_name:260
+
+# Extra info
+
+str_diesel_316_marilyn_info:Called 1600 before incorporation to RENFE
 str_electric_260_ex6000_info:Called 6000 before incorporation to RENFE
-str_electric_261_paloma_name:261 "Paloma"
-str_electric_269_japonesa_name:269 "Japonesa"
-str_electric_270_ex7000_name:270
 str_electric_270_ex7000_info:Called 7000 before incorporation to RENFE
-str_electric_274_banyera_name:274 "Bañera"
-str_electric_276_francesa_name:276 "Francesa"
 str_electric_276_francesa_info:Called 7600 before incorporation to RENFE
 
 
