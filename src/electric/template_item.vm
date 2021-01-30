@@ -43,34 +43,31 @@ item(FEAT_TRAINS, item_electric_${id}) {
     engine_class: ENGINE_CLASS_ELECTRIC;
 
     visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
-    
-	#if (${liveriesNumber}!=0)
-    cargo_capacity: 1;
-	#end       
-   
-    
+
+    #if (${liveriesNumber}!=0)
+      cargo_capacity: 1;
+    #end
+
+
   }
 
   graphics {
     purchase: spriteset_electric_${id}_purchase;
 
     #if (${info}==0)
-    additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+    #else
+      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_electric_${id}_info));
     #end
-    #if (${info}==1)
-    additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_electric_${id}_info));
-    #end   
-	
-	
-	//= Callbacks
-	#if (${liveriesNumber}==0)
-    default: spriteset_electric_${id};
-	#end   	
-	#if (${liveriesNumber}!=0)
-	cargo_capacity: return 0;
-	cargo_subtype_text: switch_electric_${id}_subtype_text;
-	switch_electric_${id}_livery;
-	#end   	
+
+    //= Callbacks
+    #if (${liveriesNumber}==0)
+      default: spriteset_electric_${id};
+    #else
+      cargo_capacity: return 0;
+      cargo_subtype_text: switch_electric_${id}_subtype_text;
+      switch_electric_${id}_livery;
+    #end
 
   }
 }

@@ -2,7 +2,7 @@
 
 str_grf_name                :{TITLE}
 str_grf_desc                :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
-str_grf_url                 :https://github.com/Zardoz89/spainset-engines
+str_grf_url                 :https://github.com/spainishset/spainset-engines
 
 # Purchase texts
 
@@ -50,8 +50,9 @@ str_electric_252_pre_eurosprinter_name:252 (Pre-EuroSprinter)
 
 #TODO :Liveries must have a space at the begging of the string 
 
-str_electric_252_pre_eurosprinter_liv: Mercancºas
+str_electric_252_pre_eurosprinter_liv: Mercancías
 str_electric_252_pre_eurosprinter_liv_ldba: Larga distancia Banda Azul
+str_electric_252_pre_eurosprinter_liv_ldbax: Prueba
 str_electric_260_ex6000_name:260
 str_electric_260_ex6000_info:Called 6000 before incorporation to RENFE
 str_electric_261_paloma_name:261 "Paloma"

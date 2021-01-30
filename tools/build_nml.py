@@ -21,6 +21,15 @@ def stringToNumber(strValue):
     except ValueError:
       return strValue
 
+def stringToList(strValue):
+  "Detects if a string it's a list of values, and convert these values to a python list"
+  strValue = strValue[1:-1] # Quitamos los corchetes
+  strValues = strValue.split(',')
+  values = []
+  for strValue in strValues:
+    values.append(stringToNumber(strValue.strip()))
+  return values
+
 def readCSVFile(filename):
   "Reads a CSV file and returns a dictionary with the values"
   import csv
@@ -30,7 +39,10 @@ def readCSVFile(filename):
     output=[]
     for row in csvReader:
       for key in row.keys():
-        row[key] = stringToNumber(row[key])
+        if row[key].startswith('[') and row[key].endswith(']'):
+          row[key]= stringToList(row[key])
+        else:
+          row[key] = stringToNumber(row[key])
       output.append(row)
     return output
 
