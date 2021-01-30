@@ -130,7 +130,7 @@ UNIX2DOS_FLAGS ?= $(shell [ -n $(UNIX2DOS) ] && $(UNIX2DOS) -q --version 2>/dev/
 # a release build (tagged version): GRF's Name 0.1
 ################################################################
 # This must be conditional declarations, or building from the tar.gz won't work anymore
-VERSION_INFO ?= "$(shell ./findversion.sh)"
+VERSION_INFO ?= "$(shell ./findversion.sh 2>/dev/null)"
 
 USED_VCS ?= $(shell if [ -d .hg ]; then echo "HG"; elif [ -d .git ]; then echo "GIT"; else echo ""; fi)
 
