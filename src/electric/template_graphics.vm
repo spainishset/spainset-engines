@@ -22,12 +22,29 @@ spriteset(spriteset_electric_${id}, "gfx/${imageFile}.png") {
 //= Callbacks
 #if (${liveriesNumber}!=0)
 
-  #foreach ($liveriesFile in  $liveriesFiles)
-  // Engine sprite
-  spriteset(spriteset_electric_${id}_${liveriesFile}, "gfx/${imageFile}_${liveriesFile}.png") {
-    template_s${length}(1, 1)
-  }
-  #end
+	#if (${liveriesNumber}<0)
+	  #foreach ($liveriesFile in  $liveriesFiles)
+	  // Engine sprite
+	  spriteset(spriteset_electric_${id}_${liveriesFile}, "gfx/${imageFile}_${liveriesFile}.png") {
+	    template_s${length}(1, 1)
+	  }
+	  #end
+	#end
+	
+	#if (${liveriesNumber}>0)
+		#set($i = 1)
+	  #foreach ($liveriesFile in  $liveriesFiles)
+	  // Engine sprite
+  		#set($yPos = $i*32)
+		#if ($yPos == 0)
+			#set($yPos = 1)
+		#end
+		#set($i = $i+1)
+		spriteset(spriteset_electric_${id}_${liveriesFile},  "gfx/${imageFile}.png") {
+		template_s${length}(1, ${yPos})
+	  }
+	  #end
+	#end
 
   switch(FEAT_TRAINS, SELF, switch_electric_${id}_livery, cargo_subtype) {
     0: spriteset_electric_${id};
@@ -45,16 +62,3 @@ spriteset(spriteset_electric_${id}, "gfx/${imageFile}.png") {
     return CB_RESULT_NO_TEXT;
   }
 #end
-
-
-## Only for refitable engines with different color schemes
-## // CARGO SUBTYPE CALLBACK
-## switch(FEAT_TRAINS, SELF, switch_electric_${id}_subtype_text, cargo_subtype) {
-##   0: return string(str_cargo_subtype_auto);
-##   1: return string(str_cargo_subtype_purchase);
-##   2: return string(str_cargo_subtype_NS);
-##   3: return string(str_cargo_subtype_Railion);
-##   4: return string(str_cargo_subtype_Railion_red);
-##   5: return string(str_cargo_subtype_Railpro);
-##   return CB_RESULT_NO_TEXT;
-## }

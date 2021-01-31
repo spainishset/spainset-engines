@@ -47,7 +47,7 @@ str_diesel_340_huevo_info:Called 4000 before incorporation to RENFE
 str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
 str_electric_251_japonesa_y_media_name:251 "Japonesa y Media"
-str_electric_252_pre_eurosprinter_name:252 (Pre-EuroSprinter)
+str_electric_252_pre_eurosprinter_name:252
 str_electric_260_ex6000_name:260
 str_electric_261_paloma_name:261 "Paloma"
 str_electric_269_japonesa_name:269 "Japonesa"
@@ -56,15 +56,28 @@ str_electric_274_banyera_name:274 "Bañera"
 str_electric_276_francesa_name:276 "Francesa"
 
 # Liveries text
-#TODO :Liveries must have a space at the begging of the string 
 
-str_electric_252_pre_eurosprinter_liv: Mercancías
-str_electric_252_pre_eurosprinter_liv_ldba: Larga distancia Banda Azul
-str_electric_252_pre_eurosprinter_liv_ldbax: Prueba
+str_diesel_316_marilyn_liv: (Original)
+str_diesel_316_marilyn_verde: Verde
+str_diesel_316_marilyn_2cc: (Colores de empresa)
+
+str_electric_251_japonesa_y_media_liv: Mercancías
+str_electric_251_japonesa_y_media_liv_merc2005: Mercancías 2005
+
+str_electric_252_pre_eurosprinter_liv: AVE (Original)
+str_electric_252_pre_eurosprinter_liv_ldba: Larga distancia banda azul
+str_electric_252_pre_eurosprinter_liv_merc: Mercancías
+str_electric_252_pre_eurosprinter_liv_merc2005: Mercancías (2005)
+
+str_electric_269_japonesa_liv: (Original)
+str_electric_269_japonesa_liv_gd: Grandes líneas
+str_electric_269_japonesa_liv_merc: Mercancías
 
 # Extra info
 
 str_diesel_316_marilyn_info:Called 1600 before incorporation to RENFE
+str_diesel_334_caracol_info: Known as "Euro 3000" by the manufacturer
+str_electric_252_pre_eurosprinter_info: Known as "Pre-EuroSprinter" by the manufacturer
 str_electric_260_ex6000_info:Called 6000 before incorporation to RENFE
 str_electric_270_ex7000_info:Called 7000 before incorporation to RENFE
 str_electric_276_francesa_info:Called 7600 before incorporation to RENFE
