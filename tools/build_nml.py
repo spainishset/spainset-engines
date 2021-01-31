@@ -59,18 +59,34 @@ def writeOutputFile(filename, data):
 
 class Loader:
   """Template loader for Airspeed"""
+
   def load_text(self, name):
+    import codecs
     try:
       inputFile = codecs.open(name, 'r', 'utf-8')
       text = inputFile.read()
     finally:
       inputFile.close()
-    return text
+      return text
+
+  def load_template(self, name):
+    import codecs
+    import airspeed
+    try:
+      inputFile = codecs.open(name, 'r', 'utf-8')
+      text = inputFile.read()
+    finally:
+      inputFile.close()
+      return airspeed.Template(text, name)
 
 def parseTemplate(template, data, engine, outputFilename):
   "Parses a Airspeed template and generates an output file"
+  import airspeed
 
-  templateOutput = template.merge(data, loader=Loader())
+  try:
+    templateOutput = template.merge(data, loader=Loader())
+  except airspeed.TemplateSyntaxError as ex:
+    print(ex)
 
   print(f"Generating file : {outputFilename}")
   writeOutputFile(OUTPUT_PATH + engine + "/" + outputFilename, templateOutput)

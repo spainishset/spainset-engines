@@ -1,5 +1,5 @@
 "id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","gauge","service","length","imageFile","effect","info"
-"333_rambo","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"333/333.png",0,0
-"334_caracol","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"334/334.png",0,0
-"340_huevo","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"340/340.png",0,1
-"316_marilyn","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",9,"316/316_alco.png",0,1
+"333_rambo","date(1974,01,01)  ",20,21,53,230,"160 km/h","3.345 hpM","120 ton",0.2806122448,"iberian","fp",8,"333/333",0,0
+"334_caracol","date(2006,01,01)  ",20,21,53,230,"200 km/h","3256 hpM","85 ton",0.2136854741,"iberian","fp",8,"334/334",0,0
+"340_huevo","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"340/340",0,1
+"316_marilyn","date(1955,01,01) ",20,21,53,230,"120 km/h","1600 hpM","88 ton",0.0000000000,"iberian","fp",9,"316/316_alco",0,1
