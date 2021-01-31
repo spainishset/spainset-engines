@@ -58,6 +58,8 @@ str_electric_270_ex7000_name:270
 str_electric_274_banyera_name:274 "Bañera"
 str_electric_276_francesa_name:276 "Francesa"
 
+str_emu_101_euromed_name:101 "Euromed"
+
 # Liveries text
 
 str_diesel_316_marilyn_liv: (Original)
@@ -80,10 +82,13 @@ str_electric_269_japonesa_liv_merc: Mercancías
 
 str_diesel_316_marilyn_info:Called 1600 before incorporation to RENFE
 str_diesel_334_caracol_info: Known as "Euro 3000" by the manufacturer
+
 str_electric_252_pre_eurosprinter_info: Known as "Pre-EuroSprinter" by the manufacturer
 str_electric_260_ex6000_info:Called 6000 before incorporation to RENFE
 str_electric_270_ex7000_info:Called 7000 before incorporation to RENFE
 str_electric_276_francesa_info:Called 7600 before incorporation to RENFE
+
+str_emu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
 
 
 # CARGO SUBTYPE CALLBACK
