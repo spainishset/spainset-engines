@@ -1,30 +1,15 @@
 /*
- *  Copyright (C) 2021 Luis Panadero Guardeño
+ *  Copyright (C) 2012 Jasper Vries
  *  Based on The Dutch Trainset 2 files and NewGRF build framework
  *  This file is part of The Spanish Transet - Steam engines
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- */
 
-// GRF header and global vars
-#include "src/header.pnml"
+*/
 
-// GRF header and global vars
-#include "src/disable_original_vehicles.pnml"
+//disable original vehicles depending on parameter
 
-// Cargotable
-#include "src/cargotable.pnml"
-
-// Railtype translation table
-#include "src/railtypetable.pnml"
-
-// Sprite templates
-#include "src/templates.pnml"
-
-
-// Vehicles
-#include "generated/steam/include_all.pnml"
-#include "generated/diesel/include_all.pnml"
-#include "generated/electric/include_all.pnml"
-
+if (param_disable_original == 0) {
+	disable_item(FEAT_TRAINS, 0, 115);
+}
