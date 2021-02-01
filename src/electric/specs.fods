@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<office:document xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ooo="http://openoffice.org/2004/office" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:generator>LibreOffice/6.4.6.2$Linux_X86_64 LibreOffice_project/40$Build-2</meta:generator><dc:date>2021-01-31T14:30:04.023863240</dc:date><meta:editing-duration>PT6H29M21S</meta:editing-duration><meta:editing-cycles>73</meta:editing-cycles><meta:document-statistic meta:table-count="2" meta:cell-count="222" meta:object-count="0"/></office:meta>
+<office:document xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+ <office:meta><meta:generator>LibreOffice/7.0.4.2$Windows_x86 LibreOffice_project/dcf040e67528d9187c66b2379df5ea4407429775</meta:generator><dc:date>2021-02-01T00:03:21.841000000</dc:date><meta:editing-duration>PT6H31M55S</meta:editing-duration><meta:editing-cycles>74</meta:editing-cycles><meta:document-statistic meta:table-count="2" meta:cell-count="222" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
@@ -31,14 +31,14 @@
        <config:config-item config:name="AnchoredTextOverflowLegacy" config:type="boolean">false</config:config-item>
       </config:config-item-map-entry>
       <config:config-item-map-entry config:name="data">
-       <config:config-item config:name="CursorPositionX" config:type="int">19</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">0</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">9</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">5</config:config-item>
        <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
        <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
        <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
-       <config:config-item config:name="PositionLeft" config:type="int">5</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionBottom" config:type="int">0</config:config-item>
@@ -50,7 +50,7 @@
       </config:config-item-map-entry>
      </config:config-item-map-named>
      <config:config-item config:name="ActiveTable" config:type="string">data</config:config-item>
-     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1861</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1302</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
      <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -76,25 +76,31 @@
    </config:config-item-map-indexed>
   </config:config-item-set>
   <config:config-item-set config:name="ooo:configuration-settings">
-   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
-   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
-   <config:config-item config:name="GridColor" config:type="int">12632256</config:config-item>
-   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
    <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">kwH+/0dlbmVyaWMgUHJpbnRlcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU0dFTlBSVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAtAAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9R2VuZXJpYyBQcmludGVyCm9yaWVudGF0aW9uPVBvcnRyYWl0CmNvcGllcz0xCmNvbGxhdGU9ZmFsc2UKbWFyZ2luZGFqdXN0bWVudD0wLDAsMCwwCmNvbG9yZGVwdGg9MjQKcHNsZXZlbD0wCnBkZmRldmljZT0xCmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4RGF0YQpQYWdlU2l6ZTpBNAAAEgBDT01QQVRfRFVQTEVYX01PREUPAER1cGxleE1vZGU6Ok9mZg==</config:config-item>
-   <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
-   <config:config-item config:name="SyntaxStringRef" config:type="short">7</config:config-item>
-   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedComplexScriptFonts" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="GridColor" config:type="int">12632256</config:config-item>
+   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
+   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="EmbedLatinScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+   <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
    <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
    <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">Brother DCP-L2520DW</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">NQ7+/0Jyb3RoZXIgRENQLUwyNTIwRFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQnJvdGhlciBEQ1AtTDI1MjBEVyBzZXJpZXMAAAAAAAAWAAEAVg0AAAAAAAAEAAhSAAAEdAAAM1ROVwYAQgByAG8AdABoAGUAcgAgAEQAQwBQAC0ATAAyADUAMgAwAEQAVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEECAHcAHQMD5MBAAEACQCaCzQIZAABAAcAWAIBAAEAWAIBAAAAQQA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvY6SywAAAAAAAAAAAAACAAAAAAAAAAAAAAD2BPoCAAD2BPoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAAAABAAAAAAAABgAAAAcABwAAAAAAAQAAAAAAAAACAAAAAgEAAQABFgAAAAAAAAEAAAIAAAAHAAAAAAAAAAAZAADkDAAAAAAAALgLAABwFwAAAAAAANwFAABYAgAAAAAAAAAAAAAAAAAA/v8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADcMAADaDAAAECcAABAnAAAQJwAAECcAAKAKAADCBgAAuAYAACwEAABAAQAA0gAAABgAAAAAABAnECcQJwAAECcAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAABAAEABQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAcgBpAGEAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAcgBpAGEAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAcgBpAGEAbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkACQBkAAAAAAAAAAAA+gL2BAMBAAAAAAAAAQABAAEAAAAAAAIAAQABAAEAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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</config:config-item>
+   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
    <config:config-item-map-indexed config:name="ForbiddenCharacters">
     <config:config-item-map-entry>
      <config:config-item config:name="Language" config:type="string">es</config:config-item>
@@ -104,22 +110,16 @@
      <config:config-item config:name="EndLine" config:type="string"/>
     </config:config-item-map-entry>
    </config:config-item-map-indexed>
-   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="SaveThumbnail" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrinterName" config:type="string">Generic Printer</config:config-item>
-   <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
-   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
-   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedOnlyUsedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="EmbedAsianScriptFonts" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SyntaxStringRef" config:type="short">7</config:config-item>
   </config:config-item-set>
  </office:settings>
  <office:scripts>
@@ -131,38 +131,39 @@
  </office:scripts>
  <office:font-face-decls>
   <style:font-face style:name="Monospace" svg:font-family="Monospace"/>
+  <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
-  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Lucida Sans" svg:font-family="&apos;Lucida Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Microsoft YaHei" svg:font-family="&apos;Microsoft YaHei&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Noto Sans CJK SC" svg:font-family="&apos;Noto Sans CJK SC&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Noto Sans Devanagari" svg:font-family="&apos;Noto Sans Devanagari&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="table-cell">
-   <style:paragraph-properties style:tab-stop-distance="0.4921in"/>
+   <style:paragraph-properties style:tab-stop-distance="1.25cm"/>
    <style:text-properties style:font-name="Liberation Sans" fo:language="es" fo:country="ES" style:font-name-asian="Noto Sans CJK SC" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Noto Sans Devanagari" style:language-complex="hi" style:country-complex="IN"/>
   </style:default-style>
   <number:number-style style:name="N0">
    <number:number number:min-integer-digits="1"/>
   </number:number-style>
-  <number:currency-style style:name="N122P0" style:volatile="true">
-   <number:number number:decimal-places="2" loext:min-decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
+  <number:currency-style style:name="N108P0" style:volatile="true">
+   <number:number number:decimal-places="2" number:min-decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
    <number:text> </number:text>
    <number:currency-symbol number:language="es" number:country="ES">€</number:currency-symbol>
   </number:currency-style>
-  <number:currency-style style:name="N122" number:title="Definido por el usuario">
+  <number:currency-style style:name="N108" number:title="Definido por el usuario">
    <style:text-properties fo:color="#ff0000"/>
    <number:text>-</number:text>
-   <number:number number:decimal-places="2" loext:min-decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
+   <number:number number:decimal-places="2" number:min-decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
    <number:text> </number:text>
    <number:currency-symbol number:language="es" number:country="ES">€</number:currency-symbol>
-   <style:map style:condition="value()&gt;=0" style:apply-style-name="N122P0"/>
+   <style:map style:condition="value()&gt;=0" style:apply-style-name="N108P0"/>
   </number:currency-style>
   <number:number-style style:name="N10111" number:language="en" number:country="GB">
-   <number:number number:decimal-places="10" loext:min-decimal-places="10" number:min-integer-digits="1"/>
+   <number:number number:decimal-places="10" number:min-decimal-places="10" number:min-integer-digits="1"/>
   </number:number-style>
   <style:style style:name="Default" style:family="table-cell"/>
-  <style:style style:name="Heading" style:family="table-cell" style:parent-style-name="Default">
+  <style:style style:name="Heading_20__28_user_29_" style:display-name="Heading (user)" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties fo:color="#000000" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold"/>
   </style:style>
   <style:style style:name="Heading_20_1" style:display-name="Heading 1" style:family="table-cell" style:parent-style-name="Heading">
@@ -216,58 +217,64 @@
   <style:style style:name="Accent_20_3" style:display-name="Accent 3" style:family="table-cell" style:parent-style-name="Accent">
    <style:table-cell-properties fo:background-color="#dddddd"/>
   </style:style>
+  <style:style style:name="Result_20__28_user_29_" style:display-name="Result (user)" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="10pt" fo:font-style="italic" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="#000000" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Heading" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#000000" fo:font-size="24pt" fo:font-style="normal" fo:font-weight="bold"/>
+  </style:style>
  </office:styles>
  <office:automatic-styles>
   <style:style style:name="co1" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.822in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="4.628cm"/>
   </style:style>
   <style:style style:name="co2" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.161in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.949cm"/>
   </style:style>
   <style:style style:name="co3" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="0.7535in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="1.914cm"/>
   </style:style>
   <style:style style:name="co4" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="0.8181in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.078cm"/>
   </style:style>
   <style:style style:name="co5" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="0.889in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.258cm"/>
   </style:style>
   <style:style style:name="co6" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.1898in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.022cm"/>
   </style:style>
   <style:style style:name="co7" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="0.8035in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.041cm"/>
   </style:style>
   <style:style style:name="co8" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="0.7398in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="1.879cm"/>
   </style:style>
   <style:style style:name="co9" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.5008in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.812cm"/>
   </style:style>
   <style:style style:name="co10" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="2.7764in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="7.052cm"/>
   </style:style>
   <style:style style:name="co11" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.2646in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.212cm"/>
   </style:style>
   <style:style style:name="co12" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="2.9264in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="7.433cm"/>
   </style:style>
   <style:style style:name="co13" style:family="table-column">
-   <style:table-column-properties fo:break-before="auto" style:column-width="1.6402in"/>
+   <style:table-column-properties fo:break-before="auto" style:column-width="4.166cm"/>
   </style:style>
   <style:style style:name="ro1" style:family="table-row">
-   <style:table-row-properties style:row-height="0.178in" fo:break-before="auto" style:use-optimal-row-height="true"/>
+   <style:table-row-properties style:row-height="0.452cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
   </style:style>
   <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
    <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
   </style:style>
   <number:number-style style:name="N1">
-   <number:number number:decimal-places="0" loext:min-decimal-places="0" number:min-integer-digits="1"/>
+   <number:number number:decimal-places="0" number:min-decimal-places="0" number:min-integer-digits="1"/>
   </number:number-style>
   <number:number-style style:name="N2">
-   <number:number number:decimal-places="2" loext:min-decimal-places="2" number:min-integer-digits="1"/>
+   <number:number number:decimal-places="2" number:min-decimal-places="2" number:min-integer-digits="1"/>
   </number:number-style>
   <style:style style:name="ce19" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:border-bottom="0.06pt solid #000000" fo:border-left="none" fo:border-right="none" fo:border-top="none"/>
@@ -282,6 +289,10 @@
   <style:style style:name="ce22" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N10111">
    <style:table-cell-properties fo:border-bottom="0.06pt solid #000000" fo:border-left="none" fo:border-right="none" fo:border-top="none"/>
   </style:style>
+  <style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N10111">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="end" fo:margin-left="0cm"/>
+  </style:style>
   <style:style style:name="ce23" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N10111"/>
   <style:style style:name="ce24" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:border-bottom="0.06pt solid #000000" fo:border-left="0.06pt solid #000000" fo:border-right="none" fo:border-top="none"/>
@@ -289,25 +300,25 @@
   <style:style style:name="ce25" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:border-bottom="none" fo:border-left="0.06pt solid #000000" fo:border-right="none" fo:border-top="none"/>
   </style:style>
-  <style:style style:name="ce13" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N122"/>
+  <style:style style:name="ce13" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N108"/>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties style:writing-mode="lr-tb"/>
    <style:header-style>
-    <style:header-footer-properties fo:min-height="0.2953in" fo:margin-left="0in" fo:margin-right="0in" fo:margin-bottom="0.0984in"/>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.25cm"/>
    </style:header-style>
    <style:footer-style>
-    <style:header-footer-properties fo:min-height="0.2953in" fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.0984in"/>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.25cm"/>
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="pm2">
    <style:page-layout-properties style:writing-mode="lr-tb"/>
    <style:header-style>
-    <style:header-footer-properties fo:min-height="0.2953in" fo:margin-left="0in" fo:margin-right="0in" fo:margin-bottom="0.0984in" fo:border="2.49pt solid #000000" fo:padding="0.0071in" fo:background-color="#c0c0c0">
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.25cm" fo:border="2.49pt solid #000000" fo:padding="0.018cm" fo:background-color="#c0c0c0">
      <style:background-image/>
     </style:header-footer-properties>
    </style:header-style>
    <style:footer-style>
-    <style:header-footer-properties fo:min-height="0.2953in" fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0.0984in" fo:border="2.49pt solid #000000" fo:padding="0.0071in" fo:background-color="#c0c0c0">
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.25cm" fo:border="2.49pt solid #000000" fo:padding="0.018cm" fo:background-color="#c0c0c0">
      <style:background-image/>
     </style:header-footer-properties>
    </style:footer-style>
@@ -330,7 +341,7 @@
      <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
     </style:region-left>
     <style:region-right>
-     <text:p><text:date style:data-style-name="N2" text:date-value="2021-01-31">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="14:28:56.801279991">00:00:00</text:time></text:p>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2021-02-01">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="23:19:34.278000000">00:00:00</text:time></text:p>
     </style:region-right>
    </style:header>
    <style:header-left style:display="false"/>
@@ -427,7 +438,7 @@
       <text:p>250_alemana</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1982,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -442,16 +453,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>160 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>4600 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>124 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell table:style-name="ce7" office:value-type="float" office:value="0.3373930217" calcext:value-type="float">
+      <text:p>0.3373930217</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -478,7 +489,7 @@
       <text:p>251_japonesa_y_media</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1982,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -493,16 +504,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>160 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>4650 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>138 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell table:style-name="ce7" office:value-type="float" office:value="0.3349600709" calcext:value-type="float">
+      <text:p>0.3349600709</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -535,7 +546,7 @@
       <text:p>252_pre_eurosprinter</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1991,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -550,16 +561,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>220 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>5600 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>86 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.355956336" calcext:value-type="float">
+      <text:p>0.3559563360</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -592,7 +603,7 @@
       <text:p>260_ex6000</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1923,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -607,16 +618,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>60 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>260 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>80 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.128" calcext:value-type="float">
+      <text:p>0.1280000000</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -646,7 +657,7 @@
       <text:p>261_paloma</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1924,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -661,16 +672,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>55 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>1344 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>75 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.128" calcext:value-type="float">
+      <text:p>0.1280000000</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -697,7 +708,7 @@
       <text:p>269_japonesa</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1973,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -712,16 +723,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>160 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>3100 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>88 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.2319109461" calcext:value-type="float">
+      <text:p>0.2319109461</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -754,7 +765,7 @@
       <text:p>270_ex7000</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1928,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -769,16 +780,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>90 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>2280 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>102 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.1376470588" calcext:value-type="float">
+      <text:p>0.1376470588</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -808,7 +819,7 @@
       <text:p>274_banyera</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>date(1956,01,01) </text:p>
+      <text:p>date(1944,01,01) </text:p>
      </table:table-cell>
      <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
       <text:p>20</text:p>
@@ -823,16 +834,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>100 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>2400 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>99 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.1257575757" calcext:value-type="float">
+      <text:p>0.1257575757</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -874,16 +885,16 @@
       <text:p>230</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>130 km/h</text:p>
+      <text:p>125 km/h</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>4000 hpM</text:p>
+      <text:p>3000 hpM</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
-      <text:p>88 ton</text:p>
+      <text:p>120 ton</text:p>
      </table:table-cell>
-     <table:table-cell office:value-type="float" office:value="0.19093687" calcext:value-type="float">
-      <text:p>0.1909368700</text:p>
+     <table:table-cell office:value-type="float" office:value="0.15125" calcext:value-type="float">
+      <text:p>0.1512500000</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>iberian</text:p>
@@ -1134,7 +1145,7 @@
       <text:p>Coste base</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce13" office:value-type="currency" office:currency="EUR" office:value="234474" calcext:value-type="currency">
-      <text:p>234,474.00 €</text:p>
+      <text:p>234.474,00 €</text:p>
      </table:table-cell>
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -1146,7 +1157,7 @@
       <text:p>Coste operación base</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="ce13" office:value-type="currency" office:currency="EUR" office:value="3046" calcext:value-type="currency">
-      <text:p>3,046.00 €</text:p>
+      <text:p>3.046,00 €</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
     </table:table-row>
