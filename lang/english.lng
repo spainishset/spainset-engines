@@ -4,13 +4,17 @@ str_grf_name                :{TITLE}
 str_grf_desc                :{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain. This set is not complete.
 str_grf_url                 :https://github.com/spainishset/spainset-engines
 
-str_param_disable_original		:Keep original engines and wagons
-str_param_disable_original_desc	:By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep the original vehicles. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
+# Parameters
 
+str_param_disable_original          :Keep original engines and wagons
+str_param_disable_original_desc     :By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep the original vehicles. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
+
+str_param_add_tracks            :Add Spanish trackways
+str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, iberian (both electified and unelectrified), and standard gauge high speed electricified tracks.
 # Purchase texts
 
-str_purchase				:{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
-str_purchase_info			:{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
+str_purchase_info           :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
 
 str_purchase_gauge_narrow   :narrow
 str_purchase_gauge_standard :standard
@@ -27,6 +31,14 @@ str_purchase_svc_hphf       :high speed passengers or heavy freight
 str_purchase_svc_eplf       :express passengers or light freight
 str_purchase_svc_fp         :freight or passengers
 str_purchase_svc_lfep       :light freight or express passengers
+
+# Tracks
+
+str_track_type_uic_highspeed           :High speed UIC track
+str_construction_uic_highspeed         :High speed UIC track construction
+str_vehicle_construction_uic_highspeed :New high speed UIC railway vehicle
+str_autoreplace_uic_highspeed          :High speed UIC railway vehicles
+str_new_engine_uic_highspeed           :high speed UIC railway vehicle
 
 # Train names
 

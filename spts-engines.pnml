@@ -22,6 +22,8 @@
 // Sprite templates
 #include "src/templates.pnml"
 
+// Railtypes
+#include "src/railtypes.pnml"
 
 // Vehicles
 #include "generated/steam/include_all.pnml"

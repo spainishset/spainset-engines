@@ -11,5 +11,5 @@
 //disable original vehicles depending on parameter
 
 if (param_disable_original == 0) {
-	disable_item(FEAT_TRAINS, 0, 115);
+  disable_item(FEAT_TRAINS, 0, 115);
 }
