@@ -49,18 +49,16 @@ item(FEAT_TRAINS, item_mu_${id}) {
     	running_cost_base: RUNNING_COST_DIESEL;
     	engine_class: ENGINE_CLASS_DIESEL;
     	visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, ${effect}, DISABLE_WAGON_POWER);
-    	track_type: RAIL; ##TODO: cambiar cuando haya railes nuevos
     #else
-    	track_type: ELRL; ##TODO: cambiar cuando haya railes nuevos
     	visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
         running_cost_base: RUNNING_COST_ELECTRIC;
     	engine_class: ENGINE_CLASS_ELECTRIC;
     #end
     
      #if (${gauge}=="iberian")
-    	##track_type: ELRL; TODO: cambiar cuando haya railes nuevos
+    	track_type: ELRL;
     #else
-    	##track_type: ELRL; TODO: cambiar cuando haya railes nuevos
+    	track_type: uicHighSpeedElectrified;
     #end 
 
 

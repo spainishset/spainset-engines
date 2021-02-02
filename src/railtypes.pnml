@@ -29,9 +29,12 @@ if (param_add_tracks != 0) {
 
       // List of rail tyoes that trains of this type can also run (but not necesary powered)
       compatible_railtype_list: [
-        "RAIL", "RLOW", "RMED", "RHIG",
+        //"RAIL",
+         "RLOW", "RMED", "RHIG",
         "SAAN", "SABN", "SACN", "SBAN", "SBBN", "SBCN", "SCAN", "SCBN", "SCCN",
-        "SDAN", "SDBN", "ELRL", "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE",
+        "SDAN", "SDBN",
+        //"ELRL", 
+        "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE",
         "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", "SDAE", "SDBE",
         "SEAE", "SEBE", "3RDR", "3LOW", "3MED", "SAA3", "SAB3", "SAC3", "SBA3",
         "SBB3", "SBC3", "SCA3", "SCB3", "SCC3", "3RDC", "CLOW", "CMED", "SAAZ",
@@ -40,7 +43,8 @@ if (param_add_tracks != 0) {
 
       // List of rail tyoes that trains of this type are powered on
       powered_railtype_list: [
-        "ELRL", "ELOW", "EMED", "EHIG", "HSTR",
+        //"ELRL", 
+        "ELOW", "EMED", "EHIG", "HSTR",
         "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE",
         "SDAE", "SDBE", "SEAE", "SEBE",
         "3RDC", "CLOW", "CMED",
