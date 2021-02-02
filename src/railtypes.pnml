@@ -11,14 +11,14 @@ if (param_add_tracks != 0) {
 
   /*
   * S Standard gauge
-  * A High speed
+  * B High speed
   * A low axle limit ?
   * A AC high voltange eletric
   */
-  item(FEAT_RAILTYPES, SAAA, 1) {
+  item(FEAT_RAILTYPES, SBAA, 1) {
     property {
-      label: "SAAA";
-      introduction_date: date(1990,1,1);
+      label: "SBAA";
+      introduction_date: date(1989, 10, 2);
 
       name: string(str_track_type_uic_highspeed);
       toolbar_caption: string(str_construction_uic_highspeed);
@@ -27,37 +27,45 @@ if (param_add_tracks != 0) {
       autoreplace_text: string(str_autoreplace_uic_highspeed);
       new_engine_text: string(str_new_engine_uic_highspeed);
 
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
       compatible_railtype_list: [
-        "RAIL", "RLOW", "RMED", "RHIG", 
-        "SAAN", "SABN", "SACN", "SBAN", "SBBN", "SBCN", "SCAN", "SCBN", "SCCN", 
-        "SDAN", "SDBN", "ELRL", "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE", 
-        "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", "SDAE", "SDBE", 
-        "SEAE", "SEBE", "3RDR", "3LOW", "3MED", "SAA3", "SAB3", "SAC3", "SBA3", 
-        "SBB3", "SBC3", "SCA3", "SCB3", "SCC3", "3RDC", "CLOW", "CMED", "SAAZ", 
+        "RAIL", "RLOW", "RMED", "RHIG",
+        "SAAN", "SABN", "SACN", "SBAN", "SBBN", "SBCN", "SCAN", "SCBN", "SCCN",
+        "SDAN", "SDBN", "ELRL", "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE",
+        "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", "SDAE", "SDBE",
+        "SEAE", "SEBE", "3RDR", "3LOW", "3MED", "SAA3", "SAB3", "SAC3", "SBA3",
+        "SBB3", "SBC3", "SCA3", "SCB3", "SCC3", "3RDC", "CLOW", "CMED", "SAAZ",
         "SABZ", "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
         ];
 
+      // List of rail tyoes that trains of this type are powered on
       powered_railtype_list: [
-        "ELRL", "ELOW", "EMED", "EHIG", "HSTR", 
-        "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", 
-        "SDAE", "SDBE", "SEAE", "SEBE", "3RDC", "CLOW", "CMED", "SAAZ", "SABZ", 
-        "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
-        ];
-
-      alternative_railtype_list: [
-        "ELRL", "ELOW", "EMED", "EHIG", "HSTR", 
+        "ELRL", "ELOW", "EMED", "EHIG", "HSTR",
         "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE",
-        "SDAE", "SDBE", "SEAE", "SEBE"
+        "SDAE", "SDBE", "SEAE", "SEBE",
+        "3RDC", "CLOW", "CMED",
+        "SAAZ", "SABZ", "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
         ];
 
-      // construction_cost: param_const_cost_very_low * param_const_cost_polynomial_base / 10 * param_speed_low / 130;
-      // maintenance_cost: param_maint_cost_very_low * param_maint_cost_polynomial_base / 10 * param_speed_low / 130;
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [
+        "ELRL", "ELOW", "EMED", "EHIG", "HSTR",
+        "SAAE", "SABE", "SACE", "SADE", // Standard gauge, low speed/no speed limit, electrified
+        "SBAE", "SBBE", "SBCE", "SBDE", // Standard gauge, high speed/medium speed, electrified
+        "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
+        "SDAE", "SDBE", "SDCE", "SDDE", // Standard gauge, higher? speed, electrified
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, high voltage AC
+        "SBBA", "SBCA", "SBDA",         // Standard gauge, high speed/medium speed, high voltage AC
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, high voltage AC
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, high voltage AC
+      ];
 
-      //speed_limit: 300 km/h;
+      // speed_limit: 300 km/h;
       acceleration_model: ACC_MODEL_RAIL;
-      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY, RAILTYPE_FLAG_NO_LEVEL_CROSSING);
   }
-  
+
   /*
   graphics {
     track_overlay: ground_switch_overlay_RAIL;

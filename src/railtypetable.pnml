@@ -9,9 +9,14 @@
 
 railtypetable {
   RAIL,
-  //standardGaugeNotElectrified: [SAAN, SABN, SACN, SBAN, SBBN, SBCN, SCAN, SCBN, SCCN, SDAN, SDBN, RAIL], 
   ELRL, 
   MONO, 
   MGLV,
-  uicHighSpeedElectrified: [SAAA, SABA, SACA, SADA, SAAE, SABE, SACE, SAEE, MGLV],
+  uicHighSpeedElectrified: [
+    SCAA, SCBA, SCCA, SCDA, // Standard gauge, high speed high voltage AC 
+    SBAA, SBBA, SBCA, SBDA, // Standard gauge, high/medium speed high voltage AC 
+    SCAE, SCBE, SCCE, SCDE, // Standard gauge, high speed electrified 
+    SBAE, SBBE, SBCE, SBDE, // Standard gauge, high/medium speed electrified 
+    HSTR, EHIG, DBHS,  // Other high speed electrified names
+    MGLV], // Maglev as last fallback (making compatible with "High speed railway" grf
 }

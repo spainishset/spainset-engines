@@ -30,7 +30,6 @@ grf {
       desc:   string(str_param_add_tracks_desc);
       def_value: 1;
     }
-
   }
 }
 

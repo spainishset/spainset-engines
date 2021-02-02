@@ -9,9 +9,8 @@ str_grf_url                 :https://github.com/spainishset/spainset-engines
 str_param_disable_original          :Keep original engines and wagons
 str_param_disable_original_desc     :By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep the original vehicles. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
 
-str_param_add_tracks      :Add Spanish trackways
-str_param_add_tracks_desc :Add Spanish trackways. This are narrow gauge, iberian (both electified and unelectrified), and standard gauge high speed electricified tracks.
-
+str_param_add_tracks            :Add Spanish trackways
+str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, iberian (both electified and unelectrified), and standard gauge high speed electricified tracks.
 # Purchase texts
 
 str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
