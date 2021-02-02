@@ -23,7 +23,7 @@ railtypetable {
     NCAE, NCBE, NCCE, NCDE, // Narrow gauge high speed, electrified
     ELNG, ENLW, ENHI],      // Other narrow gauge eletrified names
   RAIL,
-  ibearianNoElectrified: [
+  ibearianNotElectrified: [
     BAAN, BABN, BACN, BADN, // Broad gauge low speed/no speed limit
     BBAN, BBBN, BBCN, BBDN, // Broad gauge high speed/medium speed
     BCAN, BCBN, BCCN, BCDN, // Broad gauge high speed

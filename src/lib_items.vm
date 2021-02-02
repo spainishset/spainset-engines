@@ -7,9 +7,20 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *#
 
-#macro( pucharseSprite $engineType, $id, $imageFile )
-// Purchase
-spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
-  template_purchase(1, 223)
-}
+#macro( trackType $engineType, $gauge)
+  #if ($gauge == "iberian")
+    #if ($engineType == "electric")
+      track_type: ibearianElectrified;
+    #else
+      track_type: ibearianNotElectrified;
+    #end
+  #elseif ($gauge == "narrow")
+    #if ($engineType == "electric")
+      track_type: narrowElectrified;
+    #else
+      track_type: narrowNoElectrified;
+    #end
+  #else
+    track_type: uicHighSpeedElectrified;
+  #end
 #end
