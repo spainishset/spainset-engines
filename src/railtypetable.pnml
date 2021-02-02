@@ -13,4 +13,5 @@ railtypetable {
   ELRL, 
   MONO, 
   MGLV,
+  uicHighSpeedElectrified: [SAAA, SABA, SACA, SADA, SAAE, SABE, SACE, SAEE, MGLV],
 }

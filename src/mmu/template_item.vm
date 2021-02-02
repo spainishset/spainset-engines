@@ -42,7 +42,7 @@ item(FEAT_TRAINS, item_mmu_${id}) {
     ##cargo_allow_refit: [PASS];
     ##refit_cost: 0;
     misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP);
-    track_type: MGLV;
+    track_type: uicHighSpeedElectrified;
     engine_class: ENGINE_CLASS_ELECTRIC;
 
 

@@ -1,0 +1,69 @@
+/*
+ *  Copyright (C) 2021 The Spanish Trainset
+ *  Based on The Dutch Trainset 2 files and NewGRF build framework
+ *  This file is part of The Spanish Transet
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*
+ * S Standard gauge
+ * A High speed
+ * A low axle limit ?
+ * A AC high voltange eletric
+ */
+item(FEAT_RAILTYPES, SAAA, 1) {
+  property {
+    label: "SAAA";
+    introduction_date: date(1990,1,1);
+
+    name: string(str_track_type_uic_highspeed);
+    toolbar_caption: string(str_construction_uic_highspeed);
+    menu_text: string(str_construction_uic_highspeed);
+    build_window_caption: string(str_vehicle_construction_uic_highspeed);
+    autoreplace_text: string(str_autoreplace_uic_highspeed);
+    new_engine_text: string(str_new_engine_uic_highspeed);
+
+    compatible_railtype_list: [
+      "RAIL", "RLOW", "RMED", "RHIG", 
+      "SAAN", "SABN", "SACN", "SBAN", "SBBN", "SBCN", "SCAN", "SCBN", "SCCN", 
+      "SDAN", "SDBN", "ELRL", "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE", 
+      "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", "SDAE", "SDBE", 
+      "SEAE", "SEBE", "3RDR", "3LOW", "3MED", "SAA3", "SAB3", "SAC3", "SBA3", 
+      "SBB3", "SBC3", "SCA3", "SCB3", "SCC3", "3RDC", "CLOW", "CMED", "SAAZ", 
+      "SABZ", "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
+      ];
+
+    powered_railtype_list: [
+      "ELRL", "ELOW", "EMED", "EHIG", "HSTR", 
+      "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", 
+      "SDAE", "SDBE", "SEAE", "SEBE", "3RDC", "CLOW", "CMED", "SAAZ", "SABZ", 
+      "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
+      ];
+
+    alternative_railtype_list: [
+      "ELRL", "ELOW", "EMED", "EHIG", "HSTR", 
+      "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE",
+      "SDAE", "SDBE", "SEAE", "SEBE"
+      ];
+
+    // construction_cost: param_const_cost_very_low * param_const_cost_polynomial_base / 10 * param_speed_low / 130;
+    // maintenance_cost: param_maint_cost_very_low * param_maint_cost_polynomial_base / 10 * param_speed_low / 130;
+
+    //speed_limit: 300 km/h;
+    acceleration_model: ACC_MODEL_RAIL;
+    railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+ }
+ 
+ /*
+ graphics {
+  track_overlay: ground_switch_overlay_RAIL;
+  underlay: ground_switch_underlay_RAIL;
+  tunnels: tunnel_track_RAIL_switch;
+  level_crossings: level_crossing_RAIL_switch;
+  bridge_surfaces: bridge_RAIL_switch;
+  fences: fences_RAIL_terrain_switch;
+ }
+ */
+}
