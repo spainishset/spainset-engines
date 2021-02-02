@@ -2,8 +2,6 @@
 
 make clean
 ./tools/build_nml.py steam
-./tools/build_nml.py diesel
-./tools/build_nml.py electric
-./tools/build_nml.py emu
-./tools/build_nml.py mmu
+./tools/build_nml.py single
+./tools/build_nml.py mu
 make all

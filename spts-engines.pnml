@@ -25,8 +25,7 @@
 
 // Vehicles
 #include "generated/steam/include_all.pnml"
-#include "generated/diesel/include_all.pnml"
-#include "generated/electric/include_all.pnml"
-#include "generated/emu/include_all.pnml"
-#include "generated/mmu/include_all.pnml"
+#include "generated/single/include_all.pnml"
+#include "generated/mu/include_all.pnml"
+
 

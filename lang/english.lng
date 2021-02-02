@@ -58,9 +58,9 @@ str_electric_270_ex7000_name:270
 str_electric_274_banyera_name:274 "Bañera"
 str_electric_276_francesa_name:276 "Francesa"
 
-str_emu_101_euromed_name:101 "Euromed"
+str_mu_101_euromed_name:101 "Euromed"
 
-str_mmu_100_ave_name:100 "AVE"
+str_mu_100_ave_name:100 "AVE"
 
 # Liveries text
 
@@ -90,6 +90,6 @@ str_electric_260_ex6000_info:Called 6000 before incorporation to RENFE
 str_electric_270_ex7000_info:Called 7000 before incorporation to RENFE
 str_electric_276_francesa_info:Called 7600 before incorporation to RENFE
 
-str_emu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
+str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
 
-str_mmu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
+str_mu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France

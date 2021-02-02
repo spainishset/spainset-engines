@@ -1,2 +1,0 @@
-"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","gauge","service","length","imageFile","effect","info","liveriesNumber","liveriesFiles","liveriesYears","disp","diff","cargocap"
-"101_euromed","date(1956,01,01) ",20,21,53,230,"250 km/h","4000 hpM","88 ton",0.1909368700,"iberian","fp",8,"101/101",0,1,0,,,"[0,1,2,2,2,3,4,4,5,6]",7,38
