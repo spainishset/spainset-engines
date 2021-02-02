@@ -8,22 +8,29 @@
  */
 
 grf {
-    grfid: "LP\01\01";
-    name: string(str_grf_name);
-    desc: string(str_grf_desc);
-    url: string(str_grf_url);
-    version: NEWGRF_VERSION;
-    min_compatible_version: 0;
-    param {
-        param_disable_original {
-            type:   bool;
-            name:   string(str_param_disable_original);
-            desc:   string(str_param_disable_original_desc);
-            def_value: 0;
-
-        }
-
+  grfid: "LP\01\01";
+  name: string(str_grf_name);
+  desc: string(str_grf_desc);
+  url: string(str_grf_url);
+  version: NEWGRF_VERSION;
+  min_compatible_version: 0;
+  param 0 {
+    param_disable_original {
+      type:   bool;
+      name:   string(str_param_disable_original);
+      desc:   string(str_param_disable_original_desc);
+      def_value: 0;
     }
+  }
+
+  param 1 {
+    param_add_tracks {
+      type:   bool;
+      name:   string(str_param_add_tracks);
+      desc:   string(str_param_add_tracks_desc);
+      def_value: 1;
+    }
+  }
 }
 
 //check for OpenTTD
