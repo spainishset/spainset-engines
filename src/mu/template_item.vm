@@ -42,21 +42,9 @@ item(FEAT_TRAINS, item_mu_${id}) {
     ##cargo_allow_refit: [PASS];
     ##refit_cost: 0;
     misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP);
-
-
-    ##TODO: todas etiquetas a mayus para evitar este IF ?
     
-     #if (${engine}=="diesel")
-    	running_cost_base: RUNNING_COST_DIESEL;
-    	engine_class: ENGINE_CLASS_DIESEL;
-    	visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, ${effect}, DISABLE_WAGON_POWER);
-    #else
-    	visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
-        running_cost_base: RUNNING_COST_ELECTRIC;
-    	engine_class: ENGINE_CLASS_ELECTRIC;
-    #end
-    
-    #trackType( $engine, $gauge )
+    #engineType($engine)
+    #trackType($engine, $gauge)
 
   }
 

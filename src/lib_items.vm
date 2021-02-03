@@ -24,3 +24,21 @@
     track_type: /*SAAA; // */ uicHighSpeedElectrified;
   #end
 #end
+
+#macro( engineType $engineType)
+	#if (${engine}=="steam")
+		running_cost_base: RUNNING_COST_STEAM;
+		engine_class: ENGINE_CLASS_STEAM;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
+	#elseif (${engine}=="diesel")
+		running_cost_base: RUNNING_COST_DIESEL;
+		engine_class: ENGINE_CLASS_DIESEL;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, ${effect}, DISABLE_WAGON_POWER);
+	#elseif(${engine}=="electric")
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		engine_class: ENGINE_CLASS_ELECTRIC;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
+	#else
+	
+	#end
+#end

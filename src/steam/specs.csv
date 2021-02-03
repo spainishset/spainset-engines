@@ -1,11 +1,11 @@
-"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","gauge","service","length","imageFile","animationFrames","tenderLength","effect","info"
-"030_perruca","date(1880,01,01)",50,100,7,50,"80 km/h","422 hpM","64.77 ton",0.0926122301,"iberian","fp",7,"Verraco/Verraco",4,3,-3,0
-"040_verraco","date(1864,01,01)",50,102,8,65,"80 km/h","675 hpM","73.9 ton",0.1179081629,"iberian","fp",7,"Verraco/Verraco",4,3,-3,0
-"140_consolidacion","date(1920,01,01)",45,20,10,90,"90 km/h","1373 hpM","80 ton",0.2967653060,"iberian","fp",8,"Consolidacion/Consolidacion",4,3,-3,0
-"240_mastodonte","date(1932,01,01) ",45,20,15,130,"105 km/h","2042 hpM","90 ton",0.2966326530,"iberian","fp",7,"Verraco/Verraco",4,3,-3,0
-"282_garrafeta","date(1931,01,01) ",45,20,19,145,"60 km/h","1825 hpM","170 ton",0.1284489796,"iberian","hf",7,"Verraco/Verraco",4,3,-3,0
-"241_montanya","date(1927,01,01) ",45,20,17,72,"120 km/h","2232 hpM","180 ton",0.2964795918,"iberian","ephf",7,"Verraco/Verraco",4,3,-3,0
-"231_pacific","date(1928,01,01) ",45,20,14,70,"125 km/h","2079 hpM","130 ton",0.2966938775,"iberian","eplf",7,"Verraco/Verraco",4,3,-3,0
-"151_santafe","date(1942,01,01) ",45,20,18,140,"100 km/h","4113 hpM","213 ton",0.2965408162,"iberian","hf",7,"Verraco/Verraco",4,3,-3,0
-"141_mikado","date(1917,01,01) ",45,20,23,125,"115 km/h","2028 hpM","150 ton",0.2965918367,"iberian","fp",7,"Verraco/Verraco",4,3,-3,0
-"242_confederacion","date(1956,01,01) ",45,20,20,176,"125 km/h","4563 hpM","213 ton",0.0992346939,"iberian","ephf",7,"Verraco/Verraco",4,3,-3,0
+"id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","engine","gauge","service","length","imageFile","animationFrames","tenderLength","effect","info"
+"030_perruca","date(1880,01,01)",50,100,7,50,"80 km/h","422 hpM","64.77 ton",0.0926122301,"steam","iberian","fp",7,"Verraco/Verraco",4,3,-3,0
+"040_verraco","date(1864,01,01)",50,102,8,65,"80 km/h","675 hpM","73.9 ton",0.1179081629,"steam","iberian","fp",7,"Verraco/Verraco",4,3,-3,0
+"140_consolidacion","date(1920,01,01)",45,20,10,90,"90 km/h","1373 hpM","80 ton",0.2967653060,"steam","iberian","fp",8,"Consolidacion/Consolidacion",4,3,-3,0
+"240_mastodonte","date(1932,01,01) ",45,20,15,130,"105 km/h","2042 hpM","90 ton",0.2966326530,"steam","iberian","fp",7,"Verraco/Verraco",4,3,-3,0
+"282_garrafeta","date(1931,01,01) ",45,20,19,145,"60 km/h","1825 hpM","170 ton",0.1284489796,"steam","iberian","hf",7,"Verraco/Verraco",4,3,-3,0
+"241_montanya","date(1927,01,01) ",45,20,17,72,"120 km/h","2232 hpM","180 ton",0.2964795918,"steam","iberian","ephf",7,"Verraco/Verraco",4,3,-3,0
+"231_pacific","date(1928,01,01) ",45,20,14,70,"125 km/h","2079 hpM","130 ton",0.2966938775,"steam","iberian","eplf",7,"Verraco/Verraco",4,3,-3,0
+"151_santafe","date(1942,01,01) ",45,20,18,140,"100 km/h","4113 hpM","213 ton",0.2965408162,"steam","iberian","hf",7,"Verraco/Verraco",4,3,-3,0
+"141_mikado","date(1917,01,01) ",45,20,23,125,"115 km/h","2028 hpM","150 ton",0.2965918367,"steam","iberian","fp",7,"Verraco/Verraco",4,3,-3,0
+"242_confederacion","date(1956,01,01) ",45,20,20,176,"125 km/h","4563 hpM","213 ton",0.0992346939,"steam","iberian","ephf",7,"Verraco/Verraco",4,3,-3,0

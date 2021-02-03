@@ -26,7 +26,6 @@ item(FEAT_TRAINS, item_steam_${id}) {
     reliability_decay: 20;
 
     cost_factor: ${costFactor};
-    running_cost_base: RUNNING_COST_STEAM;
     running_cost_factor: ${runningCostFactor};
 
     speed: ${speed};
@@ -40,10 +39,8 @@ item(FEAT_TRAINS, item_steam_${id}) {
     bitmask_vehicle_info: 0;
     misc_flags: 0;
 
-    #trackType( "steam", $gauge )
-    engine_class: ENGINE_CLASS_STEAM;
-
-    visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
+    #engineType($engine)
+    #trackType($engine, $gauge)
   }
 
   graphics {
