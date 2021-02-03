@@ -69,7 +69,7 @@ str_diesel_316_marilyn_name:316 "Marilyn"
 str_diesel_333_rambo_name:333 "Rambo"
 str_diesel_334_caracol_name:334 "Caracol de carreras"
 str_diesel_340_huevo_name:340 "Huevo"
-str_diesel_340_huevo_info:Called 4000 according old RENFE numeration system
+str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 
 str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
@@ -81,10 +81,15 @@ str_electric_269_japonesa_name:269 "Japonesa"
 str_electric_270_ex7000_name:270
 str_electric_274_banyera_name:274 "Bañera"
 str_electric_276_francesa_name:276 "Francesa"
+str_electric_278_pachorga_name:278 "Pachorga"
+str_electric_279_benemerita_name:279 "Benemérita"
+str_electric_280_ex10000_name:280
+str_electric_281_ex1000_name:281
 
 str_mu_100_ave_name:100 "AVE"
 str_mu_101_euromed_name:101 "Euromed"
 str_mu_590_talguillo_name:590 "Talguillo"
+str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
 
 # Liveries text
 
@@ -106,14 +111,19 @@ str_electric_269_japonesa_liv_merc: Mercancías
 
 # Extra info
 
-str_diesel_316_marilyn_info:Called 1600 according old RENFE numeration system
+str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system
 str_diesel_334_caracol_info: Known as "Euro 3000" by the manufacturer
 
 str_electric_252_pre_eurosprinter_info: Known as "Pre-EuroSprinter" by the manufacturer
-str_electric_260_ex6000_info:Called 6000 according old RENFE numeration system
-str_electric_270_ex7000_info:Called 7000 according old RENFE numeration system
-str_electric_276_francesa_info:Called 7600 according old RENFE numeration system
+str_electric_260_ex6000_info:Called 6000 according to old RENFE numeration system
+str_electric_270_ex7000_info:Called 7000 according to old RENFE numeration system
+str_electric_276_francesa_info:Called 7600 according to old RENFE numeration system
+str_electric_278_pachorga_info:Called 7800 according to old RENFE numeration system
+str_electric_279_benemerita_info:Called 7900 according to old RENFE numeration system
+str_electric_280_ex10000_info:Called 10000 according to old RENFE numeration system
+str_electric_281_ex1000_info:Called 1000 according to old RENFE numeration system
 
 str_mu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
 str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
-str_mu_590_talguillo_info:Called 9000 according old RENFE numeration system
+str_mu_590_talguillo_info:Called 9000 according to old RENFE numeration system
+str_mu_598_huevo_kinder_info:Also nicknamed "Nexios"
