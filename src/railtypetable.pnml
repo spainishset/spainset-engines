@@ -7,16 +7,49 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+// Cuando definimos una entrada en el railtypetable, si tiene una lista,
+// intenta usar el primer tipo de rail si existe. Si no existe, pasa al 
+// siguiente, etc... hasta llegar al ultimo
+
 railtypetable {
+  SAAA,
+  BAAN,
+  BAAE,
+  narrowNotElectrified: [
+    NAAN, NABN, NACN, NADN, // Narrow gauge low speed/no speed limit
+    NBAN, NBBN, NBCN, NBDN, // Narrow gauge high speed/medium speed
+    NCAN, NCBN, NCCN, NCDN, // Narrow gauge high speed
+    NGRL, NLOW],            // Other narrow gauge names
+  narrowElectrified: [
+    NAAE, NABE, NACE, NADE, // Narrow gauge low speed/no speed limit, electrified
+    NBAE, NBBE, NBCE, NBDE, // Narrow gauge high speed/medium speed, electrified
+    NCAE, NCBE, NCCE, NCDE, // Narrow gauge high speed, electrified
+    ELNG, ENLW, ENHI],      // Other narrow gauge eletrified names
   RAIL,
-  ELRL, 
-  MONO, 
+  ibearianNotElectrified: [
+    BAAN, BABN, BACN, BADN, // Broad gauge low speed/no speed limit
+    BBAN, BBBN, BBCN, BBDN, // Broad gauge high speed/medium speed
+    BCAN, BCBN, BCCN, BCDN, // Broad gauge high speed
+    RHIG, RMED, RLOW, DBNN, DBHN, // Other no electrified names
+    RAIL], // Standard rail as last fallback
+  ELRL,
+  ibearianElectrified: [
+    BAAE, BABE, BACE, BADE, // Broad gauge low speed/no speed limit, electrified
+    BBAE, BBBE, BBCE, BBDE, // Broad gauge high speed/medium speed, electrified
+    BCAE, BCBE, BCCE, BCDE, // Broad gauge high speed, electrified
+    EHIG, EMED, ELOW, DBNE, DBNE, DBHE, // Other no electrified names
+    RAIL], // Standard rail as last fallback
+  MONO,
   MGLV,
   uicHighSpeedElectrified: [
-    SCAA, SCBA, SCCA, SCDA, // Standard gauge, high speed high voltage AC 
-    SBAA, SBBA, SBCA, SBDA, // Standard gauge, high/medium speed high voltage AC 
-    SCAE, SCBE, SCCE, SCDE, // Standard gauge, high speed electrified 
-    SBAE, SBBE, SBCE, SBDE, // Standard gauge, high/medium speed electrified 
+    SAAA, SABA, SACA, SADA, // Standard gauge, low/no speed limit, high voltage AC
+    SBAA, SBBA, SBCA, SBDA, // Standard gauge, high/medium speed, high voltage AC
+    SCAA, SCBA, SCCA, SCDA, // Standard gauge, high speed, high voltage AC
+    SDAA, SDBA, SDCA, SDDA, // Standard gauge, higher? speed, high voltage AC
+    SAAE, SABE, SACE, SADE, // Standard gauge, low speed/no speed limit, electrified
+    SBAE, SBBE, SBCE, SBDE, // Standard gauge, high/medium speed, electrified
+    SCAE, SCBE, SCCE, SCDE, // Standard gauge, high speed, electrified
+    SDAE, SDBE, SDCE, SDDE, // Standard gauge, higher? speed, electrified
     HSTR, EHIG, DBHS,  // Other high speed electrified names
-    MGLV], // Maglev as last fallback (making compatible with "High speed railway" grf
+    MGLV], // Maglev as last fallback (making compatible with the old "High speed railway" grf)
 }
