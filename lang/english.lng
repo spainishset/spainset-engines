@@ -82,9 +82,9 @@ str_electric_270_ex7000_name:270
 str_electric_274_banyera_name:274 "Bañera"
 str_electric_276_francesa_name:276 "Francesa"
 
-str_mu_101_euromed_name:101 "Euromed"
-
 str_mu_100_ave_name:100 "AVE"
+str_mu_101_euromed_name:101 "Euromed"
+str_mu_590_talguillo_name:590 "Talguillo"
 
 # Liveries text
 
@@ -114,6 +114,6 @@ str_electric_260_ex6000_info:Called 6000 according old RENFE numeration system
 str_electric_270_ex7000_info:Called 7000 according old RENFE numeration system
 str_electric_276_francesa_info:Called 7600 according old RENFE numeration system
 
-str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
-
 str_mu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
+str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
+str_mu_590_talguillo_info:Called 9000 according old RENFE numeration system
