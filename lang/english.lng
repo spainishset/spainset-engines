@@ -34,6 +34,18 @@ str_purchase_svc_lfep       :light freight or express passengers
 
 # Tracks
 
+str_track_type_iberian           :Iberian gauge track
+str_construction_iberian         :Iberian gauge track construction
+str_vehicle_construction_iberian :New iberian gauge railway vehicle
+str_autoreplace_iberian          :Iberian guage railway vehicles
+str_new_engine_iberian           :iberian guage railway vehicle
+
+str_track_type_iberian_e            :Iberian gauge electified track
+str_construction_iberian_e          :Iberian gauge electified track construction
+str_vehicle_construction_iberian_e  :New iberian gauge electric railway vehicle
+str_autoreplace_iberian_e           :Iberian guage electric railway vehicles
+str_new_engine_iberian_e            :iberian guage electric railway vehicle
+
 str_track_type_uic_highspeed           :High speed UIC track
 str_construction_uic_highspeed         :High speed UIC track construction
 str_vehicle_construction_uic_highspeed :New high speed UIC railway vehicle

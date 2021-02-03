@@ -10,14 +10,179 @@
 if (param_add_tracks != 0) {
 
   /*
+  * B Broad gauge
+  * A Low speed/no speed limit
+  * A low axle limit ?
+  * N not electrified
+  */
+  item(FEAT_RAILTYPES, BAAN, 1) {
+    property {
+      label: "BAAN";
+      introduction_date: date(1850, 1, 1);
+
+      name: string(str_track_type_iberian);
+      toolbar_caption: string(str_construction_iberian);
+      menu_text: string(str_construction_iberian);
+      build_window_caption: string(str_vehicle_construction_iberian);
+      autoreplace_text: string(str_autoreplace_iberian);
+      new_engine_text: string(str_new_engine_iberian);
+
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
+      compatible_railtype_list: [
+        "BAAN", "BABN", "BACN", "BADN", // Broad gauge, low speed/no speed limit, not electrified
+        "BBAN", "BBBN", "BBCN", "BBDN", // Broad gauge, high speed/medium speed, not electrified
+        "BCAN", "BCBN", "BCCN", "BCDN", // Broad gauge, high speed, not electrified
+        "BDAN", "BDBN", "BDCN", "BDDN", // Broad gauge, higher? speed, not electrified
+        "BAAE", "BABE", "BACE", "BADE", // Broad gauge, low speed/no speed limit, electrified
+        "BBAE", "BBBE", "BBCE", "BCDE", // Broad gauge, high speed/medium speed, electrified
+        "BCAE", "BCBE", "BCCE", "BCDE", // Broad gauge, high speed, electrified
+        "BDAE", "BDBE", "BDCE", "BCDE", // Broad gauge, higher? speed, electrified
+        "BAAA", "BABA", "BACA", "BADA", // Broad gauge, low speed/no speed limit, AC electrified
+        "BBAA", "BBBA", "BBCA", "BBDA", // Broad gauge, high speed/medium speed, AC electrified
+        "BCAA", "BCBA", "BCCA", "BCDA", // Broad gauge, high speed, AC electrified
+        "BDAA", "BDBA", "BDCA", "BDDA", // Broad gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail tyoes that trains of this type are powered on
+      powered_railtype_list: [
+        "BAAN", "BABN", "BACN", "BADN", // Broad gauge, low speed/no speed limit, not electrified
+        "BBAN", "BBBN", "BBCN", "BBDN", // Broad gauge, high speed/medium speed, not electrified
+        "BCAN", "BCBN", "BCCN", "BCDN", // Broad gauge, high speed, not electrified
+        "BDAN", "BDBN", "BDCN", "BDDN", // Broad gauge, higher? speed, not electrified
+        "BAAE", "BABE", "BACE", "BADE", // Broad gauge, low speed/no speed limit, electrified
+        "BBAE", "BBBE", "BBCE", "BCDE", // Broad gauge, high speed/medium speed, electrified
+        "BCAE", "BCBE", "BCCE", "BCDE", // Broad gauge, high speed, electrified
+        "BDAE", "BDBE", "BDCE", "BCDE", // Broad gauge, higher? speed, electrified
+        "BAAA", "BABA", "BACA", "BADA", // Broad gauge, low speed/no speed limit, AC electrified
+        "BBAA", "BBBA", "BBCA", "BBDA", // Broad gauge, high speed/medium speed, AC electrified
+        "BCAA", "BCBA", "BCCA", "BCDA", // Broad gauge, high speed, AC electrified
+        "BDAA", "BDBA", "BDCA", "BDDA", // Broad gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [
+        "RAIL", "ELRL",
+        "RLOW", "RMED", 
+        "ELOW", "EMED", "EHIG", "HSTR",
+        "SAAN", "SABN", "SACN", "SADN", // Standard gauge, low speed/no speed limit, not electrified
+        "SBAN", "SBBN", "SBCN", "SBDN", // Standard gauge, high speed/medium speed, not electrified
+        "SCAN", "SCBN", "SCCN", "SCDN", // Standard gauge, high speed, not electrified
+        "SDAN", "SDBN", "SDCN", "SDDN", // Standard gauge, higher? speed, not electrified
+        "SAAE", "SABE", "SACE", "SADE", // Standard gauge, low speed/no speed limit, electrified
+        "SBAE", "SBBE", "SBCE", "SCDE", // Standard gauge, high speed/medium speed, electrified
+        "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
+        "SDAE", "SDBE", "SDCE", "SCDE", // Standard gauge, higher? speed, electrified
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, AC electrified
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, AC electrified
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, AC electrified
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, AC electrified
+      ];
+
+      // speed_limit: 200 km/h;
+      acceleration_model: ACC_MODEL_RAIL;
+  }
+
+  /*
+  graphics {
+    track_overlay: ground_switch_overlay_RAIL;
+    underlay: ground_switch_underlay_RAIL;
+    tunnels: tunnel_track_RAIL_switch;
+    level_crossings: level_crossing_RAIL_switch;
+    bridge_surfaces: bridge_RAIL_switch;
+    fences: fences_RAIL_terrain_switch;
+  }
+  */
+  }
+
+  /*
+  * B Broad gauge
+  * A Low speed/no speed limit
+  * A low axle limit ?
+  * E electrified
+  */
+  item(FEAT_RAILTYPES, BAAE, 2) {
+    property {
+      label: "BAAE";
+      introduction_date: date(1890, 1, 1);
+
+      name: string(str_track_type_iberian_e);
+      toolbar_caption: string(str_construction_iberian_e);
+      menu_text: string(str_construction_iberian_e);
+      build_window_caption: string(str_vehicle_construction_iberian_e);
+      autoreplace_text: string(str_autoreplace_iberian_e);
+      new_engine_text: string(str_new_engine_iberian_e);
+
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
+      compatible_railtype_list: [
+        "BAAN", "BABN", "BACN", "BADN", // Broad gauge, low speed/no speed limit, not electrified
+        "BBAN", "BBBN", "BBCN", "BBDN", // Broad gauge, high speed/medium speed, not electrified
+        "BCAN", "BCBN", "BCCN", "BCDN", // Broad gauge, high speed, not electrified
+        "BDAN", "BDBN", "BDCN", "BDDN", // Broad gauge, higher? speed, not electrified
+        "BAAE", "BABE", "BACE", "BADE", // Broad gauge, low speed/no speed limit, electrified
+        "BBAE", "BBBE", "BBCE", "BCDE", // Broad gauge, high speed/medium speed, electrified
+        "BCAE", "BCBE", "BCCE", "BCDE", // Broad gauge, high speed, electrified
+        "BDAE", "BDBE", "BDCE", "BCDE", // Broad gauge, higher? speed, electrified
+        "BAAA", "BABA", "BACA", "BADA", // Broad gauge, low speed/no speed limit, AC electrified
+        "BBAA", "BBBA", "BBCA", "BBDA", // Broad gauge, high speed/medium speed, AC electrified
+        "BCAA", "BCBA", "BCCA", "BCDA", // Broad gauge, high speed, AC electrified
+        "BDAA", "BDBA", "BDCA", "BDDA", // Broad gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail tyoes that trains of this type are powered on
+      powered_railtype_list: [
+        "BAAE", "BABE", "BACE", "BADE", // Broad gauge, low speed/no speed limit, electrified
+        "BBAE", "BBBE", "BBCE", "BCDE", // Broad gauge, high speed/medium speed, electrified
+        "BCAE", "BCBE", "BCCE", "BCDE", // Broad gauge, high speed, electrified
+        "BDAE", "BDBE", "BDCE", "BCDE", // Broad gauge, higher? speed, electrified
+        "BAAA", "BABA", "BACA", "BADA", // Broad gauge, low speed/no speed limit, AC electrified
+        "BBAA", "BBBA", "BBCA", "BBDA", // Broad gauge, high speed/medium speed, AC electrified
+        "BCAA", "BCBA", "BCCA", "BCDA", // Broad gauge, high speed, AC electrified
+        "BDAA", "BDBA", "BDCA", "BDDA", // Broad gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [
+        "ELRL",
+        "ELOW", "EMED", "EHIG", "HSTR",
+        "SAAE", "SABE", "SACE", "SADE", // Standard gauge, low speed/no speed limit, electrified
+        "SBAE", "SBBE", "SBCE", "SCDE", // Standard gauge, high speed/medium speed, electrified
+        "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
+        "SDAE", "SDBE", "SDCE", "SCDE", // Standard gauge, higher? speed, electrified
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, AC electrified
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, AC electrified
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, AC electrified
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, AC electrified
+      ];
+
+      // speed_limit: 200 km/h;
+      acceleration_model: ACC_MODEL_RAIL;
+      railtype_flags: bitmask(RAILTYPE_FLAG_CATENARY);
+  }
+
+  /*
+  graphics {
+    track_overlay: ground_switch_overlay_RAIL;
+    underlay: ground_switch_underlay_RAIL;
+    tunnels: tunnel_track_RAIL_switch;
+    level_crossings: level_crossing_RAIL_switch;
+    bridge_surfaces: bridge_RAIL_switch;
+    fences: fences_RAIL_terrain_switch;
+  }
+  */
+  }
+
+
+  /*
   * S Standard gauge
-  * B High speed
+  * A No speed limit/ Low speed
   * A low axle limit ?
   * A AC high voltange eletric
   */
-  item(FEAT_RAILTYPES, SBAA, 1) {
+  item(FEAT_RAILTYPES, SAAA, 3) {
     property {
-      label: "SBAA";
+      label: "SAAA";
       introduction_date: date(1989, 10, 2);
 
       name: string(str_track_type_uic_highspeed);
@@ -29,22 +194,36 @@ if (param_add_tracks != 0) {
 
       // List of rail tyoes that trains of this type can also run (but not necesary powered)
       compatible_railtype_list: [
-        "RAIL", "RLOW", "RMED", "RHIG",
-        "SAAN", "SABN", "SACN", "SBAN", "SBBN", "SBCN", "SCAN", "SCBN", "SCCN",
-        "SDAN", "SDBN", "ELRL", "ELOW", "EMED", "EHIG", "HSTR", "SAAE", "SABE",
-        "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE", "SDAE", "SDBE",
-        "SEAE", "SEBE", "3RDR", "3LOW", "3MED", "SAA3", "SAB3", "SAC3", "SBA3",
-        "SBB3", "SBC3", "SCA3", "SCB3", "SCC3", "3RDC", "CLOW", "CMED", "SAAZ",
-        "SABZ", "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
+        "SAAN", "SABN", "SACN", "SADN", // Standard gauge, low speed/no speed limit, not electrified
+        "SBAN", "SBBN", "SBCN", "SBDN", // Standard gauge, high speed/medium speed, not electrified
+        "SCAN", "SCBN", "SCCN", "SCDN", // Standard gauge, high speed, not electrified
+        "SDAN", "SDBN", "SDCN", "SDDN", // Standard gauge, higher? speed, not electrified
+        "SAAE", "SABE", "SACE", "SADE", // Standard gauge, low speed/no speed limit, electrified
+        "SBAE", "SBBE", "SBCE", "SCDE", // Standard gauge, high speed/medium speed, electrified
+        "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
+        "SDAE", "SDBE", "SDCE", "SCDE", // Standard gauge, higher? speed, electrified
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, AC electrified
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, AC electrified
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, AC electrified
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, AC electrified
+        "SAA3", "SAB3", "SAC3", "SAD3", // Standard gauge, low speed/no speed limit, 3rd rail
+        "SBA3", "SBB3", "SBC3", "SBD3", // Standard gauge, high speed/medium speed, 3rd rail
+        "SCA3", "SCB3", "SCC3", "SCD3", // Standard gauge, high speed, 3rd rail
+        "SAAZ", "SABZ", "SACZ", "SADZ", // Standard gauge, low speed/no speed limit, 3rd rail and catenary
+        "SBAZ", "SBBZ", "SBCZ", "SBDZ", // Standard gauge, high speed/medium speed, 3rd rail and catenary
+        "SCAZ", "SCBZ", "SCCZ", "SCDZ", // Standard gauge, high speed, 3rd rail and catenary
+        "3RDR", "3RDC", "3LOW", "CLOW", "3MED", "CMED", // Not standard 3rd rail types
+        "ELOW", "EMED", "EHIG", "HSTR", // NuTracks electrified tracks
+        "RLOW", "RMED", "RHIG", // NuTracks not electrified tracks
+        "ELRL", "RAIL", // TTD classic tracks
         ];
 
       // List of rail tyoes that trains of this type are powered on
       powered_railtype_list: [
-        "ELRL", "ELOW", "EMED", "EHIG", "HSTR",
-        "SAAE", "SABE", "SACE", "SBAE", "SBBE", "SBCE", "SCAE", "SCBE", "SCCE",
-        "SDAE", "SDBE", "SEAE", "SEBE",
-        "3RDC", "CLOW", "CMED",
-        "SAAZ", "SABZ", "SACZ", "SBAZ", "SBBZ", "SBCZ", "SCAZ", "SCBZ", "SCCZ"
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, AC electrified
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, AC electrified
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, AC electrified
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, AC electrified
         ];
 
       // List of rail types which this rail type will act as fallback for,
@@ -55,8 +234,8 @@ if (param_add_tracks != 0) {
         "SBAE", "SBBE", "SBCE", "SBDE", // Standard gauge, high speed/medium speed, electrified
         "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
         "SDAE", "SDBE", "SDCE", "SDDE", // Standard gauge, higher? speed, electrified
-        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, high voltage AC
-        "SBBA", "SBCA", "SBDA",         // Standard gauge, high speed/medium speed, high voltage AC
+        "SABA", "SACA", "SADA",         // Standard gauge, low speed/no speed limit, high voltage AC
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, high voltage AC
         "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, high voltage AC
         "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, high voltage AC
       ];

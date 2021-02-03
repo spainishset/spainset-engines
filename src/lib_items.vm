@@ -21,6 +21,6 @@
       track_type: narrowNoElectrified;
     #end
   #else
-    track_type: uicHighSpeedElectrified;
+    track_type: /*SAAA; // */ uicHighSpeedElectrified;
   #end
 #end
