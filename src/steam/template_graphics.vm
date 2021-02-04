@@ -50,6 +50,9 @@ switch(FEAT_TRAINS, SELF, switch_steam_${id}_articulated, extra_callback_info1) 
   return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
+#if ($length > 8)
+  #set($length = 8)
+#end
 // Sets the length of each articulation
 switch(FEAT_TRAINS, SELF, switch_steam_${id}_length, position_in_vehid_chain % 2) {
   0: ${length};
