@@ -3,6 +3,9 @@
 ~*
 .~*
 
+#git
+*.orig
+
 # Generated files
 .nmlcache
 *.nml
