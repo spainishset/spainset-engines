@@ -60,7 +60,7 @@ switch(FEAT_TRAINS, SELF, switch_steam_${id}_length, position_in_vehid_chain % 2
 
 // Visual effect of smoke
 switch(FEAT_TRAINS, SELF, switch_steam_${id}_visual_effect_and_powered, (position_in_vehid_chain % 2)) {
-    1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-    return visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
+  1: return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+  return visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
 }
 #end
