@@ -8,7 +8,7 @@
  */
 
 grf {
-  grfid: "LP\01\01";
+  grfid: "SPS\01";
   name: string(str_grf_name);
   desc: string(str_grf_desc);
   url: string(str_grf_url);
