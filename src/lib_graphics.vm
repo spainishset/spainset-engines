@@ -7,9 +7,37 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *#
 
+## Macro que genera el spriteset de compra de una locomotora
 #macro( pucharseSprite $engineType, $id, $imageFile )
-// Purchase
-spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
-  template_purchase(1, 223)
-}
+  spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
+    template_purchase(1, 223)
+  }
+#end
+
+## Macro que genera los spritesets de una animación, para locomotoras
+#macro( animatedSpriteSets $engineType, $id, $imageFile, $length, $animationFrames)
+  #set($animationFramesMinusOne = $animationFrames - 1)
+  #foreach ($frame in [0..$animationFramesMinusOne])
+    #set($yPos = $frame*32)
+    #if ($yPos == 0)
+      #set($yPos = 1)
+    #end
+    spriteset(spriteset_${engineType}_${id}_ani_${frame}, "gfx/${imageFile}.png") {
+      template_s${length}(1, ${yPos})
+    }
+  #end
+#end
+
+## Macro que genera el spriteset para una locomotora sin animación
+#macro( engineSpriteSet $engineType, $id, $imageFile, $length)
+  spriteset(spriteset_${engine}_${id}, "gfx/${imageFile}.png") {
+    template_s${length}(1, 1)
+  }
+#end
+
+## Macro que genera el spriteset para una unidad motora
+#macro( mumuSpriteSet $id, $imageFile, $length)
+  spriteset(spritesetmumu_${id}, "gfx/${imageFile}.png") {
+    template_s${length}(1, 1)
+  }
 #end
