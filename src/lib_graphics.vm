@@ -35,9 +35,32 @@
   }
 #end
 
+## Macro para generar los spriteset de liveries de una locomotora sin animación cuando están en el mismo fichero
+#macro( engineSpriteSetLiveriesSingleFile $engineType, $id, $liveries, $imageFile, $length)
+  #foreach ($liverie in $liveries)
+    #set($yPos = $foreach.count * 32)
+    #if ($yPos == 0)
+      #set($yPos = 1)
+    #end
+    spriteset(spriteset_${engine}_${id}_${liverie},  "gfx/${imageFile}.png") {
+      template_s${length}(1, ${yPos})
+    }
+  #end
+#end
+
+## Macro para generar los spriteset de liveries de una locomotora sin animación cuando están en distintos ficheros
+#macro( engineSpriteSetLiveries $engineType, $id, $liveriesFiles, $imageFile, $length)
+  #foreach ($liverieFile in $liveriesFiles)
+    spriteset(spriteset_${engine}_${id}_${liverieFile}, "gfx/${imageFile}_${liverieFile}.png") {
+      template_s${length}(1, 1)
+    }
+  #end
+#end
+
 ## Macro que genera el spriteset para una unidad motora
 #macro( mumuSpriteSet $id, $imageFile, $length)
   spriteset(spritesetmumu_${id}, "gfx/${imageFile}.png") {
     template_s${length}(1, 1)
   }
 #end
+

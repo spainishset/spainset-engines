@@ -17,34 +17,16 @@
 // Engine sprite
 #engineSpriteset($engine, $id, $imageFile, $length)
 
-//TODO: all liveries to the same file
-
-//= Callbacks
 #if (${liveriesNumber}!=0)
 
-  #if (${liveriesNumber}<0)
-    #foreach ($liveriesFile in  $liveriesFiles)
-    // Engine sprite
-    spriteset(spriteset_${engine}_${id}_${liveriesFile}, "gfx/${imageFile}_${liveriesFile}.png") {
-      template_s${length}(1, 1)
-    }
-    #end
+  // Engine liveries spritesets
+  #if (${liveriesNumber} > 0)
+    #engineSpriteSetLiveriesSinglefile( $engine, $id, $liveriesFiles, $imageFile, $length)
+  #else
+    #engineSpriteSetLiveries( $engine, $id, $liveriesFiles, $imageFile, $length)
   #end
 
-  #if (${liveriesNumber}>0)
-      #set($i = 1)
-    #foreach ($liveriesFile in  $liveriesFiles)
-    // Engine sprite
-        #set($yPos = $i*32)
-      #if ($yPos == 0)
-          #set($yPos = 1)
-      #end
-      #set($i = $i+1)
-      spriteset(spriteset_${engine}_${id}_${liveriesFile},  "gfx/${imageFile}.png") {
-      template_s${length}(1, ${yPos})
-    }
-    #end
-  #end
+  //= Callbacks
 
   switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_livery, cargo_subtype) {
     0: spriteset_${engine}_${id};
