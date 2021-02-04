@@ -37,7 +37,6 @@ switch(FEAT_TRAINS, SELF, switch_mu_${id}_position, (position_in_vehid_chain % $
 		$i:spriteset_mu_${id}_$part;
 	#set($i = $i+1)	
 	#end
-	##spriteset_mu_${id}_$part.get(0)
 }
 
 /*
@@ -58,3 +57,11 @@ switch(FEAT_TRAINS, SELF, switch_mu_${id}_visual_effect_and_powered, (position_i
     return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
+
+switch(FEAT_TRAINS, SELF, switch_mu_${id}_length, (position_in_vehid_chain % $disp.size())) {
+	#set($i = 0)
+	#foreach ($part in  $mu_length)
+		$i: return $part;
+	#set($i = $i+1)	
+	#end
+}
