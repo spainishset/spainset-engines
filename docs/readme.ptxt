@@ -1,8 +1,14 @@
 {{GRF_TITLE}}
 ===================================
-Spain Train engines for OpenTTD
+Spain Train set for OpenTTD
 
-The SPTS Engines set includes locomotives, DMUs and EMUs from Spain.
+The SPTS set includes locomotives, DMUs and EMUs from Spain.
+
+Also, follows the Standardized Railtype Scheme (https://newgrf-specs.tt-wiki.net/wiki/Standardized_Railtype_Scheme)
+to allow be compatible with another GRFs that includes how own tracks.
+
+Iberian tracks (Narrow gauge & Iberian gauge, both electrified and not electrified) and UIC High speed tracks are 
+include on set and can toggled using GRF parameters.
 
 Created using the NML.
 
