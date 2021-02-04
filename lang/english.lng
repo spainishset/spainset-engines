@@ -94,8 +94,8 @@ str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
 # Liveries text
 
 str_diesel_316_marilyn_liv: (Original)
-str_diesel_316_marilyn_verde: Verde
-str_diesel_316_marilyn_2cc: (Colores de empresa)
+str_diesel_316_marilyn_liv_green: Verde
+str_diesel_316_marilyn_liv_2cc: (Colores de empresa)
 
 str_electric_251_japonesa_y_media_liv: Mercancías
 str_electric_251_japonesa_y_media_liv_merc2005: Mercancías 2005
@@ -111,7 +111,7 @@ str_electric_269_japonesa_liv_merc: Mercancías
 
 # Extra info
 
-str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system
+str_diesel_316_marilyn_info: Called 1600 according to old RENFE numeration system. Also know as "ALCO"
 str_diesel_334_caracol_info: Known as "Euro 3000" by the manufacturer
 
 str_electric_252_pre_eurosprinter_info: Known as "Pre-EuroSprinter" by the manufacturer
