@@ -256,5 +256,89 @@ if (param_add_tracks != 0) {
   }
   */
   }
+  
+  /*
+  * VGNE = VARIABLE GAUGE NOT ELECTRIFIED: for trains capable to change gauge from standard not electrified to broad and vice-versa.
+  */
+  item(FEAT_RAILTYPES, VGNE, 4) {
+    property {
+      label: "VGNE";
+      introduction_date: date(1000, 10, 2);
+
+      name: string(str_track_type_uic_highspeed);
+      toolbar_caption: string(str_construction_uic_highspeed);
+      menu_text: string(str_construction_uic_highspeed);
+      build_window_caption: string(str_vehicle_construction_uic_highspeed);
+      autoreplace_text: string(str_autoreplace_uic_highspeed);
+      new_engine_text: string(str_new_engine_uic_highspeed);
+
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
+      compatible_railtype_list: ["SAAA", "BAAE" , "BAAN"];
+
+      // List of rail tyoes that trains of this type are powered on
+      powered_railtype_list: ["SAAA", "BAAE" , "BAAN"];
+
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [];
+
+      // speed_limit: 300 km/h;
+      acceleration_model: ACC_MODEL_RAIL;
+      railtype_flags: bitmask(RAILTYPE_FLAG_HIDDEN);
+  }
+
+  /*
+  graphics {
+    track_overlay: ground_switch_overlay_RAIL;
+    underlay: ground_switch_underlay_RAIL;
+    tunnels: tunnel_track_RAIL_switch;
+    level_crossings: level_crossing_RAIL_switch;
+    bridge_surfaces: bridge_RAIL_switch;
+    fences: fences_RAIL_terrain_switch;
+  }
+  */
+  }
+  
+  /*
+  * VGEL = VARIABLE GAUGE ELECTRIFIED: for trains capable to change gauge from standard electrified to broad and vice-versa.
+  */
+  item(FEAT_RAILTYPES, VGEL, 5) {
+    property {
+      label: "VGEL";
+      introduction_date: date(1000, 10, 2);
+
+      name: string(str_track_type_uic_highspeed);
+      toolbar_caption: string(str_construction_uic_highspeed);
+      menu_text: string(str_construction_uic_highspeed);
+      build_window_caption: string(str_vehicle_construction_uic_highspeed);
+      autoreplace_text: string(str_autoreplace_uic_highspeed);
+      new_engine_text: string(str_new_engine_uic_highspeed);
+
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
+      compatible_railtype_list: ["SAAA", "BAAE" , "BAAN"];
+
+      // List of rail tyoes that trains of this type are powered on
+      powered_railtype_list: ["SAAA", "BAAE"];
+
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [];
+
+      // speed_limit: 300 km/h;
+      acceleration_model: ACC_MODEL_RAIL;
+      railtype_flags: bitmask(RAILTYPE_FLAG_HIDDEN);
+  }
+
+  /*
+  graphics {
+    track_overlay: ground_switch_overlay_RAIL;
+    underlay: ground_switch_underlay_RAIL;
+    tunnels: tunnel_track_RAIL_switch;
+    level_crossings: level_crossing_RAIL_switch;
+    bridge_surfaces: bridge_RAIL_switch;
+    fences: fences_RAIL_terrain_switch;
+  }
+  */
+  }
 
 }

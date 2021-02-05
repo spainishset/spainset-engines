@@ -19,6 +19,7 @@ str_purchase_info           :{BLACK}--------------------{}{BLACK}Track gauge: {O
 str_purchase_gauge_narrow   :narrow
 str_purchase_gauge_standard :standard
 str_purchase_gauge_iberian  :iberian
+str_purchase_gauge_variable :iberian and standard
 
 str_purchase_svc_p          :passengers
 str_purchase_svc_ep         :express passengers
@@ -88,8 +89,10 @@ str_electric_281_ex1000_name:281
 
 str_mu_100_ave_name:100 "AVE"
 str_mu_101_euromed_name:101 "Euromed"
+str_mu_120_chipiron_name:120 "Chipirón"
 str_mu_590_talguillo_name:590 "Talguillo"
 str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
+str_mu_talgo_xxi_name:Talgo XXI
 
 # Liveries text
 
@@ -125,5 +128,6 @@ str_electric_281_ex1000_info:Called 1000 according to old RENFE numeration syste
 
 str_mu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
 str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
+str_mu_120_chipiron_info:Also nicknamed "sepia"
 str_mu_590_talguillo_info:Called 9000 according to old RENFE numeration system
 str_mu_598_huevo_kinder_info:Also nicknamed "Nexios"

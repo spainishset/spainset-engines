@@ -20,6 +20,12 @@
     #else
       track_type: narrowNoElectrified;
     #end
+  #elseif ($gauge == "variable")
+    #if ($engineType == "electric")
+      track_type: variableElectrified;
+    #else
+      track_type: variableNotElectrified;
+    #end
   #else
     track_type: /*SAAA; // */ uicHighSpeedElectrified;
   #end
