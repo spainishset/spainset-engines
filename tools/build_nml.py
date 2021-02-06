@@ -112,11 +112,22 @@ def main():
 
   ids=[]
   for engineData in data:
-    outputItemFilename = f"{engineData['id']}_item.pnml"
-    parseTemplate(itemTemplate, engineData, engine, outputItemFilename);
+    if engine == "steam" and engineData['id'] == "282_garrafeta":
+      garrafetaItemTemplate = airspeed.Template(codecs.open(f'src/{engine}/garrafeta_item.vm', 'r', 'utf-8').read())
+      garrafetaGraphicsTemplate = airspeed.Template(codecs.open(f'src/{engine}/garrafeta_graphics.vm', 'r', 'utf-8').read())
 
-    outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
-    parseTemplate(graphicsTemplate, engineData, engine, outputGraphicsFilename);
+      outputItemFilename = f"{engineData['id']}_item.pnml"
+      parseTemplate(garrafetaItemTemplate, engineData, engine, outputItemFilename);
+
+      outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
+      parseTemplate(garrafetaGraphicsTemplate, engineData, engine, outputGraphicsFilename);
+
+    else:
+      outputItemFilename = f"{engineData['id']}_item.pnml"
+      parseTemplate(itemTemplate, engineData, engine, outputItemFilename);
+
+      outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
+      parseTemplate(graphicsTemplate, engineData, engine, outputGraphicsFilename);
 
     ids.append(engineData['id'])
 
