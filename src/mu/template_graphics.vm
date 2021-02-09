@@ -54,8 +54,16 @@ switch(FEAT_TRAINS, SELF, switch_mu_${id}_articulated, extra_callback_info1) {
 */
 
 switch(FEAT_TRAINS, SELF, switch_mu_${id}_visual_effect_and_powered, (position_in_vehid_chain % $disp.size())) {
-  $disp.size()-1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
-  return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+	#if (${engine}=="diesel")
+		##Smoke from first part
+	  	0: return visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+		return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+	#elseif(${engine}=="electric")
+		## Spark from last part
+		$disp.size()-1: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+		return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+	#else
+	#end 
 }
 
 
