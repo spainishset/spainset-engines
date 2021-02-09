@@ -19,17 +19,18 @@ spriteset(spritesetmumu_${id}, "gfx/${imageFile}.png") {
 
 #set($i = 0)
 #foreach ($wagon in  $disp)
-	    ##if( $foreach.count > $diff)
-	        ##break   TODO ESTO NO PARA
-	    ##end
+	    #if( $foreach.count <= $diff)
+
   		#set($yPos = $i*32)
 		#if ($yPos == 0)
 			#set($yPos = 1)
 		#end
 		spriteset(spriteset_mu_${id}_$i,  "gfx/${imageFile}.png") {
-		template_s${length}(1, ${yPos})
+		template_s$mu_length.get($i)(1, ${yPos})
 		#set($i = $i + 1)
+
 		}
+		#end
 #end
 switch(FEAT_TRAINS, SELF, switch_mu_${id}_position, (position_in_vehid_chain % $disp.size())) {
 	#set($i = 0)

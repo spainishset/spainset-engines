@@ -88,6 +88,7 @@ str_electric_281_ex1000_name:281
 
 str_mu_100_ave_name:100 "AVE"
 str_mu_101_euromed_name:101 "Euromed"
+str_mu_102_pato_name:102 "Pato"
 str_mu_590_talguillo_name:590 "Talguillo"
 str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
 
