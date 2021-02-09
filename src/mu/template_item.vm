@@ -30,7 +30,8 @@ item(FEAT_TRAINS, item_mu_${id}) {
     weight: ${weight};
     tractive_effort_coefficient: ${tec};
     air_drag_coefficient: 0;
-    length: ${length};
+    ##length: ${length};
+
     dual_headed: 0;
     extra_power_per_wagon: 0;
     bitmask_vehicle_info: 0;
@@ -50,6 +51,7 @@ item(FEAT_TRAINS, item_mu_${id}) {
 
   graphics {
     purchase: spriteset_mu_${id}_purchase;
+    length: switch_mu_${id}_length;
 
     #if (${info}==0)
       additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));

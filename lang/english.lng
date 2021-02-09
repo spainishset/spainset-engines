@@ -89,6 +89,7 @@ str_electric_281_ex1000_name:281
 
 str_mu_100_ave_name:100 "AVE"
 str_mu_101_euromed_name:101 "Euromed"
+str_mu_102_pato_name:102 "Pato"
 str_mu_120_chipiron_name:120 "Chipirón"
 str_mu_590_talguillo_name:590 "Talguillo"
 str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
@@ -154,10 +155,10 @@ str_electric_281_ex1000_liv_2cc: (2CC)
 
 # Extra info
 
-str_diesel_316_marilyn_info: Called 1600 according to old RENFE numeration system. Also know as "ALCO"
-str_diesel_334_caracol_info: Known as "Euro 3000" by the manufacturer
+str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system. Also know as "ALCO"
+str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
 
-str_electric_252_pre_eurosprinter_info: Known as "Pre-EuroSprinter" by the manufacturer
+str_electric_252_pre_eurosprinter_info:Known as "Pre-EuroSprinter" by the manufacturer
 str_electric_260_ex6000_info:Called 6000 according to old RENFE numeration system
 str_electric_270_ex7000_info:Called 7000 according to old RENFE numeration system
 str_electric_276_francesa_info:Called 7600 according to old RENFE numeration system
