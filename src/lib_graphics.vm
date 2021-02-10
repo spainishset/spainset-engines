@@ -8,14 +8,14 @@
  *#
 
 ## Macro que genera el spriteset de compra de una locomotora
-#macro( pucharseSprite $engineType, $id, $imageFile )
+#macro(pucharseSprite $engineType, $id, $imageFile )
   spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
     template_purchase(1, 223)
   }
 #end
 
 ## Macro que genera los spritesets de una animación, para locomotoras
-#macro( animatedSpriteSets $engineType, $id, $imageFile, $length, $animationFrames)
+#macro(animatedSpriteSets $engineType, $id, $imageFile, $length, $animationFrames)
   #set($animationFramesMinusOne = $animationFrames - 1)
   #foreach ($frame in [0..$animationFramesMinusOne])
     #set($yPos = $frame*32)
@@ -29,38 +29,111 @@
 #end
 
 ## Macro que genera el spriteset para una locomotora sin animación
-#macro( engineSpriteSet $engineType, $id, $imageFile, $length)
+#macro(engineSpriteSet $engineType, $id, $imageFile, $length)
   spriteset(spriteset_${engine}_${id}, "gfx/${imageFile}.png") {
     template_s${length}(1, 1)
   }
 #end
 
 ## Macro para generar los spriteset de liveries de una locomotora sin animación cuando están en el mismo fichero
-#macro( engineSpriteSetLiveriesSingleFile $engineType, $id, $liveries, $imageFile, $length)
-  #foreach ($liverie in $liveries)
+#macro(engineSpriteSetLiveriesSingleFile $engineType, $id, $liveries, $imageFile, $length)
+  #foreach ($livery in $liveries)
     #set($yPos = $foreach.count * 32)
     #if ($yPos == 0)
       #set($yPos = 1)
     #end
-    spriteset(spriteset_${engine}_${id}_${liverie},  "gfx/${imageFile}.png") {
+    spriteset(spriteset_${engine}_${id}_${livery},  "gfx/${imageFile}.png") {
       template_s${length}(1, ${yPos})
     }
   #end
 #end
 
 ## Macro para generar los spriteset de liveries de una locomotora sin animación cuando están en distintos ficheros
-#macro( engineSpriteSetLiveries $engineType, $id, $liveriesFiles, $imageFile, $length)
-  #foreach ($liverieFile in $liveriesFiles)
-    spriteset(spriteset_${engine}_${id}_${liverieFile}, "gfx/${imageFile}_${liverieFile}.png") {
+#macro(engineSpriteSetLiveries $engineType, $id, $liveriesFiles, $imageFile, $length)
+  #foreach ($liveryFile in $liveriesFiles)
+    spriteset(spriteset_${engine}_${id}_${liveryFile}, "gfx/${imageFile}_${liveryFile}.png") {
       template_s${length}(1, 1)
     }
   #end
 #end
 
 ## Macro que genera el spriteset para una unidad motora
-#macro( muSpriteSet $id, $imageFile, $length)
-  spriteset(spriteset_mu_${id}, "gfx/${imageFile}.png") {
-    template_s${length}(1, 1)
-  }
+#macro(muSpriteSet $id, $imageFile, $length)
+	spriteset(spriteset_mu_${id}, "gfx/${imageFile}.png") {
+		template_s${length}(1, 1)
+	}
 #end
 
+##Macro para añadir los sprites de una unidad multiple
+#macro(muSpriteByParts, $id, $imageFile, $livery, $length, $disp, $diff)
+	#muSpriteSet($id, $imageFile, $length)
+	#set($i = 0)
+	#foreach ($wagon in  $disp)
+		#if( $foreach.count <= $diff)
+			#set($yPos = $i*32)
+			#if ($yPos == 0)
+				#set($yPos = 1)
+			#end
+			spriteset(spriteset_mu_${id}_$i,  "gfx/${imageFile}.png") {
+			template_s$mu_length.get($i)(1, ${yPos})
+			#set($i = $i + 1)
+			}
+		#end
+	#end
+#end
+
+##Macro para la posicion de los sprites de una unidad multiple
+#macro(muSpritePosition $id, $disp, $livery)
+	switch(FEAT_TRAINS, SELF, switch_mu_${id}_${livery}position, (position_in_vehid_chain % $disp.size())) {
+		#set($i = 0)
+		#foreach ($part in  $disp)
+			$i:spriteset_mu_${id}_${livery}$part;
+			#set($i = $i+1)
+		#end
+	}
+#end
+
+##Macro para los sprites de una unidad multiple, caso de esquemas adicionales
+#macro(muSpriteLiveries $id, $imageFile, $liveriesFiles, $length, $disp, $diff)
+	//MULTIPLE LIVERIES
+	#foreach ($livery in $liveriesFiles)
+		#muSpriteByParts("${id}_${livery}", "${imageFile}_${livery}", $livery, $length, $disp, $diff)	
+		#muSpritePosition($id, $disp, "${livery}_")
+	#end
+	
+	// CARGO SUBTYPE CALLBACK
+	switch(FEAT_TRAINS, SELF, switch_mu_${id}_livery, cargo_subtype) {
+		0: switch_mu_${id}_position;
+		#foreach ($livery in  $liveriesFiles)
+			$foreach.count: switch_mu_${id}_${livery}_position;
+		#end
+	}
+
+	// CARGO SUBTYPE STRING CALLBACK
+	switch(FEAT_TRAINS, SELF, switch_mu_${id}_subtype_text, cargo_subtype) {
+		0: return string(str_mu_${id}_liv);
+		#foreach ($livery in  $liveriesFiles)
+			$foreach.count: return string(str_mu_${id}_liv_${livery});
+		#end
+	return CB_RESULT_NO_TEXT;
+	}
+	
+#end
+
+
+##Macro para los sprites de una unidad multiple
+#macro(muSprite $id, $imageFile, $liveriesFiles, $length, $disp, $diff, $liveriesNumber)
+
+	//DEFAULT
+	#muSpriteByParts($id, $imageFile, "", $length, $disp, $diff)
+	#muSpritePosition($id, $disp, "")
+
+	#if (${liveriesNumber} > 0)
+		## Multiple units can not have all liveries on same file!
+	#elseif (${liveriesNumber} < 0)
+		#muSpriteLiveries($id, $imageFile, $liveriesFiles, $length, $disp, $diff)
+	#else
+		## Only default livery, no required actions	
+	#end
+	
+#end

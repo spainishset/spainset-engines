@@ -7,31 +7,33 @@
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  *#
 
-#macro( trackType $engineType, $gauge)
-  #if ($gauge == "iberian")
-    #if ($engineType == "electric")
-      track_type: ibearianElectrified;
-    #else
-      track_type: ibearianNotElectrified;
-    #end
-  #elseif ($gauge == "narrow")
-    #if ($engineType == "electric")
-      track_type: narrowElectrified;
-    #else
-      track_type: narrowNoElectrified;
-    #end
-  #elseif ($gauge == "variable")
-    #if ($engineType == "electric")
-      track_type: variableElectrified;
-    #else
-      track_type: variableNotElectrified;
-    #end
-  #else
-    track_type: /*SAAA; // */ uicHighSpeedElectrified;
-  #end
+##Macro para tipos y anchos de via
+#macro(trackType $engineType, $gauge)
+	#if ($gauge == "iberian")
+		#if ($engineType == "electric")
+			track_type: ibearianElectrified;
+		#else
+			track_type: ibearianNotElectrified;
+		#end
+	#elseif ($gauge == "narrow")
+		#if ($engineType == "electric")
+			track_type: narrowElectrified;
+		#else
+			track_type: narrowNoElectrified;
+		#end
+	#elseif ($gauge == "variable")
+		#if ($engineType == "electric")
+			track_type: variableElectrified;
+		#else
+			track_type: variableNotElectrified;
+		#end
+	#else
+		track_type: uicHighSpeedElectrified;
+	#end
 #end
 
-#macro( engineType $engineType)
+##Macro para tipo de vehiculo
+#macro(engineType $engineType)
 	#if (${engine}=="steam")
 		running_cost_base: RUNNING_COST_STEAM;
 		engine_class: ENGINE_CLASS_STEAM;
@@ -47,4 +49,46 @@
 	#else
 	
 	#end
+#end
+
+## Macro para informacion extra
+#macro(extraInfo $engineType, $id, $info, $gauge)
+    #if (${info}==0)
+      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+    #else
+      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
+    #end
+#end
+
+## Macro para refit en "property"
+#macro(refitProperty $engineType, $liveriesNumber)
+    #if (${liveriesNumber}!=0)
+    	#if (${engineType}=="mu")  
+			cargo_capacity: ${cargocap};  
+    	#else
+      		cargo_capacity: 1;
+    	#end  
+    	cargo_allow_refit: [PASS];
+    	refit_cost: 0;
+    #end
+#end
+
+## Macro para refit en "graphics"
+#macro(refitGraphics $engineType, $liveriesNumber)
+    #if (${liveriesNumber}!=0)
+    	#if (${engineType}=="mu")
+    		## Empty  
+    	#else
+			cargo_capacity: return 0;
+    	#end
+    	
+    	cargo_subtype_text: switch_${engineType}_${id}_subtype_text;
+		switch_${engineType}_${id}_livery;
+    #else
+        #if (${engineType}=="mu")
+        	switch_mu_${id}_position;  
+    	#else
+			default: spriteset_${engine}_${id};
+    	#end
+    #end
 #end

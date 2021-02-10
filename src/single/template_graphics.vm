@@ -21,9 +21,9 @@
 
   // Engine liveries spritesets
   #if (${liveriesNumber} > 0)
-    #engineSpriteSetLiveriesSinglefile( $engine, $id, $liveriesFiles, $imageFile, $length)
+    #engineSpriteSetLiveriesSinglefile($engine, $id, $liveriesFiles, $imageFile, $length)
   #else
-    #engineSpriteSetLiveries( $engine, $id, $liveriesFiles, $imageFile, $length)
+    #engineSpriteSetLiveries($engine, $id, $liveriesFiles, $imageFile, $length)
   #end
 
   //= Callbacks

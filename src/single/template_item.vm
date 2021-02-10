@@ -27,7 +27,6 @@ item(FEAT_TRAINS, item_${engine}_${id}) {
     reliability_decay: 20;
 
     cost_factor: ${costFactor};
-    
     running_cost_factor: ${runningCostFactor};
 
     speed: ${speed};
@@ -41,34 +40,15 @@ item(FEAT_TRAINS, item_${engine}_${id}) {
     bitmask_vehicle_info: 0;
     misc_flags: 0;
 
-    cargo_allow_refit: [PASS];
-    refit_cost: 0;
-
     #engineType($engine)
     #trackType($engine, $gauge)
+    #refitProperty($engine, $liveriesNumber)
+}
 
-    #if (${liveriesNumber}!=0)
-      cargo_capacity: 1;
-    #end
-  }
-
-  graphics {
+graphics {
     purchase: spriteset_${engine}_${id}_purchase;
-
-    #if (${info}==0)
-      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
-    #else
-      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engine}_${id}_info));
-    #end
-
-    //= Callbacks
-    #if (${liveriesNumber}==0)
-      default: spriteset_${engine}_${id};
-    #else
-      cargo_capacity: return 0;
-      cargo_subtype_text: switch_${engine}_${id}_subtype_text;
-      switch_${engine}_${id}_livery;
-    #end
-
+    #extraInfo($engine, $id, $info, $gauge)
+    
+    #refitGraphics($engine, $liveriesNumber)
   }
 }

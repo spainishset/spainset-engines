@@ -13,3 +13,6 @@ cargotable {
     CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, FRVG, GLAS, GRVL, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC,
     RFPR, SAND, SCMT, SGBT, SGCN, SULP, TOUR, VEHI, WDPR, WOOL, JAVA
 }
+
+//TODO: establecer definiciones de cargas:   https://dev.openttdcoop.org/projects/dutchtrains/repository/entry/src/cargorefits.pnml
+// https://dev.openttdcoop.org/projects/dutchtrains/repository/entry/src/mu/V250_item.pnml
