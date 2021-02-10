@@ -58,8 +58,8 @@
 #end
 
 ## Macro que genera el spriteset para una unidad motora
-#macro( mumuSpriteSet $id, $imageFile, $length)
-  spriteset(spritesetmumu_${id}, "gfx/${imageFile}.png") {
+#macro( muSpriteSet $id, $imageFile, $length)
+  spriteset(spriteset_mu_${id}, "gfx/${imageFile}.png") {
     template_s${length}(1, 1)
   }
 #end

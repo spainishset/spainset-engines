@@ -39,9 +39,14 @@ item(FEAT_TRAINS, item_mu_${id}) {
 
 ##TODO: establecer definiciones de cargas:   https://dev.openttdcoop.org/projects/dutchtrains/repository/entry/src/cargorefits.pnml
 ## https://dev.openttdcoop.org/projects/dutchtrains/repository/entry/src/mu/V250_item.pnml
-    cargo_capacity: ${cargocap};
-    ##cargo_allow_refit: [PASS];
-    ##refit_cost: 0;
+
+    cargo_capacity: ${cargocap};   
+    
+    #if (${liveriesNumber}!=0)
+    	cargo_allow_refit: [PASS];
+    	refit_cost: 0;
+    #end
+
     misc_flags: bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_FLIP);
     
     #engineType($engine)
@@ -59,8 +64,20 @@ item(FEAT_TRAINS, item_mu_${id}) {
       additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_mu_${id}_info));
     #end
 
-	articulated_part: switch_mu_${id}_articulated;
+	
+
+    //= Callbacks
+    #if (${liveriesNumber}!=0)
+      cargo_subtype_text: switch_mu_${id}_subtype_text;
+    #end
+   	articulated_part: switch_mu_${id}_articulated;
  	visual_effect_and_powered: switch_mu_${id}_visual_effect_and_powered;
-	switch_mu_${id}_position;
+
+	
+	#if (${liveriesNumber}!=0)
+		switch_mu_${id}_livery;
+	#else
+		switch_mu_${id}_position;
+    #end
   }
 }

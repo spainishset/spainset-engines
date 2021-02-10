@@ -13,3 +13,5 @@
 *.tar
 custom_tags.txt
 spts/**
+/.pydevproject
+/.project

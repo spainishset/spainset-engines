@@ -14,24 +14,6 @@
 // Purchase
 #pucharseSprite("mu", $id, $imageFile)
 
-// Engine sprite
-#mumuSpriteSet($id, $imageFile, $length)
-
-#set($i = 0)
-#foreach ($wagon in  $disp)
-	    #if( $foreach.count <= $diff)
-
-  		#set($yPos = $i*32)
-		#if ($yPos == 0)
-			#set($yPos = 1)
-		#end
-		spriteset(spriteset_mu_${id}_$i,  "gfx/${imageFile}.png") {
-		template_s$mu_length.get($i)(1, ${yPos})
-		#set($i = $i + 1)
-
-		}
-		#end
-#end
 switch(FEAT_TRAINS, SELF, switch_mu_${id}_position, (position_in_vehid_chain % $disp.size())) {
   #set($i = 0)
   #foreach ($part in  $disp)
@@ -39,6 +21,99 @@ switch(FEAT_TRAINS, SELF, switch_mu_${id}_position, (position_in_vehid_chain % $
   #set($i = $i+1)
   #end
 }
+
+#if (${liveriesNumber}!=0)
+  // Engine liveries spritesets
+  #if (${liveriesNumber} > 0)
+    ## Multiple units can not have all liveries on same file!
+  #else
+  // Engine sprite
+	#muSpriteSet($id, $imageFile, $length)
+	#set($i = 0)
+	#foreach ($wagon in  $disp)
+		    #if( $foreach.count <= $diff)
+	
+		  		#set($yPos = $i*32)
+				#if ($yPos == 0)
+					#set($yPos = 1)
+				#end
+				spriteset(spriteset_mu_${id}_$i,  "gfx/${imageFile}.png") {
+				template_s$mu_length.get($i)(1, ${yPos})
+				#set($i = $i + 1)
+		
+				}
+			#end
+	#end
+  
+  
+      #foreach ($liverieFile in $liveriesFiles)
+		  spriteset(spriteset_mu_${id}_${liverieFile}, "gfx/${imageFile}_${liverieFile}.png") {
+		    template_s${length}(1, 1)
+		  }
+		  	#set($i = 0)
+			#foreach ($wagon in  $disp)
+			    #if( $foreach.count <= $diff)
+		  			#set($yPos = $i*32)
+					#if ($yPos == 0)
+						#set($yPos = 1)
+					#end
+					spriteset(spriteset_mu_${id}_${liverieFile}_$i,  "gfx/${imageFile}_${liverieFile}.png") {
+					template_s$mu_length.get($i)(1, ${yPos})
+					#set($i = $i + 1)
+					}
+				#end
+			#end
+			  //= Callbacks
+				switch(FEAT_TRAINS, SELF, switch_mu_${id}_${liverieFile}_position, (position_in_vehid_chain % $disp.size())) {
+				  #set($i = 0)
+				  #foreach ($part in  $disp)
+				    $i:spriteset_mu_${id}_${liverieFile}_$part;
+				  #set($i = $i+1)
+				  #end
+}
+
+
+			  switch(FEAT_TRAINS, SELF, switch_mu_${id}_livery, cargo_subtype) {
+			    0: switch_mu_${id}_position;
+			  #foreach ($liveriesFile in  $liveriesFiles)
+			    $foreach.count: switch_mu_${id}_${liveriesFile}_position;
+			  #end
+			  }
+			
+			  // CARGO SUBTYPE CALLBACK
+			  switch(FEAT_TRAINS, SELF, switch_mu_${id}_subtype_text, cargo_subtype) {
+			    0: return string(str_mu_${id}_liv);
+			  #foreach ($liveriesFile in  $liveriesFiles)
+			    $foreach.count: return string(str_mu_${id}_liv_${liveriesFile});
+			  #end
+			    return CB_RESULT_NO_TEXT;
+			  }
+	  
+	  #end
+  #end
+
+
+#else
+// Engine sprite
+	#muSpriteSet($id, $imageFile, $length)
+	#set($i = 0)
+	#foreach ($wagon in  $disp)
+		    #if( $foreach.count <= $diff)
+	
+		  		#set($yPos = $i*32)
+				#if ($yPos == 0)
+					#set($yPos = 1)
+				#end
+				spriteset(spriteset_mu_${id}_$i,  "gfx/${imageFile}.png") {
+				template_s$mu_length.get($i)(1, ${yPos})
+				#set($i = $i + 1)
+		
+				}
+			#end
+	#end
+#end
+
+
 
 /*
 * ARTICULATED VEHICLE CALLBACK
