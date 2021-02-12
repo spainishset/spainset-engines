@@ -1,7 +1,8 @@
 "id","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","engine","gauge","service","length","imageFile","effect","info","liveriesNumber","liveriesFiles","liveriesYears"
 "250_alemana","date(1982,01,01) ",20,21,53,230,"160 km/h","4600 hpM","124 ton",0.3373930217,"electric","iberian","fp",8,"250/250",0,0,1,"[merc, aya, 2cc]",
 "251_japonesa_y_media","date(1982,01,01) ",20,21,53,230,"160 km/h","4650 hpM","138 ton",0.3349600709,"electric","iberian","fp",8,"251/251",0,0,2,"[merc, merc_ba, merc_2005, 2cc]",
-"252_pre_eurosprinter","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","iberian","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]",
+"252_eurosprinter_iberian","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","iberian","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]",
+"252_eurosprinter_standard","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","standard","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]",
 "260_ex6000","date(1923,01,01) ",20,21,53,230,"60 km/h","260 hpM","80 ton",0.1280000000,"electric","iberian","fp",6,"260/260",0,1,1,"[2cc]",
 "261_paloma","date(1924,01,01) ",20,21,53,230,"55 km/h","1344 hpM","75 ton",0.1280000000,"electric","iberian","fp",6,"261/261",0,0,1,"[2cc]",
 "269_japonesa","date(1973,01,01) ",20,21,53,230,"160 km/h","3100 hpM","88 ton",0.2319109461,"electric","iberian","fp",6,"269/269",0,0,-2,"[gd, merc]",

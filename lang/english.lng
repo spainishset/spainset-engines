@@ -75,7 +75,8 @@ str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
 str_electric_251_japonesa_y_media_name:251 "Japonesa y Media"
-str_electric_252_pre_eurosprinter_name:252
+str_electric_252_eurosprinter_iberian_name:252 "EuroSprinter"
+str_electric_252_eurosprinter_standard_name:252 "EuroSprinter"
 str_electric_260_ex6000_name:260
 str_electric_261_paloma_name:261 "Paloma"
 str_electric_269_japonesa_name:269 "Japonesa"
@@ -113,12 +114,19 @@ str_electric_251_japonesa_y_media_liv_merc_ba: Mercancías (Banda azul)
 str_electric_251_japonesa_y_media_liv_merc_2005: Mercancías (2005)
 str_electric_251_japonesa_y_media_liv_2cc: (2CC)
 
-str_electric_252_pre_eurosprinter_liv: AVE (Original)
-str_electric_252_pre_eurosprinter_liv_ldba: Larga distancia banda azul
-str_electric_252_pre_eurosprinter_liv_merc: Mercancías
-str_electric_252_pre_eurosprinter_liv_pas_2005: Pasajeros (2005)
-str_electric_252_pre_eurosprinter_liv_merc_2005: Mercancías (2005)
-str_electric_252_pre_eurosprinter_liv_2cc: (2CC)
+str_electric_252_eurosprinter_iberian_liv: AVE (Original)
+str_electric_252_eurosprinter_iberian_liv_ldba: Larga distancia banda azul
+str_electric_252_eurosprinter_iberian_liv_merc: Mercancías
+str_electric_252_eurosprinter_iberian_liv_pas_2005: Pasajeros (2005)
+str_electric_252_eurosprinter_iberian_liv_merc_2005: Mercancías (2005)
+str_electric_252_eurosprinter_iberian_liv_2cc: (2CC)
+
+str_electric_252_eurosprinter_standard_liv: AVE (Original)
+str_electric_252_eurosprinter_standard_liv_ldba: Larga distancia banda azul
+str_electric_252_eurosprinter_standard_liv_merc: Mercancías
+str_electric_252_eurosprinter_standard_liv_pas_2005: Pasajeros (2005)
+str_electric_252_eurosprinter_standard_liv_merc_2005: Mercancías (2005)
+str_electric_252_eurosprinter_standard_liv_2cc: (2CC)
 
 str_electric_260_ex6000_liv: (Original)
 str_electric_260_ex6000_liv_2cc: (2CC)
@@ -162,7 +170,8 @@ str_mu_594_zodiac_liv_new: (Otra)
 str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system. Also know as "ALCO"
 str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
 
-str_electric_252_pre_eurosprinter_info:Known as "Pre-EuroSprinter" by the manufacturer
+str_electric_252_eurosprinter_iberian_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
+str_electric_252_eurosprinter_standard_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
 str_electric_260_ex6000_info:Called 6000 according to old RENFE numeration system
 str_electric_270_ex7000_info:Called 7000 according to old RENFE numeration system
 str_electric_276_francesa_info:Called 7600 according to old RENFE numeration system
