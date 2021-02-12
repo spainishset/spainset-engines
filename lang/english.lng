@@ -66,6 +66,7 @@ str_steam_151_santafe_name: 1-5-1 "Santa Fe"
 str_steam_141_mikado_name: 1-4-1 "Mikado"
 str_steam_242_confederacion_name: 2-4-2 "Confederación"
 
+str_diesel_314_ex1400_name:314
 str_diesel_316_marilyn_name:316 "Marilyn"
 str_diesel_333_rambo_name:333 "Rambo"
 str_diesel_334_caracol_name:334 "Caracol de carreras"
@@ -98,6 +99,9 @@ str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
 str_mu_talgo_xxi_name:Talgo XXI
 
 # Liveries text
+
+str_diesel_314_ex1400_liv: (Original)
+str_diesel_314_ex1400_liv_2cc: (Colores de empresa)
 
 str_diesel_316_marilyn_liv: (Original)
 str_diesel_316_marilyn_liv_green: Verde
