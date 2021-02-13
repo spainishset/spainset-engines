@@ -8,4 +8,4 @@
 "231_pacific","date(1928,01,01) ",45,20,14,70,"125 km/h","2079 hpM","130 ton",0.2966938775,"steam","iberian","eplf",7,"Verraco/Verraco",4,3,-3,0
 "151_santafe","date(1942,01,01) ",45,20,18,140,"100 km/h","4113 hpM","213 ton",0.2965408162,"steam","iberian","hf",7,"Verraco/Verraco",4,3,-3,0
 "141_mikado","date(1917,01,01) ",45,20,23,125,"115 km/h","2028 hpM","150 ton",0.2965918367,"steam","iberian","fp",9,"mikado/mikado",4,6,-3,0
-"242_confederacion","date(1956,01,01) ",45,20,20,176,"125 km/h","4563 hpM","213 ton",0.0992346939,"steam","iberian","ephf",7,"Verraco/Verraco",4,3,-3,0
+"242_confederacion","date(1956,01,01) ",45,20,20,176,"125 km/h","4563 hpM","213 ton",0.0992346939,"steam","iberian","ephf",9,"confederacion/confederacion",4,6,-3,0
