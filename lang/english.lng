@@ -68,10 +68,10 @@ str_steam_242_confederacion_name: 2-4-2 "Confederación"
 
 str_diesel_314_ex1400_name:314
 str_diesel_316_marilyn_name:316 "Marilyn"
+str_diesel_321_chata_name:321 "Chata"
 str_diesel_333_rambo_name:333 "Rambo"
 str_diesel_334_caracol_name:334 "Caracol de carreras"
 str_diesel_340_huevo_name:340 "Huevo"
-str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 
 str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
@@ -103,12 +103,16 @@ str_mu_talgo_xxi_name:Talgo XXI
 str_diesel_314_ex1400_liv: (Original)
 str_diesel_314_ex1400_liv_2cc: (Colores de empresa)
 
-str_diesel_340_huevo_liv: (Original)
-str_diesel_340_huevo_liv_2cc: (Colores de empresa)
-
 str_diesel_316_marilyn_liv: (Original)
 str_diesel_316_marilyn_liv_green: Verde
 str_diesel_316_marilyn_liv_2cc: (Colores de empresa)
+
+str_diesel_321_chata_liv: (Original)
+str_diesel_321_chata_liv_merc: Mercancías
+str_diesel_321_chata_liv_2cc: (Colores de empresa)
+
+str_diesel_340_huevo_liv: (Original)
+str_diesel_340_huevo_liv_2cc: (Colores de empresa)
 
 str_electric_250_alemana_liv: (Original)
 str_electric_250_alemana_liv_merc: Mercancías
@@ -174,8 +178,11 @@ str_mu_594_zodiac_liv_new: (Otra)
 
 # Extra info
 
-str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system. Also know as "ALCO"
+str_diesel_314_ex1400_info:Called 1400 according to old RENFE numeration system
+str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system
+str_diesel_321_chata_info:Called 2100 according to old RENFE numeration system
 str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
+str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 
 str_electric_252_eurosprinter_iberian_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
 str_electric_252_eurosprinter_standard_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
