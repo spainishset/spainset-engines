@@ -14,7 +14,7 @@ template template_purchase(x, y) {
 
 /*
  * The templates below are derived from the 2cc trainset.
- * Difference though is that the first four sprites should be aligned in 
+ * Difference though is that the first four sprites should be aligned in
  * the bottom right of the blue boxes and the last four sprites in the
  * bottom left. Correct positioning ingame is then done by templates below.
 */
@@ -22,14 +22,14 @@ template template_purchase(x, y) {
 // Size 9
 template template_s9(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
-    [x    , y,  8, 24,  -3, -12]
-    [x+9  , y, 26, 20, -14, -12]
-    [x+36 , y, 36, 13, -16, -9]
-    [x+73 , y, 26, 20,  -6, -9]
-    [x+100, y,  8, 24,  -3, -12]
-    [x+109, y, 26, 20, -14, -12]
-    [x+136, y, 33, 13, -16, -9]
-    [x+173, y, 26, 20,  -6, -11]
+    [x    , y,  8, 27,  -3, -14]     // Norte
+    [x+9  , y, 26, 23, -14, -16]     // NO
+    [x+36 , y, 36, 16, -19, -12]     // Oeste
+    [x+73 , y, 26, 23,  -6, -13]     // SO
+    [x+100, y,  8, 27,  -3, -10]     // Sur
+    [x+109, y, 26, 23, -18, -13]     // SE
+    [x+136, y, 33, 16, -17, -12]     // Este
+    [x+173, y, 26, 23, -10, -16]     // NE
 }
 
 // Size 8
