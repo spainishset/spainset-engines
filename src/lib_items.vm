@@ -78,6 +78,9 @@
     	#end  
     	cargo_allow_refit: [PASS];
     	refit_cost: 0;
+    #elseif (${engineType}=="mu")  
+    	cargo_capacity: ${cargocap};
+    	cargo_allow_refit: [];  
     #end
 #end
 
