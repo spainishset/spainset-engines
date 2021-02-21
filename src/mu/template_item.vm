@@ -45,7 +45,7 @@ item(FEAT_TRAINS, item_mu_${id}) {
 
 graphics {
     purchase: spriteset_mu_${id}_purchase;
-    #extraInfo("mu", $id, $info, $gauge)
+    #extraInfo("mu", $id, $info, $gauge, $disp)
 
     length: switch_mu_${id}_length;
    	articulated_part: switch_mu_${id}_articulated;

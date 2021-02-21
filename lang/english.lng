@@ -15,6 +15,30 @@ str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, i
 
 str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
 str_purchase_info           :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+str_purchase_mu             :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
+str_purchase_info_mu        :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+
+str_1  :1
+str_2  :2
+str_3  :3
+str_4  :4
+str_5  :5
+str_6  :6
+str_7  :7
+str_8  :8
+str_9  :9
+str_10 :10
+str_11 :11
+str_12 :12
+str_13 :13
+str_14 :14
+str_15 :15
+str_16 :16
+str_17 :17
+str_18 :18
+str_19 :19
+str_20 :20
+
 
 str_purchase_gauge_narrow   :narrow
 str_purchase_gauge_standard :standard

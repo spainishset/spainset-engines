@@ -52,12 +52,20 @@
 #end
 
 ## Macro para informacion extra
-#macro(extraInfo $engineType, $id, $info, $gauge)
-    #if (${info}==0)
-      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
-    #else
-      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
-    #end
+#macro(extraInfo $engineType, $id, $info, $gauge, $disp)
+    #if (${engineType}!="mu")
+	    #if (${info}==0)
+	      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+	    #else
+	      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
+	    #end
+	#else
+	    #if (${info}==0)
+	      additional_text: return string(str_purchase_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}));
+	    #else
+	      additional_text: return string(str_purchase_info_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
+	    #end
+	#end
 #end
 
 ## Macro para refit en "property"

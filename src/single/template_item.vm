@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_${engine}_${id}) {
 
 graphics {
     purchase: spriteset_${engine}_${id}_purchase;
-    #extraInfo($engine, $id, $info, $gauge)
+    #extraInfo($engine, $id, $info, $gauge, 0)
     
     #refitGraphics($engine, $liveriesNumber)
   }
