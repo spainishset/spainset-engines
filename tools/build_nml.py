@@ -107,28 +107,19 @@ def main():
     print(data)
 
   # Generate all the vehicle files from CSV data
-  itemTemplate = airspeed.Template(codecs.open(f'src/{engine}/template_item.vm', 'r', 'utf-8').read())
-  graphicsTemplate = airspeed.Template(codecs.open(f'src/{engine}/template_graphics.vm', 'r', 'utf-8').read())
 
   ids=[]
   engines=[]
   for engineData in data:
-    if engine == "steam" and engineData['id'] == "282_garrafeta":
-      garrafetaItemTemplate = airspeed.Template(codecs.open(f'src/{engine}/garrafeta_item.vm', 'r', 'utf-8').read())
-      garrafetaGraphicsTemplate = airspeed.Template(codecs.open(f'src/{engine}/garrafeta_graphics.vm', 'r', 'utf-8').read())
+    template = engineData['template']
+    itemTemplate = airspeed.Template(codecs.open(f'src/{engine}/{template}_item.vm', 'r', 'utf-8').read())
+    graphicsTemplate = airspeed.Template(codecs.open(f'src/{engine}/{template}_graphics.vm', 'r', 'utf-8').read())
 
-      outputItemFilename = f"{engineData['id']}_item.pnml"
-      parseTemplate(garrafetaItemTemplate, engineData, engine, outputItemFilename);
+    outputItemFilename = f"{engineData['id']}_item.pnml"
+    parseTemplate(itemTemplate, engineData, engine, outputItemFilename);
 
-      outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
-      parseTemplate(garrafetaGraphicsTemplate, engineData, engine, outputGraphicsFilename);
-
-    else:
-      outputItemFilename = f"{engineData['id']}_item.pnml"
-      parseTemplate(itemTemplate, engineData, engine, outputItemFilename);
-
-      outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
-      parseTemplate(graphicsTemplate, engineData, engine, outputGraphicsFilename);
+    outputGraphicsFilename = f"{engineData['id']}_graphics.pnml"
+    parseTemplate(graphicsTemplate, engineData, engine, outputGraphicsFilename);
 
     ids.append(engineData['id'])
     engines.append(engineData['engine'])
