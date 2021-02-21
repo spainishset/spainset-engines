@@ -31,6 +31,15 @@ grf {
       def_value: 1;
     }
   }
+  
+  param 2 {
+    param_restr_liv {
+      type:   bool;
+      name:   string(str_param_restr_liv);
+      desc:   string(str_param_restr_liv_desc);
+      def_value: 1;
+    }
+  }
 }
 
 //check for OpenTTD

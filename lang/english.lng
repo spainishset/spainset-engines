@@ -7,10 +7,14 @@ str_grf_url                 :https://github.com/spainishset/spainset-engines
 # Parameters
 
 str_param_disable_original          :Keep original engines and wagons
-str_param_disable_original_desc     :By default this set disables all original rail, monorail and maglev enignes and wagons. You can use this parameter to keep the original vehicles. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
+str_param_disable_original_desc     :By default this set disables all original rail, monorail and maglev engines and wagons. You can use this parameter to keep the original vehicles. However, if a different NewGRF disables the original vehicles, then this setting can not re-enable them.
 
 str_param_add_tracks            :Add Spanish trackways
-str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, iberian (both electified and unelectrified), and standard gauge high speed electricified tracks.
+str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, iberian (both electrified and unelectrified), and standard gauge high speed electricified tracks.
+
+str_param_restr_liv            :Only deliveries by year
+str_param_restr_liv_desc       :Only deliveries by year: if enabled, only year-dependent deliveries will be available
+
 # Purchase texts
 
 str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
@@ -123,6 +127,8 @@ str_mu_598_huevo_kinder_name:598 "Huevo Kinder"
 str_mu_talgo_xxi_name:Talgo XXI
 
 # Liveries text
+
+str_purchase_year: (According to purchase year)
 
 str_diesel_314_ex1400_liv: (Original)
 str_diesel_314_ex1400_liv_2cc: (Colores de empresa)
