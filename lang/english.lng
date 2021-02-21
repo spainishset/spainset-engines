@@ -12,6 +12,10 @@ str_param_disable_original_desc     :By default this set disables all original r
 str_param_add_tracks            :Add Spanish trackways
 str_param_add_tracks_desc       :Add Spanish trackways. This are narrow gauge, iberian (both electrified and unelectrified), and standard gauge high speed electricified tracks.
 
+str_param_add_steam             :Add Steam engines
+str_param_add_diesel            :Add Diesel engines
+str_param_add_electric          :Add Electric engines
+
 str_param_restr_liv            :Only deliveries by year
 str_param_restr_liv_desc       :Only deliveries by year: if enabled, only year-dependent deliveries will be available
 

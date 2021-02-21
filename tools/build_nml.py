@@ -111,6 +111,7 @@ def main():
   graphicsTemplate = airspeed.Template(codecs.open(f'src/{engine}/template_graphics.vm', 'r', 'utf-8').read())
 
   ids=[]
+  engines=[]
   for engineData in data:
     if engine == "steam" and engineData['id'] == "282_garrafeta":
       garrafetaItemTemplate = airspeed.Template(codecs.open(f'src/{engine}/garrafeta_item.vm', 'r', 'utf-8').read())
@@ -130,10 +131,11 @@ def main():
       parseTemplate(graphicsTemplate, engineData, engine, outputGraphicsFilename);
 
     ids.append(engineData['id'])
+    engines.append(engineData['engine'])
 
   # Generate the include all pnml file
   includeAllTemplate = airspeed.Template(codecs.open(f'src/{engine}/template_include.vm', 'r', 'utf-8').read())
-  parseTemplate(includeAllTemplate, {'ids': ids}, engine, 'include_all.pnml');
+  parseTemplate(includeAllTemplate, {'ids': ids, 'engines': engines}, engine, 'include_all.pnml');
 
 
 if __name__ == "__main__":

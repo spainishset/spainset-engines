@@ -14,7 +14,7 @@ grf {
   url: string(str_grf_url);
   version: NEWGRF_VERSION;
   min_compatible_version: 0;
-  param 0 {
+  param {
     param_disable_original {
       type:   bool;
       name:   string(str_param_disable_original);
@@ -23,7 +23,7 @@ grf {
     }
   }
 
-  param 1 {
+  param {
     param_add_tracks {
       type:   bool;
       name:   string(str_param_add_tracks);
@@ -31,8 +31,29 @@ grf {
       def_value: 1;
     }
   }
-  
-  param 2 {
+
+  param {
+    param_add_steam {
+      type:   bool;
+      name:   string(str_param_add_steam);
+      bit: 1;
+      def_value: 1;
+    }
+    param_add_diesel {
+      type:   bool;
+      name:   string(str_param_add_diesel);
+      bit: 2;
+      def_value: 1;
+    }
+    param_add_electric {
+      type:   bool;
+      name:   string(str_param_add_electric);
+      bit: 3;
+      def_value: 1;
+    }
+  }
+
+  param {
     param_restr_liv {
       type:   bool;
       name:   string(str_param_restr_liv);
