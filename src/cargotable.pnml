@@ -1,17 +1,65 @@
 /*
  *  Copyright (C) 2021 The Spanish Trainset
- *  Based on The Dutch Trainset 2 files and NewGRF build framework
+ *  Based on The Dutch Trainset 2, xUSSR files and NewGRF build framework
  *  This file is part of The Spanish Transet
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
  *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+// List of cargo labels, including standard, toyland, ECS and FIRS
+
 cargotable {
-    PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE,
-    WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY,
-    CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, FRVG, GLAS, GRVL, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC,
-    RFPR, SAND, SCMT, SGBT, SGCN, SULP, TOUR, VEHI, WDPR, WOOL, JAVA
+  // Passengers
+  PASS, TOUR,
+  // Animals : unknow
+  YETI, YETY,
+  // Aninmals: Livestock
+  LVST,
+  // Covered: Products
+  GOOD, BOOM,
+  // Indoor: Materials
+  PAPR, CERA, GLAS, CMNT,
+  // Covered: Raw
+  FICR, WOOL,
+  // Covered: Values
+  MAIL, VALU, DIAM, GOLD,
+  // Liquids: Fuel
+  OIL_, PETR, RFPR, FUEL,
+  // Liquids: Materials
+  PLST, DYES, PLAS,
+  // Liquids: Chemicals
+  ACID, CHLO, CTAR,
+  // Liquids: Raw materials
+  RUBR, BUBL,
+  // Liquids: Food
+  EOIL, WATR, COLA,
+  // Food: Products
+  FOOD, BEER, FZDR,
+  // Food: Food raw materials
+  FISH, MILK, SWET, SUGR, RSGR, SALT,
+  // Food: Plants
+  FRUT, FRVG, SGBT, SGCN, CASS, BEAN, NUTS, JAVA,
+  // Food: Grain
+  GRAI, WHEA, MAIZ, CERE, OLSD, TOFF, CTCD,
+  // Bulk: Materials
+  FERT, RCYC, WSTE, SCMT, SCRP, CBLK, SASH,
+  // Loose: Species
+  COAL, COKE, SAND, GRVL, SLAG, PEAT,
+  // Loose: Clay
+  LIME, CLAY, QLME, KAOL,
+  // Loose: Ores
+  IORE, CORE, AORE, SULP, MNO2, PORE, NITR, PHOS, POTA, FECR,
+  // Bulck
+  BDMT, BRCK,
+  // Bulck: Wood
+  WOOD, TWOD, WDPR, BATT,
+  // Bulk: Steel
+  STEL, COPR, PIPE, METL, ZINC, STAL, STST, STCB, CSTI, IRON,
+  // Piece cargo
+  VEHI, TOYS, ENSP, FMSP, MNSP, VPTS, VBOD, POWR, VENG, TIRE,
+  // Other
+  URAN, GEAR
 }
 
 //TODO: establecer definiciones de cargas:   https://dev.openttdcoop.org/projects/dutchtrains/repository/entry/src/cargorefits.pnml
