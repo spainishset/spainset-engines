@@ -52,6 +52,6 @@ railtypetable {
     SDAE, SDBE, SDCE, SDDE, // Standard gauge, higher? speed, electrified
     HSTR, EHIG, DBHS,  // Other high speed electrified names
     MGLV], // Maglev as last fallback (making compatible with the old "High speed railway" grf)
-   variableNotElectrified : [VGNE],
-   variableElectrified : [VGEL]
+  variableNotElectrified : [VGNE],
+  variableElectrified : [VGEL]
 }

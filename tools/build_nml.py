@@ -6,7 +6,7 @@ def parseArguments():
   import argparse
 
   parser = argparse.ArgumentParser(prog='build_nml', description='Build NML files from Velocity templates.')
-  parser.add_argument("engine", choices=['steam', 'single', 'mu'])
+  parser.add_argument("engine", choices=['steam', 'single', 'mu', 'wagons'])
   parser.add_argument("-d","--debug", action='store_const', const=True, help="Enables the debug mode.")
   args = parser.parse_args()
   return [args.debug, args.engine]

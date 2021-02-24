@@ -9,97 +9,110 @@
 
 ##Macro para tipos y anchos de via
 #macro(trackType $engineType, $gauge)
-	#if ($gauge == "iberian")
-		#if ($engineType == "electric")
-			track_type: ibearianElectrified;
-		#else
-			track_type: ibearianNotElectrified;
-		#end
-	#elseif ($gauge == "narrow")
-		#if ($engineType == "electric")
-			track_type: narrowElectrified;
-		#else
-			track_type: narrowNoElectrified;
-		#end
-	#elseif ($gauge == "variable")
-		#if ($engineType == "electric")
-			track_type: variableElectrified;
-		#else
-			track_type: variableNotElectrified;
-		#end
-	#else
-		track_type: uicHighSpeedElectrified;
-	#end
+  #if ($gauge == "iberian")
+    #if ($engineType == "electric")
+      track_type: ibearianElectrified;
+    #else
+      track_type: ibearianNotElectrified;
+    #end
+  #elseif ($gauge == "narrow")
+    #if ($engineType == "electric")
+      track_type: narrowElectrified;
+    #else
+      track_type: narrowNoElectrified;
+    #end
+  #elseif ($gauge == "variable")
+    #if ($engineType == "electric")
+      track_type: variableElectrified;
+    #else
+      track_type: variableNotElectrified;
+    #end
+  #else
+    track_type: uicHighSpeedElectrified;
+  #end
+#end
+
+##Macro para tipos y anchos de via de vagones
+#macro(wagonTrackType $gauge)
+  #if ($gauge == "iberian")
+    track_type: ibearianNotElectrified;
+  #elseif ($gauge == "narrow")
+    track_type: narrowNoElectrified;
+  #elseif ($gauge == "variable")
+    track_type: variableNotElectrified;
+  #else
+    track_type: uicHighSpeedElectrified;
+  #end
 #end
 
 ##Macro para tipo de vehiculo
 #macro(engineType $engineType)
-	#if (${engine}=="steam")
-		running_cost_base: RUNNING_COST_STEAM;
-		engine_class: ENGINE_CLASS_STEAM;
-		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
-	#elseif (${engine}=="diesel")
-		running_cost_base: RUNNING_COST_DIESEL;
-		engine_class: ENGINE_CLASS_DIESEL;
-		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, ${effect}, DISABLE_WAGON_POWER);
-	#elseif(${engine}=="electric")
-		running_cost_base: RUNNING_COST_ELECTRIC;
-		engine_class: ENGINE_CLASS_ELECTRIC;
-		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
-	#else
-	
-	#end
+  #if (${engine}=="steam")
+    running_cost_base: RUNNING_COST_STEAM;
+    engine_class: ENGINE_CLASS_STEAM;
+    visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, ${effect}, DISABLE_WAGON_POWER);
+  #elseif (${engine}=="diesel")
+    running_cost_base: RUNNING_COST_DIESEL;
+    engine_class: ENGINE_CLASS_DIESEL;
+    visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, ${effect}, DISABLE_WAGON_POWER);
+  #elseif(${engine}=="electric")
+    running_cost_base: RUNNING_COST_ELECTRIC;
+    engine_class: ENGINE_CLASS_ELECTRIC;
+    visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, ${effect}, DISABLE_WAGON_POWER);
+  #else
+
+  #end
 #end
 
 ## Macro para informacion extra
 #macro(extraInfo $engineType, $id, $info, $gauge, $disp)
-    #if (${engineType}!="mu")
-	    #if (${info}==0)
-	      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
-	    #else
-	      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
-	    #end
-	#else
-	    #if (${info}==0)
-	      additional_text: return string(str_purchase_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}));
-	    #else
-	      additional_text: return string(str_purchase_info_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
-	    #end
-	#end
+  #if (${engineType}!="mu")
+    #if (${info}==0)
+      additional_text: return string(str_purchase, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}));
+    #else
+      additional_text: return string(str_purchase_info, string(str_purchase_gauge_${gauge}),string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
+    #end
+  #else
+    #if (${info}==0)
+      additional_text: return string(str_purchase_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}));
+    #else
+      additional_text: return string(str_purchase_info_mu, string(str_purchase_gauge_${gauge}), string(str_$disp.size()), string(str_purchase_svc_${service}), string(str_${engineType}_${id}_info));
+    #end
+  #end
 #end
 
 ## Macro para refit en "property"
 #macro(refitProperty $engineType, $liveriesNumber)
-    #if (${liveriesNumber}!=0)
-    	#if (${engineType}=="mu")  
-			cargo_capacity: ${cargocap};  
-    	#else
-      		cargo_capacity: 1;
-    	#end  
-    	cargo_allow_refit: [PASS];
-    	refit_cost: 0;
-    #elseif (${engineType}=="mu")  
-    	cargo_capacity: ${cargocap};
-    	cargo_allow_refit: [];  
+  #if (${liveriesNumber}!=0)
+    #if (${engineType}=="mu")
+    cargo_capacity: ${cargocap};
+    #else
+        cargo_capacity: 1;
     #end
+    cargo_allow_refit: [PASS];
+    refit_cost: 0;
+  #elseif (${engineType}=="mu")
+    cargo_capacity: ${cargocap};
+    cargo_allow_refit: [];
+  #end
 #end
 
 ## Macro para refit en "graphics"
 #macro(refitGraphics $engineType, $liveriesNumber)
-    #if (${liveriesNumber}!=0)
-    	#if (${engineType}=="mu")
-    		## Empty  
-    	#else
-			cargo_capacity: return 0;
-    	#end
-    	
-    	cargo_subtype_text: switch_${engineType}_${id}_subtype_text;
-		switch_${engineType}_${id}_livery;
+  #if (${liveriesNumber}!=0)
+    #if (${engineType}=="mu")
+      ## Empty
     #else
-        #if (${engineType}=="mu")
-        	switch_mu_${id}_position;  
-    	#else
-			default: spriteset_${engine}_${id};
-    	#end
+    cargo_capacity: return 0;
     #end
+
+    cargo_subtype_text: switch_${engineType}_${id}_subtype_text;
+    switch_${engineType}_${id}_livery;
+  #else
+      #if (${engineType}=="mu")
+        switch_mu_${id}_position;
+    #else
+    default: spriteset_${engine}_${id};
+    #end
+  #end
 #end
