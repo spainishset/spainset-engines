@@ -237,3 +237,7 @@ str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains tha
 str_mu_120_chipiron_info:Also nicknamed "sepia"
 str_mu_590_talguillo_info:Called 9000 according to old RENFE numeration system
 str_mu_598_huevo_kinder_info:Also nicknamed "Nexios"
+
+# Wagons
+str_wagon_gen0_tanker_name: Small liquid tanquer
+

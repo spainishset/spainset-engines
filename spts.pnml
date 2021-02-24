@@ -30,4 +30,6 @@
 #include "generated/single/include_all.pnml"
 #include "generated/mu/include_all.pnml"
 
+// Wagons
+#include "generated/wagons/include_all.pnml"
 

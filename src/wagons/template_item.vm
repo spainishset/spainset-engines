@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_wagon_${id}) {
 
     #refitableCargoClases($cargoType)
     non_refittable_cargo_classes: 0;
-    #cargoAllowRefit($cargoType);
-    #cargoDisallowRefit($cargoType);
+    #cargoAllowRefit($cargoType)
+    #cargoDisallowRefit($cargoType)
 
     tractive_effort_coefficient: 0;
     air_drag_coefficient: 0;
@@ -49,14 +49,16 @@ item(FEAT_TRAINS, item_wagon_${id}) {
     engine_class: ENGINE_CLASS_DIESEL;
     visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 
-    #trackType($engine, $gauge)
+    #wagonTrackType($gauge)
 
     misc_flags: bitmask(TRAIN_FLAG_AUTOREFIT);
+  }
+
+  graphics {
+    purchase: spriteset_wagon_${id}_purchase;
+
+    cargo_capacity: return ${capacity};
+    default: spriteset_${engine}_${id};
+  }
 }
 
-graphics {
-  purchase: spriteset_wagon_${id}_purchase;
-
-  cargo_capacity: return ${capacity};
-  default: spriteset_${engine}_${id};
-}

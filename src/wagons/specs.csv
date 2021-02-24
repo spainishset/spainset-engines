@@ -1,2 +1,2 @@
-"id","template","engine","Date","modelLife","vehicleLife","loadingSpeed","costFactor","speed","capacity","weight","gauge","length","cargoType","imageFile"
-"gen0_tanker","template","wagon","date(1820, 1, 1) ",158,75,"medium",16,"50 km/h",10,"7 ton","iberian",4,"liquid","wagons/gen0_tanker/gen0_tanker"
+"id","template","engine","date","modelLife","vehicleLife","loadingSpeed","costFactor","speed","capacity","weight","gauge","length","cargoType","imageFile"
+"gen0_tanker","template","wagon","date(1820, 1, 1) ",158,75,"medium",16,"50 km/h",10,"7 ton","iberian",5,"liquid","wagons/gen0_tanker/gen0_tanker"
