@@ -26,21 +26,12 @@
     #engineSpriteSetLiveries($engine, $id, $liveriesFiles, $imageFile, $length)
   #end
 
-  //= Callbacks
 
-  switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_livery, cargo_subtype) {
-    0: spriteset_${engine}_${id};
-  #foreach ($liveriesFile in  $liveriesFiles)
-    $foreach.count: spriteset_${engine}_${id}_${liveriesFile};
-  #end
-  }
+#callBackSubtypeSprites($id, ${engine}, $liveriesFiles, $liveriesYears)			
 
-  // CARGO SUBTYPE CALLBACK
-  switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_subtype_text, cargo_subtype) {
-    0: return string(str_${engine}_${id}_liv);
-  #foreach ($liveriesFile in  $liveriesFiles)
-    $foreach.count: return string(str_${engine}_${id}_liv_${liveriesFile});
-  #end
-    return CB_RESULT_NO_TEXT;
-  }
+#callBackSubtypeLivery($id, ${engine}, $liveriesFiles)			
+	
+#callBackSubtypeText($id, ${engine}, $liveriesFiles)
+
+
 #end

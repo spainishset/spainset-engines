@@ -102,13 +102,13 @@
 	#end
 
 	switch(FEAT_TRAINS, SELF, switch_mu_${id}_livery_year, build_year) {
-		#set($i = 1)
-		#set($j = 2)
+		#set($i = 2)
+		#set($j = 3)
 		0..$liveriesYears.get($i): switch_mu_${id}_position;
 		#foreach ($livery in  $liveriesFiles)
 			$liveriesYears.get($i)..$liveriesYears.get($j): switch_mu_${id}_${livery}_position;
-			#set($i = $i+1)
-			#set($j = $j+1)
+			#set($i = $i+2)
+			#set($j = $j+2)
 		#end
 	}
 	
@@ -124,27 +124,9 @@
 		#end
 	}
 
-	switch(FEAT_TRAINS, SELF, switch_mu_${id}_livery_text_year, build_year) {
-		#set($i = 1)
-		#set($j = 2)
-		0..$liveriesYears.get($i): return string(str_mu_${id}_liv);
-		#foreach ($livery in  $liveriesFiles)
-			$liveriesYears.get($i)..$liveriesYears.get($j): return string(str_mu_${id}_liv_${livery});
-			#set($i = $i+1)
-			#set($j = $j+1)
-		#end
-	}		
+	#callBackSubtypeLivery($id, "mu", $liveriesFiles)			
 	
-		switch(FEAT_TRAINS, SELF, switch_mu_${id}_subtype_text, cargo_subtype + 1000 * param_restr_liv) {
-			0: return string(str_purchase_year);
-			1: return string(str_mu_${id}_liv);
-			#foreach ($livery in  $liveriesFiles)
-				#set($counter = $foreach.count + 1)			
-				$counter: return string(str_mu_${id}_liv_${livery});
-			#end
-			1000: switch_mu_${id}_livery_text_year;
-			return CB_RESULT_NO_TEXT;
-		}
+	#callBackSubtypeText($id, "mu", $liveriesFiles)
 #end
 
 
@@ -163,4 +145,57 @@
 		## Only default livery, no required actions	
 	#end
 	
+#end
+
+
+##Macro para los callback de texto de esquemas segun anho
+#macro(callBackSubtypeText $id, $engineType, $liveriesFiles)
+		switch(FEAT_TRAINS, SELF, switch_${engineType}_${id}_subtype_text, cargo_subtype + 1000 * param_restr_liv) {
+			0: return string(str_purchase_year);
+			1: return string(str_${engineType}_${id}_liv);
+			#foreach ($livery in  $liveriesFiles)
+				#set($counter = $foreach.count + 1)			
+				$counter: return string(str_${engineType}_${id}_liv_${livery});
+			#end
+			1000: switch_${engineType}_${id}_livery_text_year;
+			return CB_RESULT_NO_TEXT;
+		}
+#end
+
+
+##Macro para los callback de texto de esquemas segun anho
+#macro(callBackSubtypeLivery $id, $engineType, $liveriesFiles)
+	switch(FEAT_TRAINS, SELF, switch_${engineType}_${id}_livery_text_year, build_year) {
+		$liveriesYears.get(0)..$liveriesYears.get(1): return string(str_${engineType}_${id}_liv);
+		#set($i = 2)
+		#set($j = 3)
+		#foreach ($livery in  $liveriesFiles)
+			$liveriesYears.get($i)..$liveriesYears.get($j): return string(str_${engineType}_${id}_liv_${livery});
+			#set($i = $i+2)
+			#set($j = $j+2)
+		#end
+	}	
+#end
+
+##Macro para los callback de sprites de esquemas segun anho (locomotoras simples)
+#macro(callBackSubtypeSprites $id, $engineType, $liveriesFiles, $liveriesYears)
+	switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_livery_year, build_year) {
+		$liveriesYears.get(0)..$liveriesYears.get(1): spriteset_${engine}_${id};
+		#set($i = 2)
+		#set($j = 3)
+		#foreach ($livery in  $liveriesFiles)
+			$liveriesYears.get($i)..$liveriesYears.get($j): spriteset_${engine}_${id}_${livery};
+			#set($i = $i+2)
+			#set($j = $j+2)
+		#end
+	}	
+	
+	switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_livery, cargo_subtype) {
+		0: switch_${engine}_${id}_livery_year;
+		1: spriteset_${engine}_${id};
+		#foreach ($liveriesFile in  $liveriesFiles)
+			#set($counter = $foreach.count + 1)			
+			$counter:spriteset_${engine}_${id}_${liveriesFile};
+		#end
+	}	
 #end

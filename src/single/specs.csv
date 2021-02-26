@@ -1,21 +1,21 @@
 "id","template","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","engine","gauge","service","length","imageFile","effect","info","liveriesNumber","liveriesFiles","liveriesYears"
-"250_alemana","template","date(1982,01,01) ",20,21,53,230,"160 km/h","4600 hpM","124 ton",0.3373930217,"electric","iberian","fp",8,"250/250",0,0,1,"[merc, aya, 2cc]",
-"251_japonesa_y_media","template","date(1982,01,01) ",20,21,53,230,"160 km/h","4650 hpM","138 ton",0.3349600709,"electric","iberian","fp",8,"251/251",0,0,2,"[merc, merc_ba, merc_2005, 2cc]",
-"252_eurosprinter_iberian","template","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","iberian","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]",
-"252_eurosprinter_standard","template","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","standard","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]",
-"260_ex6000","template","date(1923,01,01) ",20,21,53,230,"60 km/h","260 hpM","80 ton",0.1280000000,"electric","iberian","fp",6,"260/260",0,1,1,"[2cc]",
-"261_paloma","template","date(1924,01,01) ",20,21,53,230,"55 km/h","1344 hpM","75 ton",0.1280000000,"electric","iberian","fp",6,"261/261",0,0,1,"[2cc]",
-"269_japonesa","template","date(1973,01,01) ",20,21,53,230,"160 km/h","3100 hpM","88 ton",0.2319109461,"electric","iberian","fp",6,"269/269",0,0,-2,"[gd, merc]",
-"270_ex7000","template","date(1928,01,01) ",20,21,53,230,"90 km/h","2280 hpM","102 ton",0.1376470588,"electric","iberian","fp",6,"270/270",0,1,1,"[2cc]",
-"274_banyera","template","date(1944,01,01) ",20,21,53,230,"100 km/h","2400 hpM","99 ton",0.1257575757,"electric","iberian","fp",8,"274/274",0,0,1,"[2cc]",
-"276_francesa","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"276/276",0,1,3,"[merc, red, 2cc]",
-"278_pachorga","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"278/278",0,1,1,"[2cc]",
-"279_benemerita","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"279/279",0,1,2,"[merc,  2cc]",
-"280_ex10000","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"280/280",0,1,1,"[2cc]",
-"281_ex1000","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",7,"281/281",0,1,1,"[2cc]",
-"314_ex1400","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"diesel","iberian","fp",8,"314/314",0,1,1,"[2cc]",
-"316_marilyn","template","date(1955,01,01) ",20,21,53,230,"120 km/h","1600 hpM","88 ton",0.2025087940,"diesel","iberian","fp",9,"316/316",0,1,2,"[green, 2cc]",
-"321_chata","template","date(1955,01,01) ",20,21,53,230,"120 km/h","1600 hpM","88 ton",0.2025087940,"diesel","iberian","fp",8,"321/321",0,1,2,"[merc,  2cc]",
+"250_alemana","template","date(1982,01,01) ",20,21,53,230,"160 km/h","4600 hpM","124 ton",0.3373930217,"electric","iberian","fp",8,"250/250",0,0,1,"[merc, aya, 2cc]","[0,1800,1800,1900,1900,2000,0,9999]"
+"251_japonesa_y_media","template","date(1982,01,01) ",20,21,53,230,"160 km/h","4650 hpM","138 ton",0.3349600709,"electric","iberian","fp",8,"251/251",0,0,2,"[merc, merc_ba, merc_2005, 2cc]","[0,2001,2001,2002,2003,2004,2005,2006,0,9999]"
+"252_eurosprinter_iberian","template","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","iberian","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]","[0,2001,2001,2002,2003,2004,2005,2006,2007,2008,0,9999]"
+"252_eurosprinter_standard","template","date(1991,01,01) ",20,21,53,230,"220 km/h","5600 hpM","86 ton",0.3559563360,"electric","standard","fp",8,"252/252",0,1,3,"[ldba, merc, pas_2005, merc_2005, 2cc]","[0,2001,2001,2002,2003,2004,2005,2006,2007,2008,0,9999]"
+"260_ex6000","template","date(1923,01,01) ",20,21,53,230,"60 km/h","260 hpM","80 ton",0.1280000000,"electric","iberian","fp",6,"260/260",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"261_paloma","template","date(1924,01,01) ",20,21,53,230,"55 km/h","1344 hpM","75 ton",0.1280000000,"electric","iberian","fp",6,"261/261",0,0,1,"[2cc]","[0,9999, 0,9999]"
+"269_japonesa","template","date(1973,01,01) ",20,21,53,230,"160 km/h","3100 hpM","88 ton",0.2319109461,"electric","iberian","fp",6,"269/269",0,0,-2,"[gd, merc]","[0,1800, 1800, 9999,0,9999]"
+"270_ex7000","template","date(1928,01,01) ",20,21,53,230,"90 km/h","2280 hpM","102 ton",0.1376470588,"electric","iberian","fp",6,"270/270",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"274_banyera","template","date(1944,01,01) ",20,21,53,230,"100 km/h","2400 hpM","99 ton",0.1257575757,"electric","iberian","fp",8,"274/274",0,0,1,"[2cc]","[0,9999, 0,9999]"
+"276_francesa","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"276/276",0,1,3,"[merc, red, 2cc]","[0,2000, 2000, 2010, 2020, 9999,0,9999]"
+"278_pachorga","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"278/278",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"279_benemerita","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"279/279",0,1,2,"[merc,  2cc]","[0, 2000, 2000, 9999,0,9999]"
+"280_ex10000","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",8,"280/280",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"281_ex1000","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"electric","iberian","fp",7,"281/281",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"314_ex1400","template","date(1956,01,01) ",20,21,53,230,"125 km/h","3000 hpM","120 ton",0.1512500000,"diesel","iberian","fp",8,"314/314",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"316_marilyn","template","date(1955,01,01) ",20,21,53,230,"120 km/h","1600 hpM","88 ton",0.2025087940,"diesel","iberian","fp",9,"316/316",0,1,2,"[green, 2cc]","[0, 2000, 2000, 9999,0,9999]"
+"321_chata","template","date(1955,01,01) ",20,21,53,230,"120 km/h","1600 hpM","88 ton",0.2025087940,"diesel","iberian","fp",8,"321/321",0,1,2,"[merc,  2cc]","[0, 2000, 2000, 9999,0,9999]"
 "333_rambo","template","date(1974,01,01)  ",20,21,53,230,"160 km/h","3.345 hpM","120 ton",0.2806122448,"diesel","iberian","fp",8,"333/333",0,0,0,,
-"334_caracol","template","date(2006,01,01)  ",20,21,53,230,"200 km/h","3256 hpM","85 ton",0.2136854741,"diesel","iberian","fp",8,"334/334",0,1,1,"[2cc]",
-"340_huevo","template","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"diesel","iberian","fp",8,"340/340",0,1,1,"[2cc]",
+"334_caracol","template","date(2006,01,01)  ",20,21,53,230,"200 km/h","3256 hpM","85 ton",0.2136854741,"diesel","iberian","fp",8,"334/334",0,1,1,"[2cc]","[0,9999, 0,9999]"
+"340_huevo","template","date(1966,01,01) ",20,21,53,230,"130 km/h","4000 hpM","88 ton",0.1909368700,"diesel","iberian","fp",8,"340/340",0,1,1,"[2cc]","[0,9999, 0,9999]"
