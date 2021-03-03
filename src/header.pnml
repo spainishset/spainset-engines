@@ -58,7 +58,7 @@ grf {
       type:   bool;
       name:   string(str_param_restr_liv);
       desc:   string(str_param_restr_liv_desc);
-      def_value: 1;
+      def_value: 0;
     }
   }
 }
