@@ -23,8 +23,44 @@ str_param_restr_liv_desc       :Only deliveries by year: if enabled, only year-d
 
 str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
 str_purchase_info           :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+str_purchase_single  		:{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}UIC Axle classification: {YELLOW}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
+str_purchase_single_info    :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}UIC Axle classification: {YELLOW}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
 str_purchase_mu             :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
-str_purchase_info_mu        :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+str_purchase_mu_info        :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
+
+# Track types names
+
+str_purchase_gauge_narrow   :narrow
+str_purchase_gauge_standard :standard
+str_purchase_gauge_iberian  :iberian
+str_purchase_gauge_variable :iberian and standard
+
+# Purchase services
+
+str_purchase_svc_na         :N/A								# A concretar
+
+str_purchase_svc_p          :passengers							# Generico
+str_purchase_svc_ep         :passengers (express)				# Larga distancia convencional
+str_purchase_svc_hp         :passengers (high speed)			# Larga distancia alta velocidad
+str_purchase_svc_cp         :passengers (commuter)				# Cercanías
+str_purchase_svc_mp         :passengers (medium distance)		# Regionales, media distancia
+
+str_purchase_svc_f          :freight							# Generico
+str_purchase_svc_lf         :freight (light)					# Ligeras
+str_purchase_svc_hf         :freight (heavy)					# Pesadas
+
+
+### Combinations
+
+str_purchase_svc_ephf         :passengers (express), freight (heavy)
+
+# UIC axle classification (used in single engines)
+
+str_Uac_na		:N/A
+str_Uac_coco	:Co'Co'
+str_Uac_bbb		:B'B'B'
+
+# Numbers (used in MU parts)
 
 str_1  :1
 str_2  :2
@@ -46,29 +82,6 @@ str_17 :17
 str_18 :18
 str_19 :19
 str_20 :20
-
-# UIC axle classification (used in single engines)
-
-str_Uac_na		:N/A
-str_Uac_coco	:Co'Co'
-str_Uac_bbb		:B'B'B'
-
-str_purchase_gauge_narrow   :narrow
-str_purchase_gauge_standard :standard
-str_purchase_gauge_iberian  :iberian
-str_purchase_gauge_variable :iberian and standard
-
-str_purchase_svc_p          :passengers
-str_purchase_svc_ep         :express passengers
-str_purchase_svc_hp         :high speed passengers
-str_purchase_svc_f          :freight
-str_purchase_svc_lf         :light freight
-str_purchase_svc_hf         :heavy freight
-str_purchase_svc_ephf       :express passengers or heavy freight
-str_purchase_svc_hphf       :high speed passengers or heavy freight
-str_purchase_svc_eplf       :express passengers or light freight
-str_purchase_svc_fp         :freight or passengers
-str_purchase_svc_lfep       :light freight or express passengers
 
 # Tracks
 
@@ -137,7 +150,7 @@ str_mu_talgo_xxi_name:Talgo XXI
 
 # Liveries text
 
-str_purchase_year: (According to purchase year)
+str_purchase_year: [According to purchase year]
 
 str_diesel_314_ex1400_liv: (Original)
 str_diesel_314_ex1400_liv_2cc: (Colores de empresa)
@@ -156,16 +169,16 @@ str_diesel_334_caracol_liv_2cc: (Colores de empresa)
 str_diesel_340_huevo_liv: (Original)
 str_diesel_340_huevo_liv_2cc: (Colores de empresa)
 
-str_electric_250_alemana_liv: (Original)
-str_electric_250_alemana_liv_merc: Mercancías
-str_electric_250_alemana_liv_aya: Azul y amarillo
-str_electric_250_alemana_liv_2cc: (Colores de empresa)
+str_electric_250_alemana_liv: RENFE Mazinger (Pasajeros)
+str_electric_250_alemana_liv_estr: RENFE Estrella (Pasajeros)
+str_electric_250_alemana_liv_taxi: RENFE Taxi (Mercancias)
+str_electric_250_alemana_liv_2cc: [Company Colours]
 
-str_electric_251_japonesa_y_media_liv: (Original)
-str_electric_251_japonesa_y_media_liv_merc: Mercancías
-str_electric_251_japonesa_y_media_liv_merc_ba: Mercancías (Banda azul)
-str_electric_251_japonesa_y_media_liv_merc_2005: Mercancías (2005)
-str_electric_251_japonesa_y_media_liv_2cc: (2CC)
+str_electric_251_japonesa_y_media_liv: RENFE Mil rayas (Pasajeros)
+str_electric_251_japonesa_y_media_liv_taxi: RENFE Taxi (Mercancias)
+str_electric_251_japonesa_y_media_liv_taxitone: RENFE Taxitone (Mercancias)
+str_electric_251_japonesa_y_media_liv_pantone: RENFE Pantone (Mercancias)
+str_electric_251_japonesa_y_media_liv_2cc: [Company Colours]
 
 str_electric_252_eurosprinter_iberian_liv: AVE (Original)
 str_electric_252_eurosprinter_iberian_liv_ldba: Larga distancia banda azul
@@ -227,6 +240,7 @@ str_diesel_321_chata_info:Called 2100 according to old RENFE numeration system
 str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
 str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 
+str_electric_250_alemana_info:Also known as "Nun" when livery was "Taxi"
 str_electric_252_eurosprinter_iberian_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
 str_electric_252_eurosprinter_standard_info:Derived from the Deutsche Bahn trains model E120 that operate in Germany
 str_electric_260_ex6000_info:Called 6000 according to old RENFE numeration system
