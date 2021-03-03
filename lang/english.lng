@@ -47,6 +47,11 @@ str_18 :18
 str_19 :19
 str_20 :20
 
+# UIC axle classification (used in single engines)
+
+str_Uac_na		:N/A
+str_Uac_coco	:Co'Co'
+str_Uac_bbb		:B'B'B'
 
 str_purchase_gauge_narrow   :narrow
 str_purchase_gauge_standard :standard
