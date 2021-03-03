@@ -12,7 +12,7 @@
 #parse("src/lib_graphics.vm")
 
 // Purchase
-#pucharseSprite("mu", $id, $imageFile)
+#purchaseSprite("mu", $id, $imageFile)
 
 
 /*

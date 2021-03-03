@@ -12,7 +12,7 @@
 #parse("src/lib_graphics.vm")
 
 // Purchase
-#pucharseSprite("steam", $id, "garrafeta/garrafeta_engine")
+#purchaseSprite("steam", $id, "garrafeta/garrafeta_engine")
 
 // Engine animation
 #animatedSpriteSets("steam", "${id}_pre", "garrafeta/garrafeta_pre", $length, $animationFrames)

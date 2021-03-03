@@ -12,7 +12,7 @@
 #parse("src/lib_graphics.vm")
 
 // Purchase
-#pucharseSprite($engine, $id, $imageFile)
+#purchaseSprite($engine, $id, $imageFile)
 
 // Engine sprite
 #engineSpriteset($engine, $id, $imageFile, $length)

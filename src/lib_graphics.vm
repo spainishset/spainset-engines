@@ -8,10 +8,42 @@
  *#
 
 ## Macro que genera el spriteset de compra de una locomotora
-#macro(pucharseSprite $engineType, $id, $imageFile )
-  spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
-    template_purchase(1, 223)
-  }
+#macro(purchaseSprite $engineType, $id, $imageFile )
+	spriteset (spriteset_${engineType}_${id}_purchase, "gfx/${imageFile}.png") {
+	template_purchase(1, 223)
+	}
+	
+	#if (${engineType}!= "steam")
+## IF separados hasta que el csv de las vapor admita esa columna
+		#if ($liveriesNumber <0 )
+			#foreach ($livery in $liveriesFiles)
+				spriteset(spriteset_${engineType}_${id}_${livery}_purchase, "gfx/${imageFile}_${livery}.png") {
+				template_purchase(1, 223)
+				}
+			#end
+		#end
+	#end
+	
+	switch(FEAT_TRAINS, SELF, switch_${engineType}_${id}_livery_year_purchase, build_year) {
+	#if (${engineType}!= "steam")
+## IF separados hasta que el csv de las vapor admita esa columna
+		#if ($liveriesNumber <0 )
+			$liveriesYears.get(0)..$liveriesYears.get(1): spriteset_${engineType}_${id}_purchase;
+			#set($i = 2)
+			#set($j = 3)
+			#foreach ($livery in  $liveriesFiles)
+				$liveriesYears.get($i)..$liveriesYears.get($j): spriteset_${engineType}_${id}_${livery}_purchase;
+				#set($i = $i+2)
+				#set($j = $j+2)
+			#end
+		#else
+				0..9999: spriteset_${engineType}_${id}_purchase;	
+		#end
+	#else
+			0..9999: spriteset_${engineType}_${id}_purchase;	
+	#end
+	}	
+	
 #end
 
 ## Macro que genera los spritesets de una animación, para locomotoras

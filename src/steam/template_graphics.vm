@@ -14,7 +14,7 @@
 #parse("src/lib_graphics.vm")
 
 // Purchase
-#pucharseSprite("steam", $id, $imageFile)
+#purchaseSprite("steam", $id, $imageFile)
 
 // Engine animation
 #animatedSpriteSets("steam", $id, $imageFile, $length, $animationFrames)
