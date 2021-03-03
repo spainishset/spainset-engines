@@ -37,20 +37,28 @@ str_purchase_gauge_variable :iberian and standard
 
 # Purchase services
 
-str_purchase_svc_na         :N/A								# A concretar
+# A concretar
+str_purchase_svc_na         :N/A
 
-str_purchase_svc_p          :passengers							# Generico
-str_purchase_svc_ep         :passengers (express)				# Larga distancia convencional
-str_purchase_svc_hp         :passengers (high speed)			# Larga distancia alta velocidad
-str_purchase_svc_cp         :passengers (commuter)				# Cercanías
-str_purchase_svc_mp         :passengers (medium distance)		# Regionales, media distancia
+# Generico
+str_purchase_svc_p          :passengers
+# Larga distancia convencional
+str_purchase_svc_ep         :passengers (express)
+# Larga distancia alta velocidad
+str_purchase_svc_hp         :passengers (high speed)
+# Cercanías
+str_purchase_svc_cp         :passengers (commuter)
+# Regionales, media distancia
+str_purchase_svc_mp         :passengers (medium distance)
 
-str_purchase_svc_f          :freight							# Generico
-str_purchase_svc_lf         :freight (light)					# Ligeras
-str_purchase_svc_hf         :freight (heavy)					# Pesadas
+# Generico
+str_purchase_svc_f          :freight
+# Ligeras
+str_purchase_svc_lf         :freight (light)
+# Pesadas
+str_purchase_svc_hf         :freight (heavy)
 
-
-### Combinations
+# Combinations
 
 str_purchase_svc_eplf         :passengers (express), freight (light)
 str_purchase_svc_ephf         :passengers (express), freight (heavy)
