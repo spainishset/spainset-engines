@@ -52,6 +52,7 @@ str_purchase_svc_hf         :freight (heavy)					# Pesadas
 
 ### Combinations
 
+str_purchase_svc_eplf         :passengers (express), freight (light)
 str_purchase_svc_ephf         :passengers (express), freight (heavy)
 
 # UIC axle classification (used in single engines)
