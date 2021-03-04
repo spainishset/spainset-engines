@@ -134,7 +134,7 @@ str_diesel_340_huevo_name:340 "Huevo"
 
 str_electric_default_info: #Empty string
 str_electric_250_alemana_name:250 "Alemana"
-str_electric_251_japonesa_y_media_name:251 "Japonesa y Media"
+str_electric_251_japonesa_y_media_name:251 "Japonesa y media"
 str_electric_252_eurosprinter_iberian_name:252 "EuroSprinter"
 str_electric_252_eurosprinter_standard_name:252 "EuroSprinter"
 str_electric_260_ex6000_name:260
@@ -179,7 +179,7 @@ str_diesel_340_huevo_liv: (Original)
 str_diesel_340_huevo_liv_2cc: (Colores de empresa)
 
 str_electric_250_alemana_liv: RENFE Mazinger (Pasajeros)
-str_electric_250_alemana_liv_estr: RENFE Estrella (Pasajeros)
+str_electric_250_alemana_liv_estrella: RENFE Estrella (Pasajeros)
 str_electric_250_alemana_liv_taxi: RENFE Taxi (Mercancias)
 str_electric_250_alemana_liv_2cc: [Company Colours]
 
