@@ -185,9 +185,12 @@
 		switch(FEAT_TRAINS, SELF, switch_${engineType}_${id}_subtype_text, cargo_subtype + 1000 * param_restr_liv) {
 			0: return string(str_purchase_year);
 			1: return string(str_${engineType}_${id}_liv);
+			#set($counter = 2)	
 			#foreach ($livery in  $liveriesFiles)
-				#set($counter = $foreach.count + 1)			
-				$counter: return string(str_${engineType}_${id}_liv_${livery});
+				#if ($livery != "republica" and $livery != "post_republica")	
+					$counter: return string(str_${engineType}_${id}_liv_${livery});
+					#set($counter = $counter + 1)		
+				#end
 			#end
 			1000: switch_${engineType}_${id}_livery_text_year;
 			return CB_RESULT_NO_TEXT;
@@ -225,9 +228,12 @@
 	switch(FEAT_TRAINS, SELF, switch_${engine}_${id}_livery, cargo_subtype) {
 		0: switch_${engine}_${id}_livery_year;
 		1: spriteset_${engine}_${id};
-		#foreach ($liveriesFile in  $liveriesFiles)
-			#set($counter = $foreach.count + 1)			
-			$counter:spriteset_${engine}_${id}_${liveriesFile};
+		#set($counter = 2)	
+		#foreach ($livery in  $liveriesFiles)
+			#if ($livery != "republica" and $livery != "post_republica")	
+			$counter:spriteset_${engine}_${id}_${livery};
+				#set($counter = $counter + 1)		
+			#end
 		#end
 	}	
 #end
