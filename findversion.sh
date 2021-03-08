@@ -111,7 +111,6 @@ if [ -d "$ROOT_DIR/.git" ]; then
 	if [ -n "$TAG" ]; then
 		BRANCH=""
 		REV="$TAG"
-		DISPLAY_VERSION="${TAG}"
 	fi
 elif [ -f "$ROOT_DIR/.rev" ]; then
 	# We are an exported source bundle
