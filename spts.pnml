@@ -26,8 +26,6 @@
 #include "src/railtypes.pnml"
 
 // Vehicles
-#include "generated/steam/include_all.pnml"
 #include "generated/single/include_all.pnml"
-#include "generated/mu/include_all.pnml"
 
 
