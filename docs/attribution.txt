@@ -7,6 +7,6 @@ Graphics are taken from the old Spain Set Taster v1.30b :
 
 This while NewGRF it's inspired by the old Spanish Set Taster, coded by Death (E. Silbestein) & Maquinista.
 
-253 model is based on Traxx 2E-F140DC engine, created by PNDA (original Sprites from DACH by Yoshi)
+253 engine is based on Traxx 2E-F140DC engine, created by PNDA (original Sprites from DACH by Yoshi)
 
 
