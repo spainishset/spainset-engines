@@ -195,6 +195,7 @@ str_electric_251_japonesa_y_media_liv_2cc: [Company Colours]
 
 str_electric_252_eurosprinter_iberian_liv: | RENFE | Grandes Líneas (Pasajeros)
 str_electric_252_eurosprinter_iberian_liv_altaria: | RENFE | Altaria (Pasajeros)
+str_electric_252_eurosprinter_iberian_liv_arco: | RENFE | Arco (Pasajeros)
 str_electric_252_eurosprinter_iberian_liv_taxi: | RENFE | Taxi (Multiusos)
 str_electric_252_eurosprinter_iberian_liv_pantone_pasajeros: | RENFE | Pantone (Pasajeros)
 str_electric_252_eurosprinter_iberian_liv_pantone_mercancias: | RENFE | Pantone (Mercancias)
@@ -202,7 +203,6 @@ str_electric_252_eurosprinter_iberian_liv_2cc: [Company Colours]
 
 str_electric_252_eurosprinter_standard_liv: | RENFE | AVE (Pasajeros)
 str_electric_252_eurosprinter_standard_liv_altaria: | RENFE | Altaria (Pasajeros)
-str_electric_252_eurosprinter_standard_liv_arco: | RENFE | Arco (Pasajeros)
 str_electric_252_eurosprinter_standard_liv_pantone_pasajeros: | RENFE | Pantone (Pasajeros)
 str_electric_252_eurosprinter_standard_liv_pantone_mercancias: | RENFE | Pantone (Mercancias)
 str_electric_252_eurosprinter_standard_liv_2cc: [Company Colours]
