@@ -67,10 +67,12 @@ str_purchase_svc_ephf         :passengers (express), freight (heavy)
 # UIC axle classification (used in single engines)
 
 str_Uac_na		:N/A
+str_Uac_bb		:B'B'
+str_Uac_bb_289	:B'B' (Tandem: B'B'+B'B') 
 str_Uac_bobo	:Bo'Bo'
+str_Uac_bbb		:B'B'B'
 str_Uac_cc		:C'C'
 str_Uac_coco	:Co'Co'
-str_Uac_bbb		:B'B'B'
 
 # Numbers (used in MU parts)
 
@@ -151,6 +153,7 @@ str_electric_278_pachorga_name:278 "Pachorga"
 str_electric_279_benemerita_name:279 "Benemérita"
 str_electric_280_ex10000_name:280
 str_electric_281_ex1000_name:281
+str_electric_289_japonesa_name:289 "Japonesa"
 
 str_mu_100_ave_name:100 "AVE"
 str_mu_101_euromed_name:101 "Euromed"
@@ -176,55 +179,82 @@ str_diesel_321_chata_liv: (Original)
 str_diesel_321_chata_liv_merc: Mercancías
 str_diesel_321_chata_liv_2cc: (Colores de empresa)
 
+str_diesel_333_rambo_liv: (Original)
+str_diesel_333_rambo_liv_2cc: (Colores de empresa)
+
 str_diesel_334_caracol_liv: (Original)
 str_diesel_334_caracol_liv_2cc: (Colores de empresa)
 
 str_diesel_340_huevo_liv: (Original)
 str_diesel_340_huevo_liv_2cc: (Colores de empresa)
 
-str_electric_250_alemana_liv: | RENFE | Mazinger (Pasajeros)
-str_electric_250_alemana_liv_estrella: | RENFE | Estrella (Pasajeros)
-str_electric_250_alemana_liv_taxi: | RENFE | Taxi (Multiusos)
+str_electric_250_alemana_liv: | RENFE | Mazinger | Pasajeros
+str_electric_250_alemana_liv_estrella: | RENFE | Estrella | Pasajeros
+str_electric_250_alemana_liv_taxi: | RENFE | Taxi |
 str_electric_250_alemana_liv_2cc: [Company Colours]
 
-str_electric_251_japonesa_y_media_liv: | RENFE | Mil rayas (Pasajeros)
-str_electric_251_japonesa_y_media_liv_taxi: | RENFE | Taxi (Multiusos)
-str_electric_251_japonesa_y_media_liv_taxitone: | RENFE | Taxitone (Mercancias)
-str_electric_251_japonesa_y_media_liv_pantone: | RENFE | Pantone (Mercancias)
+str_electric_251_japonesa_y_media_liv: | RENFE | Mil rayas | Pasajeros
+str_electric_251_japonesa_y_media_liv_taxi: | RENFE | Taxi |
+str_electric_251_japonesa_y_media_liv_taxitone: | RENFE | Taxitone | Mercancías
+str_electric_251_japonesa_y_media_liv_pantone: | RENFE | Pantone | Mercancías
 str_electric_251_japonesa_y_media_liv_2cc: [Company Colours]
 
-str_electric_252_eurosprinter_iberian_liv: | RENFE | Grandes Líneas (Pasajeros)
-str_electric_252_eurosprinter_iberian_liv_altaria: | RENFE | Altaria (Pasajeros)
-str_electric_252_eurosprinter_iberian_liv_arco: | RENFE | Arco (Pasajeros)
-str_electric_252_eurosprinter_iberian_liv_taxi: | RENFE | Taxi (Multiusos)
-str_electric_252_eurosprinter_iberian_liv_pantone_pasajeros: | RENFE | Pantone (Pasajeros)
-str_electric_252_eurosprinter_iberian_liv_pantone_mercancias: | RENFE | Pantone (Mercancias)
+str_electric_252_eurosprinter_iberian_liv: | RENFE | Grandes Líneas | Pasajeros
+str_electric_252_eurosprinter_iberian_liv_altaria: | RENFE | Altaria | Pasajeros
+str_electric_252_eurosprinter_iberian_liv_arco: | RENFE | Arco | Pasajeros
+str_electric_252_eurosprinter_iberian_liv_taxi: | RENFE | Taxi |
+str_electric_252_eurosprinter_iberian_liv_pantone_pasajeros: | RENFE | Pantone | Pasajeros
+str_electric_252_eurosprinter_iberian_liv_pantone_mercancias: | RENFE | Pantone | Mercancías
 str_electric_252_eurosprinter_iberian_liv_2cc: [Company Colours]
 
-str_electric_252_eurosprinter_standard_liv: | RENFE | AVE (Pasajeros)
-str_electric_252_eurosprinter_standard_liv_altaria: | RENFE | Altaria (Pasajeros)
-str_electric_252_eurosprinter_standard_liv_pantone_pasajeros: | RENFE | Pantone (Pasajeros)
-str_electric_252_eurosprinter_standard_liv_pantone_mercancias: | RENFE | Pantone (Mercancias)
+str_electric_252_eurosprinter_standard_liv: | RENFE | AVE | Pasajeros
+str_electric_252_eurosprinter_standard_liv_altaria: | RENFE | Altaria | Pasajeros
+str_electric_252_eurosprinter_standard_liv_pantone_pasajeros: | RENFE | Pantone | Pasajeros
+str_electric_252_eurosprinter_standard_liv_pantone_mercancias: | RENFE | Pantone | Mercancías
 str_electric_252_eurosprinter_standard_liv_2cc: [Company Colours]
 
-str_electric_253_traxx_liv: | RENFE | Pantone (Mercancias)
-str_electric_253_traxx_liv_comsa: | COMSA Rail Transport | Azul y blanco (Mercancias)
-str_electric_253_traxx_liv_captrain: | CAPTRAIN España | Verde y blanco (Mercancias)
+str_electric_253_traxx_liv: | RENFE | Pantone | Mercancías
+str_electric_253_traxx_liv_comsa: | COMSA Rail Transport | Azul y blanco | Mercancías
+str_electric_253_traxx_liv_captrain: | CAPTRAIN España | Verde y blanco | Mercancías
 str_electric_253_traxx_liv_2cc: [Company Colours]
 
-str_electric_260_ex6000_liv: | RENFE | Verde (Multiusos)
-str_electric_260_ex6000_liv_republica: | RENFE | Verde (Multiusos)
-str_electric_260_ex6000_liv_post_republica: | RENFE | Verde (Multiusos)
+str_electric_260_ex6000_liv: | RENFE | Verde |
+str_electric_260_ex6000_liv_republica: | RENFE | Verde |
+str_electric_260_ex6000_liv_post_republica: | RENFE | Verde |
 str_electric_260_ex6000_liv_2cc: [Company Colours]
 
-str_electric_261_paloma_liv: | RENFE | Verde (Multiusos)
-str_electric_261_paloma_liv_republica: | RENFE | Verde (Multiusos)
-str_electric_261_paloma_liv_post_republica: | RENFE | Verde (Multiusos)
+str_electric_261_paloma_liv: | RENFE | Verde |
+str_electric_261_paloma_liv_republica: | RENFE | Verde |
+str_electric_261_paloma_liv_post_republica: | RENFE | Verde |
 str_electric_261_paloma_liv_2cc: [Company Colours]
 
-str_electric_269_japonesa_liv: (Original)
-str_electric_269_japonesa_liv_gd: Grandes líneas
-str_electric_269_japonesa_liv_merc: Mercancías
+str_electric_269_japonesa_liv: | RENFE | Verde |
+str_electric_269_japonesa_liv_alquiler_comsa: | RENFE | Alquiler Comsa Rail |          
+str_electric_269_japonesa_liv_alquiler_low_cost_rail: | RENFE | Alquiler Low Cost Rail |  
+str_electric_269_japonesa_liv_alquiler: | RENFE | Alquiler |  
+str_electric_269_japonesa_liv_alsa_rail: | Alsa Rail | Celeste | Pasajeros
+str_electric_269_japonesa_liv_cercanias_cabeza: | RENFE | Cercanias | Pasajeros [cabeza]
+str_electric_269_japonesa_liv_cercanias_cola: | RENFE | Cercanias | Pasajeros [cola]
+str_electric_269_japonesa_liv_estrella: | RENFE | Estrella | Pasajeros
+str_electric_269_japonesa_liv_medway: | Medway | Negro | Mercancías     
+str_electric_269_japonesa_liv_taxitone: | RENFE | Taxitone | Mercancías
+str_electric_269_japonesa_liv_altaria: | RENFE | Altaria | Pasajeros
+str_electric_269_japonesa_liv_go_transport: | Go Transport | Blanco | Mercancías
+str_electric_269_japonesa_liv_mil_rayas: | RENFE | Mil Rayas | Pasajeros
+str_electric_269_japonesa_liv_raxell: | Raxell | Rojo y blanco | Mercancías
+str_electric_269_japonesa_liv_continental_rail: | Continental Rail | Azul y amarillo | Mercancías
+str_electric_269_japonesa_liv_low_cost_rail: | Low Cost Rail | Blanco | Mercancías
+str_electric_269_japonesa_liv_pantone_mercancias: | RENFE | Pantone | Mercancías
+str_electric_269_japonesa_liv_talgo_200_blanco: | RENFE | Talgo 200 Blanco | Pasajeros
+str_electric_269_japonesa_liv_talgo_200_pantone: | RENFE | Talgo 200 Pantone | Pasajeros
+str_electric_269_japonesa_liv_blanquilla: | RENFE | Blanquilla | Pasajeros
+str_electric_269_japonesa_liv_danone: | RENFE | Danone | Pasajeros
+str_electric_269_japonesa_liv_mazinguer: | RENFE | Mázinguer | Pasajeros
+str_electric_269_japonesa_liv_pantone_pasajeros: | RENFE | Pantone | Pasajeros
+str_electric_269_japonesa_liv_taxi: | RENFE | Taxi |
+str_electric_269_japonesa_liv_2cc: [Company Colours]                 
+str_electric_269_japonesa_liv_blanca: | IRREAL | Blanca | Usar solo si prototipos
+str_electric_269_japonesa_liv_tandem_mono: | IRREAL | Tándem Mono | Usar solo si prototipos
 
 str_electric_270_ex7000_liv: (Original)
 str_electric_270_ex7000_liv_2cc: (2CC)
@@ -240,15 +270,23 @@ str_electric_276_francesa_liv_2cc: (2CC)
 str_electric_278_pachorga_liv: (Original)
 str_electric_278_pachorga_liv_2cc: (2CC)
 
-str_electric_279_benemerita_liv: (Original)
-str_electric_279_benemerita_liv_merc: Mercancías
-str_electric_279_benemerita_liv_2cc: (2CC)
+str_electric_279_benemerita_liv: | RENFE | Verde |
+str_electric_279_benemerita_liv_taxi: | RENFE | Taxi |
+str_electric_279_benemerita_liv_2cc: [Company Colours] 
 
 str_electric_280_ex10000_liv: (Original)
 str_electric_280_ex10000_liv_2cc: (2CC)
 
 str_electric_281_ex1000_liv: (Original)
 str_electric_281_ex1000_liv_2cc: (2CC)
+
+str_electric_289_japonesa_liv: | RENFE | Verde |
+str_electric_289_japonesa_liv_taxi: | RENFE | Taxi |
+str_electric_289_japonesa_liv_tandem_cabeza_verde: | RENFE | Tándem Verde | Mercancías [cabeza]
+str_electric_289_japonesa_liv_tandem_cola_verde: | RENFE | Tándem Verde | Mercancías [cola]
+str_electric_289_japonesa_liv_tandem_cabeza_pantone: | RENFE | Tándem Pantone | Mercancías [cabeza]
+str_electric_289_japonesa_liv_tandem_cola_pantone: | RENFE | Tándem Pantone | Mercancías [cola]
+str_electric_289_japonesa_liv_2cc: [Company Colours] 
 
 str_mu_594_zodiac_liv: (Original)
 str_mu_594_zodiac_liv_bm: Banda morada
@@ -272,6 +310,7 @@ str_electric_278_pachorga_info:Called 7800 according to old RENFE numeration sys
 str_electric_279_benemerita_info:Called 7900 according to old RENFE numeration system
 str_electric_280_ex10000_info:Called 10000 according to old RENFE numeration system
 str_electric_281_ex1000_info:Called 1000 according to old RENFE numeration system
+str_electric_289_japonesa_info:Called 8900 according to old RENFE numeration system
 
 str_mu_100_ave_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
 str_mu_101_euromed_info:Directly derived from the SNCF TGV Atlantique trains that operate in France
