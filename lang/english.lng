@@ -261,8 +261,8 @@ str_electric_270_ex7000_liv_republica: | RENFE | Verde |
 str_electric_270_ex7000_liv_post_republica: | RENFE | Verde |
 str_electric_270_ex7000_liv_2cc: [Company Colours]
 
-str_electric_274_banyera_liv: (Original)
-str_electric_274_banyera_liv_2cc: (2CC)
+str_electric_274_banyera_liv: | RENFE | Verde |
+str_electric_274_banyera_liv_2cc: [Company Colours]
 
 str_electric_276_francesa_liv: (Original)
 str_electric_276_francesa_liv_merc: Mercancías
