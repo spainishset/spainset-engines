@@ -2,6 +2,8 @@
 
 This is a modern replacement for the Spanish Taster Set (spainssetw.grf)
 
+TT-forums thread: https://www.tt-forums.net/viewtopic.php?f=26&t=88456
+
 ## How Build
 
 First, go to *tools* folder and run `pip3 install .` to grab the python dependencies.
@@ -18,6 +20,8 @@ If you like to copy the NewGRF to your install of OpenTTD, run `make install`
 ## Objetives
 
 Try to reimplement all the engines and wagons from the old Spanish Taster Set, with fixed data, and some modern goodies.
+
+Project evolution and documentation: https://docs.google.com/spreadsheets/d/1-FiiYils_twxTgcudiL_BsNrjCdRhsIz4bYIDnOckaI/edit#gid=0
 
 ## TODO
 
