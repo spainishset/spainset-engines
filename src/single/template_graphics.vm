@@ -35,3 +35,9 @@
 
 
 #end
+
+switch(FEAT_TRAINS, SELF, switch_colour_mapping_$id, cargo_subtype) {
+	#set($i = $liveriesFiles.size()+1)
+   	$i: return palette_2cc(company_colour1, company_colour2);
+   	return PALETTE_IDENTITY;
+}

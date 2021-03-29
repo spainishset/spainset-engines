@@ -38,7 +38,7 @@ item(FEAT_TRAINS, item_${engine}_${id}) {
     dual_headed: 0;
     extra_power_per_wagon: 0;
     bitmask_vehicle_info: 0;
-    misc_flags: 0;
+    misc_flags: bitmask(TRAIN_FLAG_2CC);
 
     #engineType($engine)
     #trackType($engine, $gauge)
@@ -46,6 +46,7 @@ item(FEAT_TRAINS, item_${engine}_${id}) {
 }
 
 graphics {
+	colour_mapping: switch_colour_mapping_$id;
     purchase: switch_${engine}_${id}_livery_year_purchase;
     #extraInfo($engine, $id, $info, $gauge, 0)
     
