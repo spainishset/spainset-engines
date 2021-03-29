@@ -1,6 +1,6 @@
 SPanish Trainset (SPTS) Changelog
-========================
-0.1 (2021/03/15)
-------------------
-- First release
-- Added: 250, 251, 252 (both gauges), 253, 260, 261 engines
+=================================
+0.1 (2021/04/01)
+----------------
+- First release.
+- Added: 250, 251, 252 (both gauges), 253, 260, 261 engines.

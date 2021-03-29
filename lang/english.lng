@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 str_grf_name                :{TITLE}
-str_grf_desc                :{}{}{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain.{}{}This set is not complete (yet).
+str_grf_desc                :{}{}{WHITE}The {LTBLUE}{TITLE} {WHITE}contains any trains that have or are currently circulating in Spain.{}{}This set is not complete (yet).{}{}Visit {ORANGE}website{WHITE}, read the {ORANGE}readme{WHITE} and {ORANGE}changelog{WHITE} for further information.
 str_grf_url                 :https://github.com/spainishset/spainset-engines
 
 # Parameters
