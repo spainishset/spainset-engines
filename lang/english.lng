@@ -70,6 +70,7 @@ str_Uac_na		:N/A
 str_Uac_bb		:B'B'
 str_Uac_bb_289	:B'B' (Tandem: B'B'+B'B') 
 str_Uac_bobo	:Bo'Bo'
+str_Uac_bobobo	:Bo'Bo'Bo'
 str_Uac_bbb		:B'B'B'
 str_Uac_cc		:C'C'
 str_Uac_coco	:Co'Co'
@@ -270,18 +271,21 @@ str_electric_276_francesa_liv_taxi: | RENFE | Taxi |
 str_electric_276_francesa_liv_ave: | RENFE | Ave | Pasajeros
 str_electric_276_francesa_liv_2cc: [Company Colours]
 
-str_electric_278_pachorga_liv: (Original)
-str_electric_278_pachorga_liv_2cc: (2CC)
+str_electric_278_pachorga_liv: | RENFE | Verde |
+str_electric_278_pachorga_liv_2cc: [Company Colours]
 
 str_electric_279_benemerita_liv: | RENFE | Verde |
 str_electric_279_benemerita_liv_taxi: | RENFE | Taxi |
 str_electric_279_benemerita_liv_2cc: [Company Colours] 
 
-str_electric_280_ex10000_liv: (Original)
-str_electric_280_ex10000_liv_2cc: (2CC)
+str_electric_280_ex10000_liv: | RENFE | Verde |
+str_electric_280_ex10000_liv_2cc: [Company Colours]
 
-str_electric_281_ex1000_liv: (Original)
-str_electric_281_ex1000_liv_2cc: (2CC)
+str_electric_281_ex1000_liv: | RENFE | Verde |
+str_electric_281_ex1000_liv_republica: | RENFE | Verde |
+str_electric_281_ex1000_liv_post_republica: | RENFE | Verde |
+str_electric_281_ex1000_liv_2cc: [Company Colours]
+
 
 str_electric_289_japonesa_liv: | RENFE | Verde |
 str_electric_289_japonesa_liv_taxi: | RENFE | Taxi |
