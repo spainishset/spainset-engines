@@ -9,4 +9,4 @@ This whole NewGRF it's inspired by the old Spanish Set Taster, coded by Death (E
 
 253 model is based on Traxx 2E-F140DC engine, created by PNDA (original Sprites from DACH by Yoshi)
 
-
+Created by Zardoz, Maquinista, Montana, JB.
