@@ -5,7 +5,7 @@ PNML scaffolding are based on The Dutch Trainset 2 (https://github.com/openttdco
 Graphics are taken from the old Spain Set Taster v1.30b :
 	 2005-2017 Drawn by: Sanchimaru, Purno, Wile E. Coyote, Artamir & Others
 
-This while NewGRF it's inspired by the old Spanish Set Taster, coded by Death (E. Silbestein) & Maquinista.
+This whole NewGRF it's inspired by the old Spanish Set Taster, coded by Death (E. Silbestein) & Maquinista.
 
 253 model is based on Traxx 2E-F140DC engine, created by PNDA (original Sprites from DACH by Yoshi)
 

@@ -12,3 +12,19 @@ include on set and can toggled using GRF parameters.
 
 Created using the NML.
 
+
+==Attribution==
+
+
+Makefile, Makefile.config and findversions.sh are based on NewGRF build framework (https://dev.openttdcoop.org/projects/make-nml/repository)
+
+PNML scaffolding are based on The Dutch Trainset 2 (https://github.com/openttdcoop/dutchtrains)
+
+Graphics are taken from the old Spain Set Taster v1.30b: 2005-2017 Drawn by: Sanchimaru, Purno, Wile E. Coyote, Artamir & Others
+
+This whole NewGRF it's inspired by the old Spanish Set Taster, coded by Death (E. Silbestein) & Maquinista.
+
+253 model is based on Traxx 2E-F140DC engine, created by PNDA (original Sprites from DACH by Yoshi)
+
+Created by Zardoz, Maquinista, Montana, JB. 
+
