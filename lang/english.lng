@@ -58,6 +58,9 @@ str_purchase_svc_lf         :freight (light)
 # Pesadas
 str_purchase_svc_hf         :freight (heavy)
 
+# Maniobras
+str_purchase_svc_s          :shunting
+
 # Combinations
 
 str_purchase_svc_pf           :passengers, freight
@@ -131,6 +134,7 @@ str_steam_151_santafe_name: 1-5-1 "Santa Fe"
 str_steam_141_mikado_name: 1-4-1 "Mikado"
 str_steam_242_confederacion_name: 2-4-2 "Confederación"
 
+str_diesel_310_guardacostas_name:310 "Guardacostas"
 str_diesel_314_ex1400_name:314
 str_diesel_316_marilyn_name:316 "Marilyn"
 str_diesel_321_chata_name:321 "Chata"
@@ -169,16 +173,19 @@ str_mu_talgo_xxi_name:Talgo XXI
 
 str_purchase_year: [According to purchase year]
 
-str_diesel_314_ex1400_liv: (Original)
-str_diesel_314_ex1400_liv_2cc: (Colores de empresa)
+str_diesel_310_guardacostas_liv: | RENFE | Gris y rojo | Maniobras [cabeza]
+str_diesel_310_guardacostas_liv_cola: | RENFE | Gris y rojo | Maniobras [cola]
 
-str_diesel_316_marilyn_liv: (Original)
-str_diesel_316_marilyn_liv_green: Verde
-str_diesel_316_marilyn_liv_2cc: (Colores de empresa)
+str_diesel_314_ex1400_liv: | RENFE | Verde |
+str_diesel_314_ex1400_liv_2cc: [Company Colours]
 
-str_diesel_321_chata_liv: (Original)
-str_diesel_321_chata_liv_merc: Mercancías
-str_diesel_321_chata_liv_2cc: (Colores de empresa)
+str_diesel_316_marilyn_liv: | RENFE | Plata |
+str_diesel_316_marilyn_liv_verde: | RENFE | Verde |
+str_diesel_316_marilyn_liv_2cc: [Company Colours]
+
+str_diesel_321_chata_liv: | RENFE | Verde |
+str_diesel_321_chata_liv_taxi: | RENFE | Taxi |
+str_diesel_321_chata_liv_2cc: [Company Colours]
 
 str_diesel_333_rambo_liv: (Original)
 str_diesel_333_rambo_liv_2cc: (Colores de empresa)
@@ -300,8 +307,8 @@ str_mu_594_zodiac_liv_bm: Banda morada
 str_mu_594_zodiac_liv_ref: (Reformado)
 
 # Extra info
-
-str_diesel_314_ex1400_info:Called 1400 according to old RENFE numeration system
+str_diesel_310_guardacostas_info:Built with the leftover elements from the reconstruction of the 319.
+str_diesel_314_ex1400_info:Called 1400 according to old RENFE numeration system. Extensively used unique prototype, from which derived 319 series
 str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system
 str_diesel_321_chata_info:Called 2100 according to old RENFE numeration system
 str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
