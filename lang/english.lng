@@ -173,8 +173,15 @@ str_mu_talgo_xxi_name:Talgo XXI
 
 str_purchase_year: [According to purchase year]
 
-str_diesel_310_guardacostas_liv: | RENFE | Gris y rojo | Maniobras [cabeza]
-str_diesel_310_guardacostas_liv_cola: | RENFE | Gris y rojo | Maniobras [cola]
+#str_diesel_310_guardacostas_liv: | RENFE | Gris y rojo | Maniobras [cabeza]
+#str_diesel_310_guardacostas_liv_cola: | RENFE | Gris y rojo | Maniobras [cola]
+str_diesel_310_guardacostas_liv: | RENFE | TMD | Mercancías [cabeza]
+str_diesel_310_guardacostas_liv_cola: | RENFE | TMD | Mercancías [cola]
+str_diesel_310_guardacostas_liv_FGC_cabeza: | FGC | Gris y rojo | Mercancías [cabeza]
+str_diesel_310_guardacostas_liv_FGC_cola: | FGC | Gris y rojo | Mercancías [cola]
+str_diesel_310_guardacostas_liv_2cc_cabeza: [Company Colours] [cabeza]
+str_diesel_310_guardacostas_liv_2cc_cola: [Company Colours] [cola]
+
 
 str_diesel_314_ex1400_liv: | RENFE | Verde |
 str_diesel_314_ex1400_liv_2cc: [Company Colours]
