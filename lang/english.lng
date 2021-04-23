@@ -327,10 +327,10 @@ str_electric_281_ex1000_liv_2cc: [Company Colours]
 
 str_electric_289_japonesa_liv: | RENFE | Verde |
 str_electric_289_japonesa_liv_taxi: | RENFE | Taxi |
-str_electric_289_japonesa_liv_tandem_cabeza_verde: | RENFE | Tándem Verde | Mercancías [cabeza]
-str_electric_289_japonesa_liv_tandem_cola_verde: | RENFE | Tándem Verde | Mercancías [cola]
-str_electric_289_japonesa_liv_tandem_cabeza_pantone: | RENFE | Tándem Pantone | Mercancías [cabeza]
-str_electric_289_japonesa_liv_tandem_cola_pantone: | RENFE | Tándem Pantone | Mercancías [cola]
+str_electric_289_japonesa_liv_tandem_verde_cabeza: | RENFE | Tándem Verde | Mercancías [cabeza]
+str_electric_289_japonesa_liv_tandem_verde_cola: | RENFE | Tándem Verde | Mercancías [cola]
+str_electric_289_japonesa_liv_tandem_pantone_cabeza: | RENFE | Tándem Pantone | Mercancías [cabeza]
+str_electric_289_japonesa_liv_tandem_pantone_cola: | RENFE | Tándem Pantone | Mercancías [cola]
 str_electric_289_japonesa_liv_2cc: [Company Colours] 
 
 str_mu_594_zodiac_liv: (Original)
