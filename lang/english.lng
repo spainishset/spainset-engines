@@ -218,8 +218,23 @@ str_diesel_321_chata_liv: | RENFE | Verde |
 str_diesel_321_chata_liv_taxi: | RENFE | Taxi |
 str_diesel_321_chata_liv_2cc: [Company Colours]
 
-str_diesel_333_rambo_liv: (Original)
-str_diesel_333_rambo_liv_2cc: (Colores de empresa)
+str_diesel_333_rambo_liv: | RENFE | Verde |
+str_diesel_333_rambo_liv_taxi: | RENFE | Taxi |
+str_diesel_333_rambo_liv_grandes_lineas: | RENFE | Grandes Líneas | Pasajeros
+str_diesel_333_rambo_liv_pantone_pasajeros: | RENFE | Pantone | Pasajeros
+str_diesel_333_rambo_liv_taxi_reformada: | RENFE | Taxi | [reformada]
+str_diesel_333_rambo_liv_grandes_lineas_inicial_reformada: | RENFE | Grandes Líneas | Pasajeros [inicial][reformada]
+str_diesel_333_rambo_liv_grandes_lineas_reformada: | RENFE | Grandes Líneas | Pasajeros [reformada]
+str_diesel_333_rambo_liv_pantone_pasajeros_reformada: | RENFE | Pantone | Pasajeros [reformada]
+str_diesel_333_rambo_liv_pantone_mercancias_reformada: | RENFE | Pantone | Mercancías [reformada]
+str_diesel_333_rambo_liv_alquiler_reformada: | RENFE | Alquiler | [reformada] 
+str_diesel_333_rambo_liv_tren_de_la_fresa_reformada: | FFE | Tren de la Fresa | Turístico
+str_diesel_333_rambo_liv_traccion_rail_reformada: | Traccion Rail | Azul | Mercancías [reformada]
+str_diesel_333_rambo_liv_acciona_reformada: | Acciona | Rojo | Mercancías [reformada]
+str_diesel_333_rambo_liv_low_cost_rail_reformada: | Low Cost Rail | Blanco | Mercancías [reformada]
+str_diesel_333_rambo_liv_continental_rail_reformada: | Continental Rail | Azul y amarillo | Mercancías [reformada]
+str_diesel_333_rambo_liv_2cc: [Company Colours]
+str_diesel_333_rambo_liv_2cc_reformada: [Company Colours][reformada]
 
 str_diesel_334_caracol_liv: | RENFE | Pantone | Pasajeros
 str_diesel_334_caracol_liv_2cc: [Company Colours]
@@ -344,6 +359,7 @@ str_diesel_316_marilyn_info:Called 1600 according to old RENFE numeration system
 str_diesel_319_yanki_iberian_info:Called 1900 according to old RENFE numeration system. Also nicknamed "Retales" and "Calderos". Derived from 314 series
 str_diesel_319_yanki_standard_info:Called 1900 according to old RENFE numeration system. Also nicknamed "Retales" and "Calderos". Derived from 314 series. Refomed from iberian gauge units
 str_diesel_321_chata_info:Called 2100 according to old RENFE numeration system
+str_diesel_333_rambo_info: Also nicknamed "Prima"
 str_diesel_334_caracol_info:Known as "Euro 3000" by the manufacturer
 str_diesel_340_huevo_info:Called 4000 according to old RENFE numeration system
 
