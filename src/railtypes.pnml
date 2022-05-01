@@ -10,15 +10,15 @@
 if (param_add_tracks != 0) {
 
   /*
-  * B Broad gauge
-  * A Low speed/no speed limit
-  * A low axle limit ?
-  * N not electrified
-  */
+   * B Broad gauge
+   * A Low speed/no speed limit
+   * A low axle limit ?
+   * N not electrified
+   */
   item(FEAT_RAILTYPES, BAAN, 1) {
     property {
       label: "BAAN";
-      introduction_date: date(1850, 1, 1);
+      introduction_date: date(1848, 1, 1);
 
       name: string(str_track_type_iberian);
       toolbar_caption: string(str_construction_iberian);
@@ -96,11 +96,11 @@ if (param_add_tracks != 0) {
   }
 
   /*
-  * B Broad gauge
-  * A Low speed/no speed limit
-  * A low axle limit ?
-  * E electrified
-  */
+   * B Broad gauge
+   * A Low speed/no speed limit
+   * A low axle limit ?
+   * E electrified
+   */
   item(FEAT_RAILTYPES, BAAE, 2) {
     property {
       label: "BAAE";
@@ -175,11 +175,11 @@ if (param_add_tracks != 0) {
 
 
   /*
-  * S Standard gauge
-  * A No speed limit/ Low speed
-  * A low axle limit ?
-  * A AC high voltange eletric
-  */
+   * S Standard gauge
+   * A No speed limit/ Low speed
+   * A low axle limit ?
+   * A AC high voltange eletric
+   */
   item(FEAT_RAILTYPES, SAAA, 3) {
     property {
       label: "SAAA";
@@ -258,8 +258,8 @@ if (param_add_tracks != 0) {
   }
   
   /*
-  * VGNE = VARIABLE GAUGE NOT ELECTRIFIED: for trains capable to change gauge from standard not electrified to broad and vice-versa.
-  */
+   * VGNE = VARIABLE GAUGE NOT ELECTRIFIED: for trains capable to change gauge from standard not electrified to broad and vice-versa.
+   */
   item(FEAT_RAILTYPES, VGNE, 4) {
     property {
       label: "VGNE";
@@ -300,8 +300,8 @@ if (param_add_tracks != 0) {
   }
   
   /*
-  * VGEL = VARIABLE GAUGE ELECTRIFIED: for trains capable to change gauge from standard electrified to broad and vice-versa.
-  */
+   * VGEL = VARIABLE GAUGE ELECTRIFIED: for trains capable to change gauge from standard electrified to broad and vice-versa.
+   */
   item(FEAT_RAILTYPES, VGEL, 5) {
     property {
       label: "VGEL";
@@ -327,6 +327,92 @@ if (param_add_tracks != 0) {
       // speed_limit: 300 km/h;
       acceleration_model: ACC_MODEL_RAIL;
       railtype_flags: bitmask(RAILTYPE_FLAG_HIDDEN);
+  }
+
+  /*
+  graphics {
+    track_overlay: ground_switch_overlay_RAIL;
+    underlay: ground_switch_underlay_RAIL;
+    tunnels: tunnel_track_RAIL_switch;
+    level_crossings: level_crossing_RAIL_switch;
+    bridge_surfaces: bridge_RAIL_switch;
+    fences: fences_RAIL_terrain_switch;
+  }
+  */
+  }
+
+  /*
+   * N Broad gauge
+   * A Low speed/no speed limit
+   * A low axle limit ?
+   * N not electrified
+   */
+
+  item(FEAT_RAILTYPES, NAAN, 6) {
+    property {
+      label: "NAAN";
+      introduction_date: date(1848, 1, 1);
+
+      name: string(str_track_type_metric);
+      toolbar_caption: string(str_construction_metric);
+      menu_text: string(str_construction_metric);
+      build_window_caption: string(str_vehicle_construction_metric);
+      autoreplace_text: string(str_autoreplace_metric);
+      new_engine_text: string(str_new_engine_metric);
+
+      // List of rail tyoes that trains of this type can also run (but not necesary powered)
+      compatible_railtype_list: [
+        "NAAN", "NABN", "NACN", "NADN", // Narrow gauge, low speed/no speed limit, not electrified
+        "NBAN", "NBBN", "NBCN", "NBDN", // Narrow gauge, high speed/medium speed, not electrified
+        "NCAN", "NCBN", "NCCN", "NCDN", // Narrow gauge, high speed, not electrified
+        "NDAN", "NDBN", "NDCN", "NDDN", // Narrow gauge, higher? speed, not electrified
+        "NAAE", "NABE", "NACE", "NADE", // Narrow gauge, low speed/no speed limit, electrified
+        "NBAE", "NBBE", "NBCE", "NCDE", // Narrow gauge, high speed/medium speed, electrified
+        "NCAE", "NCBE", "NCCE", "NCDE", // Narrow gauge, high speed, electrified
+        "NDAE", "NDBE", "NDCE", "NCDE", // Narrow gauge, higher? speed, electrified
+        "NAAA", "NABA", "NACA", "NADA", // Narrow gauge, low speed/no speed limit, AC electrified
+        "NBAA", "NBBA", "NBCA", "NBDA", // Narrow gauge, high speed/medium speed, AC electrified
+        "NCAA", "NCBA", "NCCA", "NCDA", // Narrow gauge, high speed, AC electrified
+        "NDAA", "NDBA", "NDCA", "NDDA", // Narrow gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail tyoes that trains of this type are powered on
+      powered_railtype_list: [
+        "NAAN", "NABN", "NACN", "NADN", // Narrow gauge, low speed/no speed limit, not electrified
+        "NBAN", "NBBN", "NBCN", "NBDN", // Narrow gauge, high speed/medium speed, not electrified
+        "NCAN", "NCBN", "NCCN", "NCDN", // Narrow gauge, high speed, not electrified
+        "NDAN", "NDBN", "NDCN", "NDDN", // Narrow gauge, higher? speed, not electrified
+        "NAAE", "NABE", "NACE", "NADE", // Narrow gauge, low speed/no speed limit, electrified
+        "NBAE", "NBBE", "NBCE", "NCDE", // Narrow gauge, high speed/medium speed, electrified
+        "NCAE", "NCBE", "NCCE", "NCDE", // Narrow gauge, high speed, electrified
+        "NDAE", "NDBE", "NDCE", "NCDE", // Narrow gauge, higher? speed, electrified
+        "NAAA", "NABA", "NACA", "NADA", // Narrow gauge, low speed/no speed limit, AC electrified
+        "NBAA", "NBBA", "NBCA", "NBDA", // Narrow gauge, high speed/medium speed, AC electrified
+        "NCAA", "NCBA", "NCCA", "NCDA", // Narrow gauge, high speed, AC electrified
+        "NDAA", "NDBA", "NDCA", "NDDA", // Narrow gauge, higher? speed, AC electrified
+        ];
+
+      // List of rail types which this rail type will act as fallback for,
+      // if the corresponding rail type is not defined separately
+      alternative_railtype_list: [
+        "RAIL", "ELRL",
+        "RLOW", "RMED",
+        "ELOW", "EMED", "EHIG", "HSTR",
+        "SAAN", "SABN", "SACN", "SADN", // Standard gauge, low speed/no speed limit, not electrified
+        "SBAN", "SBBN", "SBCN", "SBDN", // Standard gauge, high speed/medium speed, not electrified
+        "SCAN", "SCBN", "SCCN", "SCDN", // Standard gauge, high speed, not electrified
+        "SDAN", "SDBN", "SDCN", "SDDN", // Standard gauge, higher? speed, not electrified
+        "SAAE", "SABE", "SACE", "SADE", // Standard gauge, low speed/no speed limit, electrified
+        "SBAE", "SBBE", "SBCE", "SCDE", // Standard gauge, high speed/medium speed, electrified
+        "SCAE", "SCBE", "SCCE", "SCDE", // Standard gauge, high speed, electrified
+        "SDAE", "SDBE", "SDCE", "SCDE", // Standard gauge, higher? speed, electrified
+        "SAAA", "SABA", "SACA", "SADA", // Standard gauge, low speed/no speed limit, AC electrified
+        "SBAA", "SBBA", "SBCA", "SBDA", // Standard gauge, high speed/medium speed, AC electrified
+        "SCAA", "SCBA", "SCCA", "SCDA", // Standard gauge, high speed, AC electrified
+        "SDAA", "SDBA", "SDCA", "SDDA", // Standard gauge, higher? speed, AC electrified
+      ];
+
+      acceleration_model: ACC_MODEL_RAIL;
   }
 
   /*

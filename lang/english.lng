@@ -23,7 +23,7 @@ str_param_restr_liv_desc       :Only deliveries by year: if enabled, only year-d
 
 str_purchase                :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
 str_purchase_info           :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
-str_purchase_single  		:{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}UIC Axle classification: {YELLOW}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
+str_purchase_single         :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}UIC Axle classification: {YELLOW}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
 str_purchase_single_info    :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}UIC Axle classification: {YELLOW}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
 str_purchase_mu             :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}
 str_purchase_mu_info        :{BLACK}--------------------{}{BLACK}Track gauge: {ORANGE}{STRING}{}{BLACK}Parts: {ORANGE}{STRING}{}{BLACK}Service: {YELLOW}{STRING}{}{BLACK}Information: {YELLOW}{STRING}
@@ -69,14 +69,14 @@ str_purchase_svc_ephf         :passengers (express), freight (heavy)
 
 # UIC axle classification (used in single engines)
 
-str_Uac_na		:N/A
-str_Uac_bb		:B'B'
-str_Uac_bb_289	:B'B' (Tandem: B'B'+B'B') 
-str_Uac_bobo	:Bo'Bo'
-str_Uac_bobobo	:Bo'Bo'Bo'
-str_Uac_bbb		:B'B'B'
-str_Uac_cc		:C'C'
-str_Uac_coco	:Co'Co'
+str_Uac_na      :N/A
+str_Uac_bb      :B'B'
+str_Uac_bb_289  :B'B' (Tandem: B'B'+B'B')
+str_Uac_bobo    :Bo'Bo'
+str_Uac_bobobo  :Bo'Bo'Bo'
+str_Uac_bbb     :B'B'B'
+str_Uac_cc      :C'C'
+str_Uac_coco    :Co'Co'
 
 # Numbers (used in MU parts)
 
@@ -120,6 +120,12 @@ str_construction_uic_highspeed         :High speed UIC track construction
 str_vehicle_construction_uic_highspeed :New high speed UIC railway vehicle
 str_autoreplace_uic_highspeed          :High speed UIC railway vehicles
 str_new_engine_uic_highspeed           :high speed UIC railway vehicle
+
+str_track_type_metric           :Metric gauge track
+str_construction_metric         :Metric gauge track construction
+str_vehicle_construction_metric :New Metric gauge railway vehicle
+str_autoreplace_metric          :Metric guage railway vehicles
+str_new_engine_metric           :Metric guage railway vehicle
 
 # Train names
 
