@@ -1,5 +1,11 @@
 SPanish Trainset (SPTS) Changelog
 =================================
+0.2 (2022)
+- Added Narrow track track types
+- Added 111 Mataró, 120 NORTE 100, 030 NORTE 300, 040 NORTE 500, a few narrow
+track steam engines and 030T "Caldas" (First steam engine build on Spain by
+"La maquinista")
+
 0.1 (2021/04/01)
 ----------------
 - First release.

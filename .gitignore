@@ -2,6 +2,7 @@
 *.swp
 ~*
 .~*
+*.kate-swp
 
 #git
 *.orig

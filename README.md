@@ -11,8 +11,8 @@ Then you can run `build.sh` or follow this manual steps :
 
 1. Run `make clean`
 2. Run `tools/build_nml.py steam` from the main folder
-3. Run `tools/build_nml.py diesel` from the main folder
-4. Run `tools/build_nml.py electric` from the main folder
+3. Run `tools/build_nml.py single` from the main folder
+4. Run `tools/build_nml.py mu` from the main folder
 5. Run `make all`
 
 If you like to copy the NewGRF to your install of OpenTTD, run `make install`
@@ -40,7 +40,7 @@ Project evolution and documentation: https://docs.google.com/spreadsheets/d/1-Fi
   - [ ] Passenger wagons  
   - [ ] Cargo wagons
 - [ ] Alternative names, like The Dutch Trainset.
-- [ ] Add a few more XIX century engines (Series 100 and 200 from Norte, etc)
+- [X] Add a few more XIX century engines (Series 100 and 200 from Norte, etc)
 - [ ] Add some post 2003 new Spanish engines
 
 ### Long-term

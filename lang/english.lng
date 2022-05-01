@@ -129,8 +129,16 @@ str_new_engine_metric           :Metric guage railway vehicle
 
 # Train names
 
-str_steam_030_perruca_name: 0-3-0 "Perruca"/"Bourbonnais"
+str_steam_111_mataro_name: 1-2-1 "La Mataró"/"Patentee"
+str_steam_120_norte100_name: 1-2-0 NORTE 100
+str_steam_030_norte300_name: 0-3-0 NORTE 300
+str_steam_040_norte500_name: 0-4-0 NORTE 500
+str_steam_220T_estrecha_name : 2-2-T via estrecha
+str_steam_030T_estrecha_name : 0-3-T via estrecha
+str_steam_030T_caldas_name: 0-3-0T "Caldas"
+str_steam_030_perruca_name: 0-3-0 "Perruca"/"Bourbonnais" (Koschlin)
 str_steam_040_verraco_name: 0-4-0 "Verraco"
+str_steam_140_estrecha_consolidacion_name: 1-4-0 via estrecha "Consolidación"
 str_steam_140_consolidacion_name: 1-4-0 "Consolidación"
 str_steam_240_mastodonte_name: 2-4-0 "Mastodonte"
 str_steam_282_garrafeta_name: 2-8-2 "Garrafeta"

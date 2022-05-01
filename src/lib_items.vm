@@ -19,7 +19,7 @@
 		#if ($engineType == "electric")
 			track_type: narrowElectrified;
 		#else
-			track_type: narrowNoElectrified;
+			track_type: narrowNotElectrified;
 		#end
 	#elseif ($gauge == "variable")
 		#if ($engineType == "electric")
