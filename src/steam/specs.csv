@@ -1,8 +1,8 @@
 "id","template","date","modelLife","vehicleLife","costFactor","runningCostFactor","speed","power","weight","tec","engine","gauge","service","length","imageFile","animationFrames","tenderLength","effect","info"
-"111_mataro","template","date(1848,01,01)",20,50,7,70,"50 km/h","300 hpM","30.1 ton",0.0900000000,"steam","iberian","p",6,"perruca/perruca",4,3,-3,0
-"120_norte100","template","date(1858,01,01)",50,80,7,60,"70 km/h","300 hpM","30 ton",0.0900000000,"steam","iberian","p",6,"perruca/perruca",4,3,-3,0
-"030_norte300","template","date(1860,01,01)",50,80,7,60,"45 km/h","400 hpM","30 ton",0.0920000000,"steam","iberian","f",6,"perruca/perruca",4,3,-3,0
-"040_norte500","template","date(1864,01,01)",50,80,7,55,"40 km/h","450 hpM","30 ton",0.1000000000,"steam","iberian","hf",6,"perruca/perruca",4,3,-3,0
+"111_mataro","template","date(1848,01,01)",20,50,6,30,"86 km/h","250 hpM","24 ton",0.0967628431,"steam","iberian","p",4,"mataro/mataro",4,2,-3,0
+"120_norte100","template","date(1858,01,01)",50,80,7,60,"80 km/h","300 hpM","30 ton",0.0900000000,"steam","iberian","p",4,"mataro/mataro",4,2,-3,0
+"030_norte300","template","date(1860,01,01)",50,80,7,60,"50 km/h","400 hpM","30 ton",0.0920000000,"steam","iberian","f",4,"mataro/mataro",4,2,-3,0
+"040_norte500","template","date(1864,01,01)",50,80,7,55,"50 km/h","450 hpM","30 ton",0.1000000000,"steam","iberian","hf",6,"perruca/perruca",4,3,-3,0
 "220T_estrecha","template","date(1874,01,01)",50,80,6,50,"50 km/h","400 hpM","20 ton",0.0900000000,"steam","narrow","cp",6,"perruca/perruca",4,0,-3,0
 "030T_estrecha","template","date(1880,01,01)",50,75,6,40,"50 km/h","400 hpM","25 ton",0.0950000000,"steam","narrow","na",6,"perruca/perruca",4,0,-3,0
 "030T_caldas","template","date(1887,01,01)",50,75,7,40,"50 km/h","430 hpM","29.3 ton",0.0920000000,"steam","iberian","cp",6,"perruca/perruca",4,0,-3,0
