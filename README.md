@@ -22,34 +22,48 @@ If you like to copy the NewGRF to your install of OpenTTD, run `make install`
 Try to reimplement all the engines and wagons from the old Spanish Taster Set, with fixed data, and some modern goodies.
 
 Project evolution and documentation: https://docs.google.com/spreadsheets/d/1-FiiYils_twxTgcudiL_BsNrjCdRhsIz4bYIDnOckaI/edit#gid=0
+Discord : https://discord.gg/kArHNjkD
 
 ## TODO
+
+More updated/detailed on the previous Google Docs document.
 
 ### Short-term
 - [X] Investigate how use some script language like Python+templates to automatize all the boring repetitive coding.
 - [ ] Add more trains form Spanish Taster Set
   - Steam engines
-  - [ ] Steam engines
+  - [X] XX Steam engines
   - Single unit engines
-  - [ ] Diesel engines  
-  - [X] Electric engines  
+  - [X] Diesel engine
+  - [X] Electric engine
   - Multiple units
-  - [ ] Diesel units  
-  - [ ] Electric units 
+  - [X] Diesel units
+  - [X] Electric units
   - Wagons
-  - [ ] Passenger wagons  
+  - [ ] Passenger wagons
   - [ ] Cargo wagons
-- [ ] Alternative names, like The Dutch Trainset.
-- [X] Add a few more XIX century engines (Series 100 and 200 from Norte, etc)
-- [ ] Add some post 2003 new Spanish engines
+- Add a few more XIX century engines (Mataró, Caldas, Series 100 and 200 from Norte, etc)
+  - [ ] Sprites
+  - [ ] Models/Data
+- Add some post 2003 new Spanish engines
+  - [ ] Sprites
+  - [ ] Models/Data
 
 ### Long-term
-- [ ] Apply the track standard nomenclature so the engines are compatible with
+- [X] Apply the track standard nomenclature so the engines are compatible with
     tracks from other NewGRF. This should allow to make a new Spanish High speed
     track GRF that it's compatible with other NewGRFs.
+- [ ] Track sprites
+- Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain)
+  - [X] Track type
+  - [ ] Steam engines
+  - [ ] Single Unit Diesel
+  - [ ] Single Unit Electric
+  - [ ] Multiple Unit Diesel
+  - [ ] Multiple Unit Electric
+- [ ] Alternative names, like The Dutch Trainset.
 - [ ] Add "Fuel" variant of some steam engines (lower running costs)
-- [ ] Parameters to show/hide some engines (hide Cercanias trains, etc)
-- [ ] Incorporate narrow engines (from the FEVE GRF and a few historical used on some narrow gauge lines on Spain)
+- [ ] Parameters to show/hide some engines (hide "Cercanias" trains, etc)
 
 ### Dreaming
 - [ ] 32bpp and x2 or x4 sprites
